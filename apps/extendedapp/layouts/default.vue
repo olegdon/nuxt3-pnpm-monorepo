@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { public: config } = useRuntimeConfig()
+// const { public: config } = useRuntimeConfig()
 </script>
 
 <template>
