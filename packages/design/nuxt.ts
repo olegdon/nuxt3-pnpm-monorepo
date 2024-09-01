@@ -10,7 +10,7 @@ const { resolve } = createResolver(import.meta.url)
  * A Nuxt module that enhances the Nuxt application by adding paths for:
  * - Composables: Exposes all composables from './composables'.
  * - Components: Allows for project-specific component usage without prefix.
- *               For example, a component named 'SpiegelUiButton' can be
+ *               For example, a component named 'ExtendedappUiButton' can be
  *               directly used as 'UiButton', leading to cleaner and more
  *               efficient templates.
  */

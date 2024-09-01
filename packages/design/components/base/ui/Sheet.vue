@@ -1,10 +1,35 @@
 <script lang="ts" setup>
+const { to } = withDefaults(
+  defineProps<{
+    to?: any
+    interactive?: boolean
+    padded?: boolean
+    styles?: any
+  }>(),
+  {
+    to: null,
+    interactive: false,
+    padded: false,
+    styles: {
+      padded: 'p-2 md:p-3',
+      interactive: 'cursor-pointer transition-all hover:drop-shadow hover:-translate-y-1',
+    },
+  },
+)
+
+const component = to ? resolveComponent('NuxtLinkLocale') : 'div'
 </script>
 
 <template>
-  <BaseUiSheet
-    class="bg-white text-gray-800 border border-gray-200 rounded-sm"
+  <component
+    :is="component"
+    class="block"
+    :class="[
+      to || interactive ? styles.interactive : '',
+      padded ? styles.padded : '',
+    ]"
+    :to="to"
   >
     <slot />
-  </BaseUiSheet>
+  </component>
 </template>
