@@ -1,7 +1,7 @@
 #  olegdon/nuxt3-pnpm-monorepo 💚
 
 <pre align="center">
-🚀 Opinionated Nuxt, Tailwind & Storybook monorepo for checkout charlie frontend webapps
+🚀 Opinionated Nuxt, Tailwind & Storybook monorepo for Nuxt 3 frontend webapps
 </pre>
 <hr />
 
