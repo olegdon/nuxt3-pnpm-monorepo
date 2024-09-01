@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    // ...
+    "types": ["node"]
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.d.ts"
+  ]
+}

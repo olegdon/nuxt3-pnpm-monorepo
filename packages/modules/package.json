@@ -1,0 +1,12 @@
+{
+  "name": "@olegdon/modules",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "author": "",
+  "keywords": [],
+  "devDependencies": {
+    "@nuxt/kit": "3.13.0",
+    "@tsconfig/recommended": "1.0.7"
+  }
+}
