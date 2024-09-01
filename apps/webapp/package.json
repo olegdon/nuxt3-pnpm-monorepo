@@ -1,16 +1,37 @@
 {
-  "name": "nuxt-app",
-  "type": "module",
+  "name": "@olegdon/webapp",
   "private": true,
+  "author": "Oleg Don <info@devstdo.com>",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "nuxt dev",
+    "start": "nuxi start",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "test": "vitest run",
+    "ci:test": "vitest run",
+    "ci:smoke": "pnpm dlx concurrently -k -s first -n \"NUXT,TEST\" -c \"magenta,blue\" \"pnpm dev --host localhost\" \"pnpm dlx wait-on -t 120000 http://localhost:3000/ && pnpm echo \"pass\" \""
   },
   "dependencies": {
-    "nuxt": "^3.13.0",
-    "vue": "latest"
+    "@nuxt/devtools": "1.4.1",
+    "@nuxt/image": "1.8.0",
+    "@nuxt/test-utils": "3.14.1",
+    "@nuxtjs/i18n": "8.5.1",
+    "@nuxtjs/tailwindcss": "6.12.1",
+    "@olegdon/design": "workspace:*",
+    "@olegdon/modules": "workspace:*",
+    "@olegdon/services": "workspace:*",
+    "@pinia/nuxt": "0.5.4",
+    "@tailwindcss/container-queries": "0.1.1",
+    "@vue-macros/nuxt": "1.11.6",
+    "@vueuse/components": "11.0.3",
+    "@vueuse/core": "11.0.3",
+    "@vueuse/nuxt": "11.0.3",
+    "autoprefixer": "10.4.20",
+    "nuxt": "3.13.0",
+    "nuxt-schema-org": "3.3.9",
+    "pinia": "2.2.2",
+    "vitest": "2.0.5"
   }
 }
