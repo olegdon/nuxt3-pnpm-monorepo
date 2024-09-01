@@ -1,0 +1,31 @@
+{
+  "name": "@devstdo/extendedapp",
+  "private": true,
+  "author": "Oleg Don <info@devstdo.com>",
+  "scripts": {
+    "preview": "nuxt preview",
+    "dev": "nuxi dev",
+    "start": "nuxi start",
+    "build": "nuxi build",
+    "coverage": "vitest run --coverage",
+    "postinstall": "nuxi prepare",
+    "test": "vitest run",
+    "ci:test": "vitest run",
+    "ci:smoke": "pnpm dlx concurrently -k -s first -n \"NUXT,TEST\" -c \"magenta,blue\" \"pnpm dev --host localhost\" \"pnpm dlx wait-on -t 120000 http://localhost:3000/ && pnpm echo \"pass\" \""
+  },
+  "devDependencies": {
+    "@devstdo/design": "workspace:*",
+    "@devstdo/modules": "workspace:*",
+    "@devstdo/services": "workspace:*",
+    "@nuxt/devtools": "1.4.1",
+    "@nuxtjs/i18n": "8.5.1",
+    "@nuxtjs/tailwindcss": "6.12.1",
+    "@pinia/nuxt": "0.5.4",
+    "@vue-macros/nuxt": "1.11.6",
+    "@vueuse/nuxt": "11.0.3",
+    "autoprefixer": "10.4.20",
+    "nuxt": "3.13.0",
+    "pinia": "2.2.2",
+    "vitest": "2.0.5"
+  }
+}

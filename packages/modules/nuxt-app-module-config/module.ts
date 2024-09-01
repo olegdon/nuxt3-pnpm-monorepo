@@ -1,7 +1,7 @@
 import { defineNuxtModule } from '@nuxt/kit'
 import { usei18nLoader } from './loaders/i81n'
 import { useFontLoader } from './loaders/fonts'
-import { useImageLoader } from './loaders/image'
+// import { useImageLoader } from './loaders/image'
 import { useTwLoader } from './loaders/tw'
 
 function deepMerge(obj1: any, obj2: any) {
@@ -30,7 +30,7 @@ export default defineNuxtModule({
     loaders.push(usei18nLoader(options, nuxt.options.runtimeConfig.public))
     loaders.push(useFontLoader(options))
     loaders.push(useTwLoader(options))
-    loaders.push(useImageLoader(options))
+    // loaders.push(useImageLoader(options))
 
     loaders.forEach((loader: any) => {
       if (!loader.direct) {

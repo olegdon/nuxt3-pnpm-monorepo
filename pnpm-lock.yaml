@@ -21,8 +21,59 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
 
+  apps/extendedapp:
+    devDependencies:
+      '@devstdo/design':
+        specifier: workspace:*
+        version: link:../../packages/design
+      '@devstdo/modules':
+        specifier: workspace:*
+        version: link:../../packages/modules
+      '@devstdo/services':
+        specifier: workspace:*
+        version: link:../../packages/services
+      '@nuxt/devtools':
+        specifier: 1.4.1
+        version: 1.4.1(rollup@4.21.2)
+      '@nuxtjs/i18n':
+        specifier: 8.5.1
+        version: 8.5.1(magicast@0.3.5)(rollup@4.21.2)(vue@3.4.38(typescript@5.5.4))
+      '@nuxtjs/tailwindcss':
+        specifier: 6.12.1
+        version: 6.12.1(magicast@0.3.5)(rollup@4.21.2)
+      '@pinia/nuxt':
+        specifier: 0.5.4
+        version: 0.5.4(magicast@0.3.5)(rollup@4.21.2)(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
+      '@vue-macros/nuxt':
+        specifier: 1.11.6
+        version: 1.11.6(@vueuse/core@11.0.3(vue@3.4.38(typescript@5.5.4)))(magicast@0.3.5)(nuxt@3.13.0(@parcel/watcher@2.4.1)(@types/node@20.16.2)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)(vue-tsc@2.1.4(typescript@5.5.4)))(rollup@4.21.2)(typescript@5.5.4)(vue-tsc@2.1.4(typescript@5.5.4))(vue@3.4.38(typescript@5.5.4))
+      '@vueuse/nuxt':
+        specifier: 11.0.3
+        version: 11.0.3(magicast@0.3.5)(nuxt@3.13.0(@parcel/watcher@2.4.1)(@types/node@20.16.2)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)(vue-tsc@2.1.4(typescript@5.5.4)))(rollup@4.21.2)(vue@3.4.38(typescript@5.5.4))
+      autoprefixer:
+        specifier: 10.4.20
+        version: 10.4.20(postcss@8.4.42)
+      nuxt:
+        specifier: 3.13.0
+        version: 3.13.0(@parcel/watcher@2.4.1)(@types/node@20.16.2)(eslint@9.9.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)(vue-tsc@2.1.4(typescript@5.5.4))
+      pinia:
+        specifier: 2.2.2
+        version: 2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
+      vitest:
+        specifier: 2.0.5
+        version: 2.0.5(@types/node@20.16.2)(terser@5.31.6)
+
   apps/singleapp:
     dependencies:
+      '@devstdo/design':
+        specifier: workspace:*
+        version: link:../../packages/design
+      '@devstdo/modules':
+        specifier: workspace:*
+        version: link:../../packages/modules
+      '@devstdo/services':
+        specifier: workspace:*
+        version: link:../../packages/services
       '@nuxt/devtools':
         specifier: 1.4.1
         version: 1.4.1(rollup@4.21.2)
@@ -38,15 +89,6 @@ importers:
       '@nuxtjs/tailwindcss':
         specifier: 6.12.1
         version: 6.12.1(magicast@0.3.5)(rollup@4.21.2)
-      '@devstdo/design':
-        specifier: workspace:*
-        version: link:../../packages/design
-      '@devstdo/modules':
-        specifier: workspace:*
-        version: link:../../packages/modules
-      '@devstdo/services':
-        specifier: workspace:*
-        version: link:../../packages/services
       '@pinia/nuxt':
         specifier: 0.5.4
         version: 0.5.4(magicast@0.3.5)(rollup@4.21.2)(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
@@ -83,6 +125,15 @@ importers:
 
   apps/webapp:
     dependencies:
+      '@devstdo/design':
+        specifier: workspace:*
+        version: link:../../packages/design
+      '@devstdo/modules':
+        specifier: workspace:*
+        version: link:../../packages/modules
+      '@devstdo/services':
+        specifier: workspace:*
+        version: link:../../packages/services
       '@nuxt/devtools':
         specifier: 1.4.1
         version: 1.4.1(rollup@4.21.2)
@@ -98,15 +149,6 @@ importers:
       '@nuxtjs/tailwindcss':
         specifier: 6.12.1
         version: 6.12.1(magicast@0.3.5)(rollup@4.21.2)
-      '@devstdo/design':
-        specifier: workspace:*
-        version: link:../../packages/design
-      '@devstdo/modules':
-        specifier: workspace:*
-        version: link:../../packages/modules
-      '@devstdo/services':
-        specifier: workspace:*
-        version: link:../../packages/services
       '@pinia/nuxt':
         specifier: 0.5.4
         version: 0.5.4(magicast@0.3.5)(rollup@4.21.2)(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
@@ -143,6 +185,12 @@ importers:
 
   packages/design:
     devDependencies:
+      '@devstdo/modules':
+        specifier: workspace:*
+        version: link:../modules
+      '@devstdo/services':
+        specifier: workspace:*
+        version: link:../services
       '@nuxt/image':
         specifier: 1.8.0
         version: 1.8.0(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.21.2)
@@ -152,12 +200,6 @@ importers:
       '@nuxt/schema':
         specifier: 3.13.0
         version: 3.13.0(rollup@4.21.2)
-      '@devstdo/modules':
-        specifier: workspace:*
-        version: link:../modules
-      '@devstdo/services':
-        specifier: workspace:*
-        version: link:../services
       '@storybook/addon-essentials':
         specifier: 8.2.9
         version: 8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
