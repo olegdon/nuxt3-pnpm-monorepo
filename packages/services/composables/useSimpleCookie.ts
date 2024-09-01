@@ -10,6 +10,7 @@ export function useSimpleCookie(name: string, defaultValue: Record<string, any>,
   if (!document)
     return { value: null }
 
+  // eslint-disable-next-line unicorn/consistent-function-scoping
   const encode = (val: string) => encodeURIComponent(val)
 
   const defaultSettings = {
@@ -19,6 +20,7 @@ export function useSimpleCookie(name: string, defaultValue: Record<string, any>,
     ...settings, // This will override the defaults with user provided values if any.
   }
 
+  // eslint-disable-next-line unicorn/consistent-function-scoping
   function stringifySettings(settings: any) {
     return Object.entries(settings)
       .map(([key, value]) => `${key}=${String(value)}`)

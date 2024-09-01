@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base transition */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.collapse-enter-active,
+.collapse-leave-active {
+  transition: max-height 0.2s;
+  max-height: 250px;
+}
+.collapse-enter-from {
+  max-height: 0;
+}
+.collapse-enter,
+.collapse-leave-to
+{
+  opacity: 0;
+  max-height: 0;
+}
+
+.drawer-enter-active,
+.drawer-leave-active {
+  transition: left 0.2s;
+  left: 0px;
+}
+/* .drawer-enter-from {
+  left: -300px;
+} */
+.drawer-enter-from,
+.drawer-enter,
+.drawer-leave-to
+{
+  left: -300px;
+}
+
+@layer utilities {
+  .scroller-bullet-inner-shadow {
+    box-shadow: inset 0 1px 4px 0 rgba(0,0,0,.25),0 1px 4px 0 rgba(0,0,0,.15);
+  }
+  .scroller-logo-shadow-left {
+    box-shadow: inset 0 10px 4px -3px #fff, inset 0 -10px 4px -3px #fff, inset 6px 0 3px -3px rgba(0,0,0,.1), inset 1px 0 0 0 rgba(0,0,0,.15);
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .thin-scrollbar {
+    scrollbar-width: thin
+  }
+  .shop-logo {
+    @apply aspect-[2/1] dark:bg-white
+  }
+  .heading-xl {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+  .heading-lg {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+  .heading-base {
+    @apply text-lg md:text-xl font-semibold;
+  }
+  .heading-sm {
+    @apply font-semibold;
+  }
+  /* Rating star halving */
+  .clip-half {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  }
+}
