@@ -1,0 +1,31 @@
+name: Build Environment
+runs:
+  using: composite
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+    - uses: pnpm/action-setup@v4.0.0
+      name: Install pnpm
+      with:
+        version: 9.9.0
+    - uses: actions/checkout@v4
+    - name: Get pnpm store directory
+      id: pnpm-cache
+      shell: bash
+      run: |
+        echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+    - uses: actions/cache@v4
+      name: Setup pnpm cache
+      with:
+        path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-l
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install

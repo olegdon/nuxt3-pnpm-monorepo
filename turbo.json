@@ -1,0 +1,28 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "build": {
+      "cache": false,
+      "outputs": [
+        "dist/**",
+        ".output/**",
+        ".nuxt/**",
+        "storybook-static/**"
+      ]
+    },
+    "//#lint": {
+      "outputs": []
+    },
+    "dev": {
+      "dependsOn": ["^postinstall"],
+      "outputs": [
+        ".nuxt/**"
+      ],
+      "cache": true,
+      "persistent": true
+    },
+    "test": {
+      "outputs": []
+    }
+  }
+}
