@@ -17,7 +17,7 @@ function handleSubmit() {
     />
 
     <BaseUiButton>
-      Authenticate
+      {{ $t('components.user.login') }}
     </BaseUiButton>
   </form>
 </template>

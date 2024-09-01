@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { t: $t } = useI18n()
 const auth = useAuthStore()
 const colorMode = useColorMode()
 
@@ -15,7 +16,7 @@ onMounted(() => {
 
     <template v-if="auth.identity" #header>
       <div class="dark:text-white p-4">
-        hello <span class="font-bold">{{ auth.identity }}</span>
+        {{ $t('general.greeting', { user: auth.identity }) }}
       </div>
     </template>
 
@@ -28,7 +29,7 @@ onMounted(() => {
     <ClientOnly>
       <UiSheet class="fixed bottom-5 right-5">
         <div class="dark:text-white text-black">
-          color mode:
+          {{ $t('components.color.mode') }}
 
           <span class="font-bold">{{ colorMode.preference }}</span>
         </div>
