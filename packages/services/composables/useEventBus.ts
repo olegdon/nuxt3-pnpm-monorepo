@@ -2,7 +2,7 @@ import mitt from 'mitt'
 
 // eslint-disable-next-line ts/consistent-type-definitions
 type ApplicationEvents = {
-  'event:name': any
+  'user:login': any
 }
 
 const emitter = mitt<ApplicationEvents >()

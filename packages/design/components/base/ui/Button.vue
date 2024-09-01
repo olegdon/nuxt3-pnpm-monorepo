@@ -1,32 +1,44 @@
 <script lang="ts" setup>
-const { variant, size } = withDefaults(
+const { to, variant } = withDefaults(
   defineProps<{
-    variant?: 'default' | 'ghost' | 'alternative'
+    to?: any
+    target?: string
+    block?: boolean
+    variant?: 'default' | 'ghost' | 'alternative' | 'tag' | 'green' | 'outline'
     size?: 'base' | 'sm'
   }>(),
   {
+    to: null,
+    block: false,
     variant: 'default',
     size: 'base',
   },
 )
-const variantStyles = {
-  default: 'bg-green-700 text-gray-50 fill-gray-50 hover:bg-green-600 group-hover:bg-green-600',
-  ghost: 'bg-green-50 text-green-700 fill-gray-50 hover:bg-green-200 group-hover:bg-green-200',
-  alternative: 'bg-vin-accent-700 text-gray-50 fill-gray-50 hover:bg-vin-accent-600 group-hover:bg-vin-accent-600',
-}
 
+const component = (to) ? resolveComponent('NuxtLinkLocale') : 'button'
+
+const variantStyles = {
+  default: 'bg-blue-400 hover:bg-blue-500 text-white rounded-md',
+  green: 'bg-green-500 hover:bg-green-400 text-white rounded-md',
+  ghost: 'text-blue-500 hover:bg-blue-500/20 rounded-md',
+  alternative: 'border border-emerald-500 text-emerald-600 rounded-md',
+  tag: 'bg-blue-100 text-blue-500 transition-colors hover:bg-blue-500 hover:text-white rounded-full px-4 py-2 text-center',
+  outline: 'border border-ci-gray-500 text-ci-gray-500 hover:bg-blue-400/20 rounded-md',
+}
 const sizeStyles = {
-  base: 'px-3 h-9',
-  sm: 'px-2 h-7 text-sm md:px-3 md:h-9 md:text-base',
+  base: 'h-10',
+  sm: 'h-8 text-sm',
 }
 </script>
 
 <template>
-  <BaseUiButton
-    class="font-semibold transition-colors rounded space-x-1 outline-transparent"
-    :class="[variantStyles[variant], sizeStyles[size]]"
+  <component
+    :is="component"
+    :to="to"
+    class="justify-center items-center space-x-2 outline-none px-2"
+    :class="[block ? 'flex w-full' : 'inline-flex', variantStyles[variant], sizeStyles[size]]"
+    :target="target"
   >
-    <!-- @slot button content -->
     <slot />
-  </BaseUiButton>
+  </component>
 </template>

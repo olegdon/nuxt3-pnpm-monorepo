@@ -32,6 +32,12 @@ export default defineNuxtConfig({
         autoImports: ['defineStore', 'acceptHMRUpdate'],
       },
     ],
+    [
+      '@nuxtjs/color-mode',
+      {
+        classSuffix: '',
+      },
+    ],
     '@nuxtjs/i18n',
     [
       '@nuxtjs/tailwindcss',
