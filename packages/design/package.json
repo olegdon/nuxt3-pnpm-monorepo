@@ -9,11 +9,11 @@
     "ci:test": "pnpm dlx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build --quiet && pnpm dlx http-server storybook-static --port 6006 --silent\" \"pnpm dlx wait-on http://127.0.0.1:6006 && pnpm test\""
   },
   "devDependencies": {
+    "@devstdo/modules": "workspace:*",
+    "@devstdo/services": "workspace:*",
     "@nuxt/image": "1.8.0",
     "@nuxt/kit": "3.13.0",
     "@nuxt/schema": "3.13.0",
-    "@devstdo/modules": "workspace:*",
-    "@devstdo/services": "workspace:*",
     "@storybook/addon-essentials": "8.2.9",
     "@storybook/addon-interactions": "8.2.9",
     "@storybook/addon-links": "8.2.9",
