@@ -1,4 +1,4 @@
-#  olegdon/nuxt3-pnpm-monorepo 💚
+#  @devstdo/nuxt3-pnpm-monorepo 💚
 
 <pre align="center">
 🚀 Opinionated Nuxt, Tailwind & Storybook monorepo for Nuxt 3 frontend webapps
