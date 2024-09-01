@@ -16,8 +16,8 @@ const { resolve } = createResolver(import.meta.url)
  */
 export default defineNuxtModule({
   meta: {
-    configKey: 'initiumDesign',
-    name: 'nuxt-initium-design',
+    configKey: 'monorepoDesign',
+    name: 'nuxt-monorepo-design',
   },
 
   setup(options, nuxt) {
