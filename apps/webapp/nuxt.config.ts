@@ -1,12 +1,12 @@
 // https://nuxt.com/docs/getting-started/configuration
 // https://nuxt.com/docs/api/nuxt-config
 
-import tailwindConfig from '@olegdon/design/configs/tailwind.webapp.config'
+import tailwindConfig from '@devstdo/design/configs/tailwind.webapp.config'
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   alias: {
-    '@olegdon/webapp': './',
+    '@devstdo/webapp': './',
   },
   devtools: { enabled: true },
   sourcemap: false,
@@ -54,10 +54,10 @@ export default defineNuxtConfig({
     ],
     '@vueuse/nuxt',
     '@vue-macros/nuxt',
-    '@olegdon/design/nuxt.ts',
+    '@devstdo/design/nuxt.ts',
     'nuxt-schema-org',
     [
-      '@olegdon/modules/custom-fonts/nuxt.ts',
+      '@devstdo/modules/custom-fonts/nuxt.ts',
       {
         fonts: [],
         settings: {
@@ -96,7 +96,7 @@ export default defineNuxtConfig({
   },
   build: {
     transpile: [
-      '@olegdon/services',
+      '@devstdo/services',
     ],
   },
   runtimeConfig: {

@@ -1,4 +1,4 @@
-import storybookFontConfigLoader from '@olegdon/modules/custom-fonts/storybook'
+import storybookFontConfigLoader from '@devstdo/modules/custom-fonts/storybook'
 
 const {
   fontVitePlugin,

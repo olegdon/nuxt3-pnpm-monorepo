@@ -1,5 +1,5 @@
 {
-  "name": "@olegdon/nuxt-monorepo",
+  "name": "@devstdo/nuxt-monorepo",
   "type": "module",
   "version": "1.0.0",
   "private": true,
@@ -12,11 +12,11 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "webapp": "pnpm --filter @olegdon/webapp",
-    "singleapp": "pnpm --filter @olegdon/singleapp",
-    "extendedapp": "pnpm --filter @olegdon/extendedapp",
-    "design": "pnpm --filter @olegdon/design",
-    "services": "pnpm --filter @olegdon/services",
+    "webapp": "pnpm --filter @devstdo/webapp",
+    "singleapp": "pnpm --filter @devstdo/singleapp",
+    "extendedapp": "pnpm --filter @devstdo/extendedapp",
+    "design": "pnpm --filter @devstdo/design",
+    "services": "pnpm --filter @devstdo/services",
     "dev": "concurrently \"pnpm extendedapp dev --port=3002\" \"pnpm singleapp dev --port=3001\" \"pnpm webapp dev --port=3000\" \"pnpm design dev\""
   },
   "devDependencies": {

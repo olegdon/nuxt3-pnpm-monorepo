@@ -1,5 +1,5 @@
 {
-  "name": "@olegdon/design",
+  "name": "@devstdo/design",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,8 +12,8 @@
     "@nuxt/image": "1.8.0",
     "@nuxt/kit": "3.13.0",
     "@nuxt/schema": "3.13.0",
-    "@olegdon/modules": "workspace:*",
-    "@olegdon/services": "workspace:*",
+    "@devstdo/modules": "workspace:*",
+    "@devstdo/services": "workspace:*",
     "@storybook/addon-essentials": "8.2.9",
     "@storybook/addon-interactions": "8.2.9",
     "@storybook/addon-links": "8.2.9",
