@@ -1,0 +1,23 @@
+import { Title,  Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import config from '~/utils/tailwind'
+
+<Meta title="Foundations/Colors" />
+
+<Title>Colors</Title>
+
+<ColorPalette>
+  {Object.entries(config.colors).filter((color) => !(typeof color[1] === 'object') && !['inherit', 'currentColor'].includes(color[1])).map((color) => (
+    <ColorItem
+      key={ color[0] }
+      title={ color[0] }
+      colors={{ [color[0]]: color[1] }}
+    />
+  ))}
+  {Object.entries(config.colors).filter((color) => typeof color[1] === 'object').map((color) => (
+    <ColorItem
+      key={ color[0] }
+      title={ color[0] }
+      colors={ color[1] }
+    />
+  ))}
+</ColorPalette>

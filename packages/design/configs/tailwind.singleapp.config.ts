@@ -14,7 +14,7 @@ const config = {
           800: '#00593C',
           900: '#004730',
         },
-        'vin-accent': {
+        'singleapp-accent': {
           100: '#FFF799',
           200: '#FFAA00',
           300: '#FF6A00',
@@ -25,7 +25,7 @@ const config = {
           800: '#850D00',
           900: '#690700',
         },
-        'vin-accent-alt': {
+        'singleapp-accent-alt': {
           100: '#FFFCFD',
           200: '#F2DADE',
           300: '#D9A3AC',
