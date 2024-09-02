@@ -1,0 +1,43 @@
+import { Meta, Typeset } from '@storybook/blocks';
+import tailwind from '~/utils/tailwind'
+// @ts-expect-error unknown type
+import Typography from '~/docs/Typography.jsx'
+
+<Meta title="Single App/Typography" />
+
+# Prose
+
+<Typography font="Niramit" class="singleapp-prose" />
+
+export const typography = {
+  type: {
+    primary: 'Niramit',
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+    extrabold: '800',
+    black: '900',
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+
+## Thin
+<Typeset
+  fontSizes={Object.keys(tailwind.fontSize).map(key => tailwind.fontSize[key][0])}
+  fontWeight={tailwind.fontWeight.thin}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+
+## Bold
+<Typeset
+  fontSizes={Object.keys(tailwind.fontSize).map(key => tailwind.fontSize[key][0])}
+  fontWeight={tailwind.fontWeight.black}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>

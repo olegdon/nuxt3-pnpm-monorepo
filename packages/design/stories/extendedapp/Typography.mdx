@@ -1,0 +1,50 @@
+import { Meta, Typeset } from '@storybook/blocks';
+import tailwind from '~/utils/tailwind'
+// @ts-expect-error unknown type
+import Typography from '~/docs/Typography.jsx'
+
+<Meta title="Extended App/Typography" />
+
+# Prose
+
+<Typography font="Baton" class="extendedapp-prose" />
+
+export const typography = {
+  type: {
+    primary: 'Baton',
+  },
+  weight: {
+    regular: '400',
+    semi: '600',
+    bold: '700',
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+
+## Regular
+<Typeset
+  fontSizes={Object.keys(tailwind.fontSize).map(key => tailwind.fontSize[key][0])}
+  fontWeight={tailwind.fontWeight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## Semi
+<Typeset
+  fontSizes={Object.keys(tailwind.fontSize).map(key => tailwind.fontSize[key][0])}
+  fontWeight={tailwind.fontWeight.semi}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+
+## Bold
+<Typeset
+  fontSizes={Object.keys(tailwind.fontSize).map(key => tailwind.fontSize[key][0])}
+  fontWeight={tailwind.fontWeight.bold}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>

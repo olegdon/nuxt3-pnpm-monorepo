@@ -7,7 +7,7 @@ const twentyConfig = {
         voucher: '0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)',
       },
       colors: {
-        'twenty-primary': {
+        'extendedapp-primary': {
           50: '#F1F4F8',
           100: '#DFE6F0',
           150: '#CAD6F2',
@@ -27,7 +27,7 @@ const twentyConfig = {
           850: '#183182',
           900: '#0D2880',
         },
-        'twenty-gray': {
+        'extendedapp-gray': {
           50: '#F4F4F4',
           100: '#E6E6E6',
           150: '#D8D8D8',

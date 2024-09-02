@@ -1,0 +1,21 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import config from '~/configs/tailwind.singleapp.config'
+
+<Meta title="Single App/Colors" />
+
+<ColorPalette>
+  {Object.entries(config.theme.extend.colors).filter((color) => !(typeof color[1] === 'object') && !['inherit', 'currentColor'].includes(color[1])).map((color) => (
+    <ColorItem
+      key={ color[0] }
+      title={ color[0] }
+      colors={{ [color[0]]: color[1] }}
+    />
+  ))}
+  {Object.entries(config.theme.extend.colors).filter((color) => typeof color[1] === 'object').map((color) => (
+    <ColorItem
+      key={ color[0] }
+      title={ color[0] }
+      colors={ color[1] }
+    />
+  ))}
+</ColorPalette>
