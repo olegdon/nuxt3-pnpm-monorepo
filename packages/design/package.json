@@ -32,7 +32,7 @@
     "autoprefixer": "10.4.20",
     "mitt": "3.0.1",
     "pinia": "2.2.2",
-    "postcss": "8.4.44",
+    "postcss": "8.4.45",
     "postcss-nested": "6.2.0",
     "storybook": "8.2.9",
     "storybook-addon-vue-slots": "0.9.29",
