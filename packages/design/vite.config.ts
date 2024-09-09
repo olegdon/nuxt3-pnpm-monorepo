@@ -1,9 +1,9 @@
-import { URL, fileURLToPath } from 'node:url'
+import { fileURLToPath, URL } from 'node:url'
+import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
 import VueMacros from 'unplugin-vue-macros/vite'
+import { defineConfig } from 'vite'
 import fontLoader from './utils/fontLoader'
 
 // https://vitejs.dev/config/

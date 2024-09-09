@@ -10,7 +10,6 @@ export function useSimpleCookie(name: string, defaultValue: Record<string, any>,
   if (!document)
     return { value: null }
 
-  // eslint-disable-next-line unicorn/consistent-function-scoping
   const encode = (val: string) => encodeURIComponent(val)
 
   const defaultSettings = {
