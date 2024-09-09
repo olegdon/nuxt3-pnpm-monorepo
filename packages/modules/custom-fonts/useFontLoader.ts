@@ -1,5 +1,5 @@
-import { basename as _basename, extname } from 'pathe'
 import fg from 'fast-glob'
+import { basename as _basename, extname } from 'pathe'
 
 export function useFontLoader(family: any, options = { display: 'swap', rel: '', assetDir: '/_nuxt' }) {
   const sources = Array.isArray(family) ? family : [family]

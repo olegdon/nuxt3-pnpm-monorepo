@@ -17,4 +17,4 @@ function gaPageView() {
   window.gtag?.('event', 'page_view')
 }
 
-export { gaTrackingLoad, gaPageView }
+export { gaPageView, gaTrackingLoad }

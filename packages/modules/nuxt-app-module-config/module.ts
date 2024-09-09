@@ -1,6 +1,6 @@
 import { defineNuxtModule } from '@nuxt/kit'
-import { usei18nLoader } from './loaders/i81n'
 import { useFontLoader } from './loaders/fonts'
+import { usei18nLoader } from './loaders/i81n'
 // import { useImageLoader } from './loaders/image'
 import { useTwLoader } from './loaders/tw'
 
