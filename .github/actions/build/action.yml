@@ -11,7 +11,7 @@ runs:
     - uses: pnpm/action-setup@v4.0.0
       name: Install pnpm
       with:
-        version: 9.9.0
+        version: 9.10.0
     - uses: actions/checkout@v4
     - name: Get pnpm store directory
       id: pnpm-cache
