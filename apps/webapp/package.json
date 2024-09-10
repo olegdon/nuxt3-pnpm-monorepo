@@ -17,7 +17,7 @@
     "@devstdo/design": "workspace:*",
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
-    "@nuxt/devtools": "1.4.1",
+    "@nuxt/devtools": "1.4.2",
     "@nuxt/image": "1.8.0",
     "@nuxt/test-utils": "3.14.1",
     "@nuxtjs/color-mode": "3.4.4",
