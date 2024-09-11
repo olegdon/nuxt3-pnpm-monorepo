@@ -21,7 +21,7 @@
     "@nuxtjs/i18n": "8.5.3",
     "@nuxtjs/tailwindcss": "6.12.1",
     "@pinia/nuxt": "0.5.4",
-    "@vue-macros/nuxt": "1.11.11",
+    "@vue-macros/nuxt": "1.11.12",
     "@vueuse/nuxt": "11.0.3",
     "autoprefixer": "10.4.20",
     "nuxt": "3.13.1",
