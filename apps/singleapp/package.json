@@ -27,7 +27,7 @@
     "@vue-macros/nuxt": "1.12.2",
     "@vueuse/components": "11.1.0",
     "@vueuse/core": "11.0.3",
-    "@vueuse/nuxt": "11.0.3",
+    "@vueuse/nuxt": "11.1.0",
     "autoprefixer": "10.4.20",
     "nuxt": "3.13.2",
     "nuxt-schema-org": "3.4.0",
