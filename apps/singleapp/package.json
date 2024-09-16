@@ -25,7 +25,7 @@
     "@pinia/nuxt": "0.5.4",
     "@tailwindcss/container-queries": "0.1.1",
     "@vue-macros/nuxt": "1.12.2",
-    "@vueuse/components": "11.0.3",
+    "@vueuse/components": "11.1.0",
     "@vueuse/core": "11.0.3",
     "@vueuse/nuxt": "11.0.3",
     "autoprefixer": "10.4.20",
