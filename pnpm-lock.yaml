@@ -36,8 +36,8 @@ importers:
         specifier: 1.4.2
         version: 1.4.2(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)
       '@nuxtjs/i18n':
-        specifier: 8.5.3
-        version: 8.5.3(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)
+        specifier: 8.5.4
+        version: 8.5.4(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)
       '@nuxtjs/tailwindcss':
         specifier: 6.12.1
         version: 6.12.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
@@ -84,8 +84,8 @@ importers:
         specifier: 3.14.2
         version: 3.14.2(@jest/globals@29.7.0)(h3@1.12.0)(magicast@0.3.5)(nitropack@2.9.7(magicast@0.3.5)(webpack-sources@3.2.3))(playwright-core@1.46.1)(rollup@4.21.2)(vitest@2.1.1(@types/node@20.16.5)(terser@5.31.6))(vue-router@4.4.5(vue@3.5.6(typescript@5.6.2)))(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)
       '@nuxtjs/i18n':
-        specifier: 8.5.3
-        version: 8.5.3(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)
+        specifier: 8.5.4
+        version: 8.5.4(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)
       '@nuxtjs/tailwindcss':
         specifier: 6.12.1
         version: 6.12.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
@@ -147,8 +147,8 @@ importers:
         specifier: 3.5.1
         version: 3.5.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
       '@nuxtjs/i18n':
-        specifier: 8.5.3
-        version: 8.5.3(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)
+        specifier: 8.5.4
+        version: 8.5.4(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)
       '@nuxtjs/tailwindcss':
         specifier: 6.12.1
         version: 6.12.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
@@ -1449,8 +1449,8 @@ packages:
   '@nuxtjs/color-mode@3.5.1':
     resolution: {integrity: sha512-GRHF3WUwX6fXIiRVlngNq1nVDwrVuP6dWX1DRmox3QolzX0eH1oJEcFr/lAm1nkT71JVGb8mszho9w+yHJbePw==}
 
-  '@nuxtjs/i18n@8.5.3':
-    resolution: {integrity: sha512-owSqQtBzi6NYer1yFOpQxnZzRWg+85cXWvlweN+yKYN6hdacLtOpN/hZn3FiXXc5OKDNStTyi+QoVpb0OH4n7w==}
+  '@nuxtjs/i18n@8.5.4':
+    resolution: {integrity: sha512-8onnhHHUhKwZm7CKMDNGmLCJMt7Af0Y4VaYJ/hEvKT9O9sd1MKvGMQKNefBeSOggllRU2iOgcqCsb5qozPVP5A==}
     engines: {node: ^14.16.0 || >=16.11.0}
 
   '@nuxtjs/tailwindcss@6.12.1':
@@ -2570,17 +2570,11 @@ packages:
   '@vue/compiler-dom@3.5.6':
     resolution: {integrity: sha512-xRXqxDrIqK8v8sSScpistyYH0qYqxakpsIvqMD2e5sV/PXQ1mTwtXp4k42yHK06KXxKSmitop9e45Ui/3BrTEw==}
 
-  '@vue/compiler-sfc@3.5.4':
-    resolution: {integrity: sha512-P+yiPhL+NYH7m0ZgCq7AQR2q7OIE+mpAEgtkqEeH9oHSdIRvUO+4X6MPvblJIWcoe4YC5a2Gdf/RsoyP8FFiPQ==}
-
   '@vue/compiler-sfc@3.5.5':
     resolution: {integrity: sha512-MzBHDxwZhgQPHrwJ5tj92gdTYRCuPDSZr8PY3+JFv8cv2UD5/WayH5yo0kKCkKfrtJhc39jNSMityHrkMSbfnA==}
 
   '@vue/compiler-sfc@3.5.6':
     resolution: {integrity: sha512-pjWJ8Kj9TDHlbF5LywjVso+BIxCY5wVOLhkEXRhuCHDxPFIeX1zaFefKs8RYoHvkSMqRWt93a0f2gNJVJixHwg==}
-
-  '@vue/compiler-ssr@3.5.4':
-    resolution: {integrity: sha512-acESdTXsxPnYr2C4Blv0ggx5zIFMgOzZmYU2UgvIff9POdRGbRNBHRyzHAnizcItvpgerSKQbllUc9USp3V7eg==}
 
   '@vue/compiler-ssr@3.5.5':
     resolution: {integrity: sha512-oFasHnpv/upubjJEmqiTKQYb4qS3ziJddf4UVWuFw6ebk/QTrTUc+AUoTJdo39x9g+AOQBzhOU0ICCRuUjvkmw==}
@@ -7424,11 +7418,6 @@ packages:
     peerDependencies:
       vue: '>=2'
 
-  vue-router@4.4.4:
-    resolution: {integrity: sha512-3MlnDqwRwZwCQVbtVfpsU+nrNymNjnXSsQtXName5925NVC1+326VVfYH9vSrA0N13teGEo8z5x7gbRnGjCDiQ==}
-    peerDependencies:
-      vue: ^3.2.0
-
   vue-router@4.4.5:
     resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
     peerDependencies:
@@ -8304,7 +8293,7 @@ snapshots:
       jsonc-eslint-parser: 2.4.0
       magic-string: 0.30.11
       mlly: 1.7.1
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
       yaml-eslint-parser: 1.2.3
     optionalDependencies:
       vue-i18n: 9.14.0(vue@3.5.6(typescript@5.6.2))
@@ -8336,14 +8325,14 @@ snapshots:
       '@intlify/bundle-utils': 7.5.1(vue-i18n@9.14.0(vue@3.5.6(typescript@5.6.2)))
       '@intlify/shared': 9.14.0
       '@rollup/pluginutils': 5.1.0(rollup@4.21.2)
-      '@vue/compiler-sfc': 3.5.4
+      '@vue/compiler-sfc': 3.5.6
       debug: 4.3.6
       fast-glob: 3.3.2
       js-yaml: 4.1.0
       json5: 2.2.3
       pathe: 1.1.2
       picocolors: 1.1.0
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
       unplugin: 1.14.1(webpack-sources@3.2.3)
     optionalDependencies:
       vue-i18n: 9.14.0(vue@3.5.6(typescript@5.6.2))
@@ -9076,16 +9065,16 @@ snapshots:
       - supports-color
       - webpack-sources
 
-  '@nuxtjs/i18n@8.5.3(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)':
+  '@nuxtjs/i18n@8.5.4(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)':
     dependencies:
       '@intlify/h3': 0.5.0
       '@intlify/shared': 9.14.0
       '@intlify/unplugin-vue-i18n': 3.0.1(rollup@4.21.2)(vue-i18n@9.14.0(vue@3.5.6(typescript@5.6.2)))(webpack-sources@3.2.3)
       '@intlify/utils': 0.12.0
       '@miyaneee/rollup-plugin-json5': 1.2.0(rollup@4.21.2)
-      '@nuxt/kit': 3.13.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
+      '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
       '@rollup/plugin-yaml': 4.1.2(rollup@4.21.2)
-      '@vue/compiler-sfc': 3.5.4
+      '@vue/compiler-sfc': 3.5.6
       debug: 4.3.6
       defu: 6.1.4
       estree-walker: 3.0.3
@@ -9097,9 +9086,9 @@ snapshots:
       scule: 1.3.0
       sucrase: 3.35.0
       ufo: 1.5.4
-      unplugin: 1.14.0(webpack-sources@3.2.3)
+      unplugin: 1.14.1(webpack-sources@3.2.3)
       vue-i18n: 9.14.0(vue@3.5.6(typescript@5.6.2))
-      vue-router: 4.4.4(vue@3.5.6(typescript@5.6.2))
+      vue-router: 4.4.5(vue@3.5.6(typescript@5.6.2))
     transitivePeerDependencies:
       - magicast
       - petite-vue-i18n
@@ -10234,7 +10223,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.25.6
       '@rollup/pluginutils': 5.1.0(rollup@4.21.2)
-      '@vue/compiler-sfc': 3.5.5
+      '@vue/compiler-sfc': 3.5.6
       ast-kit: 1.1.0
       local-pkg: 0.5.0
       magic-string-ast: 0.6.2
@@ -10247,7 +10236,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.25.6
       '@rollup/pluginutils': 5.1.0(rollup@4.21.2)
-      '@vue/compiler-sfc': 3.5.5
+      '@vue/compiler-sfc': 3.5.6
       ast-kit: 1.1.0
       local-pkg: 0.5.0
       magic-string-ast: 0.6.2
@@ -10347,7 +10336,7 @@ snapshots:
   '@vue-macros/export-expose@0.3.1(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))(webpack-sources@3.2.3)':
     dependencies:
       '@vue-macros/common': 1.14.0(rollup@4.21.2)(vue@3.5.6(typescript@5.6.2))
-      '@vue/compiler-sfc': 3.5.5
+      '@vue/compiler-sfc': 3.5.6
       unplugin: 1.14.1(webpack-sources@3.2.3)
       vue: 3.5.6(typescript@5.6.2)
     transitivePeerDependencies:
@@ -10557,7 +10546,7 @@ snapshots:
       '@vue/shared': 3.5.4
       entities: 4.5.0
       estree-walker: 2.0.2
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   '@vue/compiler-core@3.5.5':
     dependencies:
@@ -10595,18 +10584,6 @@ snapshots:
       '@vue/compiler-core': 3.5.6
       '@vue/shared': 3.5.6
 
-  '@vue/compiler-sfc@3.5.4':
-    dependencies:
-      '@babel/parser': 7.25.6
-      '@vue/compiler-core': 3.5.4
-      '@vue/compiler-dom': 3.5.4
-      '@vue/compiler-ssr': 3.5.4
-      '@vue/shared': 3.5.4
-      estree-walker: 2.0.2
-      magic-string: 0.30.11
-      postcss: 8.4.47
-      source-map-js: 1.2.0
-
   '@vue/compiler-sfc@3.5.5':
     dependencies:
       '@babel/parser': 7.25.6
@@ -10617,7 +10594,7 @@ snapshots:
       estree-walker: 2.0.2
       magic-string: 0.30.11
       postcss: 8.4.47
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   '@vue/compiler-sfc@3.5.6':
     dependencies:
@@ -10630,11 +10607,6 @@ snapshots:
       magic-string: 0.30.11
       postcss: 8.4.47
       source-map-js: 1.2.1
-
-  '@vue/compiler-ssr@3.5.4':
-    dependencies:
-      '@vue/compiler-dom': 3.5.4
-      '@vue/shared': 3.5.4
 
   '@vue/compiler-ssr@3.5.5':
     dependencies:
@@ -16684,11 +16656,6 @@ snapshots:
 
   vue-inbrowser-compiler-independent-utils@4.71.1(vue@3.5.6(typescript@5.6.2)):
     dependencies:
-      vue: 3.5.6(typescript@5.6.2)
-
-  vue-router@4.4.4(vue@3.5.6(typescript@5.6.2)):
-    dependencies:
-      '@vue/devtools-api': 6.6.4
       vue: 3.5.6(typescript@5.6.2)
 
   vue-router@4.4.5(vue@3.5.5(typescript@5.6.2)):
