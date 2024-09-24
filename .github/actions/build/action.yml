@@ -8,10 +8,9 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: 20
-    - uses: pnpm/action-setup@v4.0.0
-      name: Install pnpm
-      with:
-        version: 9.10.0
+    - name: Install pnpm
+      shell: bash
+      run: npm install -g pnpm
     - uses: actions/checkout@v4
     - name: Get pnpm store directory
       id: pnpm-cache
