@@ -17,15 +17,15 @@
     "@devstdo/design": "workspace:*",
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
-    "@nuxt/devtools": "1.4.1",
-    "@nuxtjs/i18n": "8.5.2",
+    "@nuxt/devtools": "1.5.1",
+    "@nuxtjs/i18n": "8.5.5",
     "@nuxtjs/tailwindcss": "6.12.1",
     "@pinia/nuxt": "0.5.4",
-    "@vue-macros/nuxt": "1.11.11",
-    "@vueuse/nuxt": "11.0.3",
+    "@vue-macros/nuxt": "1.12.2",
+    "@vueuse/nuxt": "11.1.0",
     "autoprefixer": "10.4.20",
-    "nuxt": "3.13.1",
+    "nuxt": "3.13.2",
     "pinia": "2.2.2",
-    "vitest": "2.0.5"
+    "vitest": "2.1.1"
   }
 }

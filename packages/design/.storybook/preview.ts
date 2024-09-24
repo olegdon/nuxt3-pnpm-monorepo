@@ -1,7 +1,7 @@
+import type { Preview } from '@storybook/vue3'
 import { setup } from '@storybook/vue3'
 import { createPinia } from 'pinia'
 import { createI18n } from 'vue-i18n'
-import type { Preview } from '@storybook/vue3'
 import vuei18n from '../../translations/vue-i18n'
 import '../index.css'
 import 'virtual:virtual-fontface-css/font-face.css'
