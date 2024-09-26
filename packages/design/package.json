@@ -43,7 +43,7 @@
     "unplugin-vue-components": "0.27.4",
     "unplugin-vue-macros": "2.12.2",
     "vite": "5.4.8",
-    "vue": "3.5.8",
+    "vue": "3.5.9",
     "vue-i18n": "9",
     "vue-tsc": "2.1.6"
   }
