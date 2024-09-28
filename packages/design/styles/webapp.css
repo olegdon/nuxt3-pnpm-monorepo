@@ -75,8 +75,9 @@
   .heading-sm {
     @apply font-semibold;
   }
-  /* Rating star halving */
-  .clip-half {
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  .highlight-nuxt {
+    @apply border-transparent rounded-2xl border-2 bg-interactive-gradient dark:bg-interactive-gradient-dark;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
   }
 }

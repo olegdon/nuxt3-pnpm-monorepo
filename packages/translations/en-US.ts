@@ -1,6 +1,7 @@
 export default {
   general: {
     greeting: 'Hello {user}!',
+    app: 'Nuxtmonostarter',
   },
   pages: {
     home: {

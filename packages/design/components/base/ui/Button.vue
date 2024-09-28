@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { to, variant } = withDefaults(
+const { to, variant, size } = withDefaults(
   defineProps<{
     to?: any
     target?: string
@@ -18,8 +18,8 @@ const { to, variant } = withDefaults(
 const component = (to) ? resolveComponent('NuxtLinkLocale') : 'button'
 
 const variantStyles = {
-  default: 'bg-blue-400 hover:bg-blue-500 text-white rounded-md',
-  green: 'bg-green-500 hover:bg-green-400 text-white rounded-md',
+  default: 'bg-blue-500 hover:bg-blue-600 text-white rounded-md',
+  green: 'bg-emerald-600 hover:bg-emerald-700 text-white rounded-md',
   ghost: 'text-blue-500 hover:bg-blue-500/20 rounded-md',
   alternative: 'border border-emerald-500 text-emerald-600 rounded-md',
   tag: 'bg-blue-100 text-blue-500 transition-colors hover:bg-blue-500 hover:text-white rounded-full px-4 py-2 text-center',
@@ -35,7 +35,7 @@ const sizeStyles = {
   <component
     :is="component"
     :to="to"
-    class="justify-center items-center space-x-2 outline-none px-2"
+    class="justify-center items-center space-x-2 outline-none px-4"
     :class="[block ? 'flex w-full' : 'inline-flex', variantStyles[variant], sizeStyles[size]]"
     :target="target"
   >
