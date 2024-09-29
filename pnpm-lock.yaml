@@ -182,6 +182,9 @@ importers:
       nuxt-gtag:
         specifier: 3.0.1
         version: 3.0.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
+      nuxt-schema-org:
+        specifier: 3.4.0
+        version: 3.4.0(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)
       pinia:
         specifier: 2.2.2
         version: 2.2.2(typescript@5.6.2)(vue@3.5.10(typescript@5.6.2))
@@ -1373,16 +1376,6 @@ packages:
 
   '@nuxt/devalue@2.0.2':
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
-
-  '@nuxt/devtools-kit@1.4.2':
-    resolution: {integrity: sha512-8a5PhVnC7E94318/sHbNSe9mI2MlsQ8+pJLGs2Hh1OJyidB9SWe6hoFc8q4K9VOtXak9uCFVb5V2JGXS1q+1aA==}
-    peerDependencies:
-      vite: '*'
-
-  '@nuxt/devtools-kit@1.5.0':
-    resolution: {integrity: sha512-Q8sOquz9CoUMTABo6Bq+nkbNMZi+WVN4xpz1USZPZazcJhSj9imSmQRSycY2fBYqkfB1AKBRhm2UV2ujCQfw0Q==}
-    peerDependencies:
-      vite: '*'
 
   '@nuxt/devtools-kit@1.5.1':
     resolution: {integrity: sha512-s2dpN1vCOgua2pSYG7/xUMjf7CyLTBeEK2IRqeOeiNpiElft4ygDddlg6P3ot0Hpp+GvWTz0uPGot/vI73uk4w==}
@@ -9015,28 +9008,6 @@ snapshots:
 
   '@nuxt/devalue@2.0.2': {}
 
-  '@nuxt/devtools-kit@1.4.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)':
-    dependencies:
-      '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
-      '@nuxt/schema': 3.13.2(rollup@4.21.2)(webpack-sources@3.2.3)
-      execa: 7.2.0
-    transitivePeerDependencies:
-      - magicast
-      - rollup
-      - supports-color
-      - webpack-sources
-
-  '@nuxt/devtools-kit@1.5.0(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)':
-    dependencies:
-      '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
-      '@nuxt/schema': 3.13.2(rollup@4.21.2)(webpack-sources@3.2.3)
-      execa: 7.2.0
-    transitivePeerDependencies:
-      - magicast
-      - rollup
-      - supports-color
-      - webpack-sources
-
   '@nuxt/devtools-kit@1.5.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)':
     dependencies:
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
@@ -15080,8 +15051,8 @@ snapshots:
 
   nuxt-schema-org@3.4.0(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3):
     dependencies:
-      '@nuxt/devtools-kit': 1.4.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
-      '@nuxt/kit': 3.13.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
+      '@nuxt/devtools-kit': 1.5.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
+      '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
       '@unhead/schema-org': 1.11.2
       nuxt-site-config: 2.2.17(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)
       nuxt-site-config-kit: 2.2.17(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)
@@ -15112,7 +15083,7 @@ snapshots:
 
   nuxt-site-config@2.2.17(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3):
     dependencies:
-      '@nuxt/devtools-kit': 1.5.0(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
+      '@nuxt/devtools-kit': 1.5.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
       '@nuxt/schema': 3.13.2(rollup@4.21.2)(webpack-sources@3.2.3)
       nuxt-site-config-kit: 2.2.17(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)
