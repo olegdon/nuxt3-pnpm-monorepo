@@ -50,6 +50,12 @@ function logClientBoundaryError(error: any) {
       </UiSheet>
     </NuxtErrorBoundary>
 
+    <template #footer>
+      <div class="text-center text-black dark:text-white">
+        &copy; {{ new Date().getFullYear() }} devstdo.com
+      </div>
+    </template>
+
     <!-- color scheme toggle -->
     <ClientOnly>
       <UiSheet class="fixed bottom-5 right-5 highlight-nuxt p-6 space-y-4">

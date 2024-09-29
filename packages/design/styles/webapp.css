@@ -80,4 +80,10 @@
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
   }
+  a {
+    @apply decoration-0 text-emerald-500 duration-500 p-1
+  }
+  a:hover {
+    @apply bg-emerald-500/50
+  }
 }

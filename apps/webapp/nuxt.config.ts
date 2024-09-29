@@ -80,6 +80,12 @@ export default defineNuxtConfig({
         presets: {},
       },
     ],
+    [
+      '@nuxt/content',
+      {
+        content: {},
+      },
+    ],
   ],
   typescript: {
     shim: false,

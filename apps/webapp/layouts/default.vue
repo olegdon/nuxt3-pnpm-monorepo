@@ -5,5 +5,9 @@
     </template>
 
     <slot />
+
+    <template #footer>
+      <slot name="footer" />
+    </template>
   </LayoutApplication>
 </template>
