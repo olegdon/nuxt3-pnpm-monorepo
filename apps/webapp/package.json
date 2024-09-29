@@ -32,7 +32,7 @@
     "@vueuse/nuxt": "11.1.0",
     "autoprefixer": "10.4.20",
     "nuxt": "3.13.2",
-    "nuxt-schema-org": "3.4.0",
+    "nuxt-gtag": "3.0.1",
     "pinia": "2.2.2",
     "vitest": "2.1.1"
   }

@@ -179,9 +179,9 @@ importers:
       nuxt:
         specifier: 3.13.2
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@20.16.10)(eslint@9.11.1(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.2)(terser@5.31.6)(typescript@5.6.2)(vue-tsc@2.1.6(typescript@5.6.2))(webpack-sources@3.2.3)
-      nuxt-schema-org:
-        specifier: 3.4.0
-        version: 3.4.0(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)
+      nuxt-gtag:
+        specifier: 3.0.1
+        version: 3.0.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
       pinia:
         specifier: 2.2.2
         version: 2.2.2(typescript@5.6.2)(vue@3.5.10(typescript@5.6.2))
@@ -5689,6 +5689,9 @@ packages:
     resolution: {integrity: sha512-yAgpxBcIB2/DWL7dWRZOQa5ULLZQ4AWgYdqtUDbeOZ3KxmY/+fqm8/UJuU7QK81JrccNaZeSI+GLe5BY7RR3cQ==}
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
+
+  nuxt-gtag@3.0.1:
+    resolution: {integrity: sha512-dfDeL8JwvwdCddlSBXqofEVdoONVZ5yqztqoiUs+4fEL+QfAAHtK+3MaLyEVO4keZuiyVQs6XPUJyR7afTVXNg==}
 
   nuxt-schema-org@3.4.0:
     resolution: {integrity: sha512-VbLGmaMi6scKfQg0F9NrMNH9fpKrt1QTIPULsmR6Wwy7CUKXHUHR0n9qIBreodZ4+wHsUcjxHbxQowgoD/lofw==}
@@ -15063,6 +15066,18 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  nuxt-gtag@3.0.1(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3):
+    dependencies:
+      '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
+      defu: 6.1.4
+      pathe: 1.1.2
+      ufo: 1.5.4
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+      - webpack-sources
+
   nuxt-schema-org@3.4.0(magicast@0.3.5)(rollup@4.21.2)(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3):
     dependencies:
       '@nuxt/devtools-kit': 1.4.2(magicast@0.3.5)(rollup@4.21.2)(webpack-sources@3.2.3)
@@ -15173,7 +15188,7 @@ snapshots:
       unhead: 1.11.5
       unimport: 3.12.0(rollup@4.21.2)(webpack-sources@3.2.3)
       unplugin: 1.14.1(webpack-sources@3.2.3)
-      unplugin-vue-router: 0.10.8(rollup@4.21.2)(vue-router@4.4.5(vue@3.5.10(typescript@5.6.2)))(vue@3.5.5(typescript@5.6.2))(webpack-sources@3.2.3)
+      unplugin-vue-router: 0.10.8(rollup@4.21.2)(vue-router@4.4.5(vue@3.5.5(typescript@5.6.2)))(vue@3.5.5(typescript@5.6.2))(webpack-sources@3.2.3)
       unstorage: 1.12.0(ioredis@5.4.1)
       untyped: 1.4.2
       vue: 3.5.5(typescript@5.6.2)
@@ -17125,7 +17140,7 @@ snapshots:
       - webpack
       - webpack-sources
 
-  unplugin-vue-router@0.10.8(rollup@4.21.2)(vue-router@4.4.5(vue@3.5.10(typescript@5.6.2)))(vue@3.5.5(typescript@5.6.2))(webpack-sources@3.2.3):
+  unplugin-vue-router@0.10.8(rollup@4.21.2)(vue-router@4.4.5(vue@3.5.5(typescript@5.6.2)))(vue@3.5.5(typescript@5.6.2))(webpack-sources@3.2.3):
     dependencies:
       '@babel/types': 7.25.6
       '@rollup/pluginutils': 5.1.0(rollup@4.21.2)
@@ -17142,7 +17157,7 @@ snapshots:
       unplugin: 1.14.1(webpack-sources@3.2.3)
       yaml: 2.5.0
     optionalDependencies:
-      vue-router: 4.4.5(vue@3.5.10(typescript@5.6.2))
+      vue-router: 4.4.5(vue@3.5.5(typescript@5.6.2))
     transitivePeerDependencies:
       - rollup
       - vue
