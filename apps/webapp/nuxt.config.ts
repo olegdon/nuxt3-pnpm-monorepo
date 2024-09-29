@@ -103,8 +103,8 @@ export default defineNuxtConfig({
     ],
   },
   gtag: {
-
-    enabled: true,
+    // eslint-disable-next-line node/prefer-global/process
+    enabled: process.env.NODE_ENV === 'production',
     // eslint-disable-next-line node/prefer-global/process
     id: process.env.GOOGLE_ANALYTICS_ID,
   },

@@ -1,4 +1,4 @@
-const config = {
+export default {
   // extend or override default configuration
   theme: {
     extend: {
@@ -43,5 +43,3 @@ const config = {
     },
   },
 }
-
-export default config

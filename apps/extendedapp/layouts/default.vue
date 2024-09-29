@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// const { public: config } = useRuntimeConfig()
 </script>
 
 <template>
@@ -12,10 +11,6 @@
 
     <template #footer>
       <slot name="footer" />
-    </template>
-
-    <template #modal>
-      <slot name="modal" />
     </template>
   </LayoutApplication>
 </template>
