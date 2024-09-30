@@ -104,8 +104,7 @@ export default defineNuxtConfig({
   },
   gtag: {
     enabled: true,
-    // eslint-disable-next-line node/prefer-global/process
-    id: process.env.GOOGLE_ANALYTICS_ID,
+    id: 'G-6T72QZDMP9',
   },
   build: {
     transpile: [
