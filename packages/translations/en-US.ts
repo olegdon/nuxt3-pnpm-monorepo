@@ -5,7 +5,10 @@ export default {
   },
   pages: {
     home: {
-      title: 'Home Page',
+      examples: {
+        title: 'Examples',
+        description: 'Here are some examples of what NuxtMonoStarter can do.',
+      },
     },
   },
   components: {

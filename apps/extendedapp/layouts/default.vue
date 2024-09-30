@@ -12,8 +12,12 @@
     <slot />
 
     <template #footer>
-      <div class="text-center w-full">
-        {{ $t('general.footer') }}
+      <div class="text-center w-full space-x-4">
+        <span>
+          {{ $t('general.footer') }}
+        </span>
+
+        <UiButton>Button</UiButton>
       </div>
     </template>
   </LayoutApplication>
