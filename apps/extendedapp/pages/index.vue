@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>Extended app</h1>
+  <NuxtWelcome :title="$t('general.title')" />
 </template>
 
 <style scoped>

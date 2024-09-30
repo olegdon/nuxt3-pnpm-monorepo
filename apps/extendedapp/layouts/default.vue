@@ -4,13 +4,17 @@
 <template>
   <LayoutApplication>
     <template #header>
-      <slot name="header" />
+      <div class="text-center w-full">
+        {{ $t('general.header') }}
+      </div>
     </template>
 
     <slot />
 
     <template #footer>
-      <slot name="footer" />
+      <div class="text-center w-full">
+        {{ $t('general.footer') }}
+      </div>
     </template>
   </LayoutApplication>
 </template>
