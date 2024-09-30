@@ -11,7 +11,7 @@
       {{ $t('components.welcome.documentation.title') }}
     </template>
 
-    Vue’s
+    Nuxt 3
     <a href="https://v3.nuxtjs.org" target="_blank" rel="noopener">official documentation</a>
     provides you with all information you need to get started.
   </BaseInteractionWelcomeItem>
