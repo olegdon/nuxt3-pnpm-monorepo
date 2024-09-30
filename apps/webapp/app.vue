@@ -45,7 +45,7 @@ function logClientBoundaryError(error: any) {
       <NuxtPage v-if="auth.identity" />
 
       <!-- auth -->
-      <UiSheet v-else class="highlight-nuxt p-6">
+      <UiSheet v-else class="highlight-nuxt dark:highlight-nuxt--dark p-6">
         <InteractionLogin @sign-in="(identity: string) => auth.signIn(identity)" />
       </UiSheet>
     </NuxtErrorBoundary>
@@ -58,7 +58,7 @@ function logClientBoundaryError(error: any) {
 
     <!-- color scheme toggle -->
     <ClientOnly>
-      <UiSheet class="fixed bottom-5 right-5 highlight-nuxt p-6 space-y-4">
+      <UiSheet class="fixed bottom-5 right-5 highlight-nuxt dark:highlight-nuxt--dark p-6 space-y-4">
         <div class="dark:text-white text-black">
           {{ $t('components.color.mode') }}
 

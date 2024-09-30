@@ -13,6 +13,6 @@
       </p>
     </ContentDoc>
 
-    <ViewWelcome />
+    <AppWelcome />
   </div>
 </template>

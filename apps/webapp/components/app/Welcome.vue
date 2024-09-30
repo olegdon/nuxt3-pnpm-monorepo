@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
@@ -9,7 +8,7 @@
     </template>
 
     <template #heading>
-      Documentation
+      {{ $t('components.welcome.documentation.title') }}
     </template>
 
     Vue’s
@@ -23,7 +22,7 @@
     </template>
 
     <template #heading>
-      Tooling
+      {{ $t('components.welcome.tooling.title') }}
     </template>
 
     Optimized for VSCode usage. This Template is designed to provide great DX with VS Code and Volar.
@@ -42,7 +41,7 @@
     </template>
 
     <template #heading>
-      Ecosystem
+      {{ $t('components.welcome.ecosystem.title') }}
     </template>
 
     Tools and libraries being used in this project:
@@ -55,7 +54,7 @@
     <a href="https://i18n.nuxtjs.org/" target="_blank" rel="noopener">Support different locales</a>,
     <a href="https://tailwindcss.com/" target="_blank" rel="noopener">Tailwind 3</a>,
     <a href="https://vue-macros.sxzz.moe/" target="_blank" rel="noopener">Vue Macros</a>,
-    <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">JavaScript, but strongly typed and better</a>,
+    <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript - JavaScript, but strongly typed and better</a>,
 
     and APIs auto importing - for Composition API, VueUse, Components (locally & from design) and custom composables
   </BaseInteractionWelcomeItem>
@@ -66,7 +65,7 @@
     </template>
 
     <template #heading>
-      Repository
+      {{ $t('components.welcome.repository.title') }}
     </template>
 
     Feel free to fork <a href="https://github.com/olegdon/nuxt3-pnpm-monorepo" target="_blank" rel="noopener">this repository</a> and customize it to your needs. Let's build something great together!
@@ -80,7 +79,7 @@
     </template>
 
     <template #heading>
-      Support NuxtMonoStarter
+      {{ $t('components.welcome.support.title') }}
     </template>
 
     As an independent project, NuxtMonoStarter depends on community support to stay sustainable. You can contribute by

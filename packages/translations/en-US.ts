@@ -15,5 +15,22 @@ export default {
     user: {
       login: 'Login',
     },
+    welcome: {
+      documentation: {
+        title: 'Documentation',
+      },
+      tooling: {
+        title: 'Tooling',
+      },
+      ecosystem: {
+        title: 'Ecosystem',
+      },
+      repository: {
+        title: 'Repository',
+      },
+      support: {
+        title: 'Support NuxtMonoStarter',
+      },
+    },
   },
 }
