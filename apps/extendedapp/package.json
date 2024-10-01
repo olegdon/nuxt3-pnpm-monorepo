@@ -25,7 +25,7 @@
     "@vueuse/nuxt": "11.1.0",
     "autoprefixer": "10.4.20",
     "nuxt": "3.13.2",
-    "pinia": "2.2.3",
+    "pinia": "2.2.4",
     "vitest": "2.1.1"
   }
 }
