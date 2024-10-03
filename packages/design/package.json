@@ -11,7 +11,7 @@
   "devDependencies": {
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
-    "@nuxt/image": "1.8.0",
+    "@nuxt/image": "1.8.1",
     "@nuxt/kit": "3.13.2",
     "@nuxt/schema": "3.13.2",
     "@storybook/addon-essentials": "8.3.4",
