@@ -24,7 +24,7 @@
     "@nuxtjs/tailwindcss": "6.12.1",
     "@pinia/nuxt": "0.5.5",
     "@tailwindcss/container-queries": "0.1.1",
-    "@vue-macros/nuxt": "1.12.4",
+    "@vue-macros/nuxt": "1.12.5",
     "@vueuse/components": "11.1.0",
     "@vueuse/core": "11.1.0",
     "@vueuse/nuxt": "11.1.0",
