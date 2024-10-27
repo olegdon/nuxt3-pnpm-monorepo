@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "@tsconfig/recommended": "1.0.7",
+    "@tsconfig/recommended": "1.0.8",
     "micromark": "4.0.0"
   }
 }

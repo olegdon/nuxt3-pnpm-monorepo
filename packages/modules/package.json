@@ -7,6 +7,6 @@
   "keywords": [],
   "devDependencies": {
     "@nuxt/kit": "3.13.2",
-    "@tsconfig/recommended": "1.0.7"
+    "@tsconfig/recommended": "1.0.8"
   }
 }
