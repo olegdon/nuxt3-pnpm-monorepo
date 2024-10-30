@@ -22,7 +22,7 @@
     "@nuxt/test-utils": "3.14.4",
     "@nuxtjs/i18n": "8.5.5",
     "@nuxtjs/tailwindcss": "6.12.2",
-    "@pinia/nuxt": "0.5.5",
+    "@pinia/nuxt": "0.6.0",
     "@tailwindcss/container-queries": "0.1.1",
     "@vue-macros/nuxt": "1.12.8",
     "@vueuse/components": "11.1.0",
