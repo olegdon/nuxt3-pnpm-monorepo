@@ -33,7 +33,7 @@
     "mitt": "3.0.1",
     "pinia": "2.2.5",
     "postcss": "8.4.47",
-    "postcss-nested": "6.2.0",
+    "postcss-nested": "7.0.2",
     "storybook": "8.4.1",
     "storybook-addon-vue-slots": "0.9.29",
     "storybook-dark-mode": "4.0.2",
