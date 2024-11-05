@@ -92,8 +92,8 @@ export default defineNuxtConfig({
     defaultLocale: 'en-US',
     baseUrl: 'http://example.com',
     lazy: true,
-    langDir: '../../packages/translations',
-    vueI18n: '../../packages/translations/vue-i18n.ts',
+    langDir: '../../../packages/translations',
+    vueI18n: '../../../packages/translations/vue-i18n.ts',
     locales: [
       {
         code: 'en-US',
