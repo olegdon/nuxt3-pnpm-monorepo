@@ -21,8 +21,8 @@ export default defineNuxtConfig({
         // image: {},
         i18n: {
           baseUrl: `http://example.com`,
-          locales: (runtimeConfig: any) => runtimeConfig.i18n.locales,
-          defaultLocale: (runtimeConfig: any) => runtimeConfig.i18n.defaultLocale,
+          locales: (runtimeConfig: any) => runtimeConfig.default.i18n.locales,
+          defaultLocale: (runtimeConfig: any) => runtimeConfig.default.i18n.defaultLocale,
         },
         asyncRuntimeConfig: async () => await import(('./configs/extendedapp.ts')),
       },
