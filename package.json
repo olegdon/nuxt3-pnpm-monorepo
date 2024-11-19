@@ -20,7 +20,7 @@
     "dev": "concurrently \"pnpm extendedapp dev --port=3002\" \"pnpm singleapp dev --port=3001\" \"pnpm webapp dev --port=3000\" \"pnpm design dev\""
   },
   "devDependencies": {
-    "@antfu/eslint-config": "3.9.1",
+    "@antfu/eslint-config": "3.9.2",
     "concurrently": "9.1.0",
     "eslint": "9.15.0",
     "typescript": "5.6.3"
