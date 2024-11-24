@@ -114,8 +114,8 @@ importers:
         specifier: 3.14.1592
         version: 3.14.1592(@parcel/watcher@2.4.1)(@types/node@22.9.3)(eslint@9.15.0(jiti@2.4.0))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vue-tsc@2.1.10(typescript@5.7.2))(webpack-sources@3.2.3)
       nuxt-schema-org:
-        specifier: 3.4.7
-        version: 3.4.7(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.2))(webpack-sources@3.2.3)
+        specifier: 3.5.0
+        version: 3.5.0(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.2))(webpack-sources@3.2.3)
       pinia:
         specifier: 2.2.6
         version: 2.2.6(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
@@ -183,8 +183,8 @@ importers:
         specifier: 3.0.2
         version: 3.0.2(magicast@0.3.5)(rollup@4.24.4)(webpack-sources@3.2.3)
       nuxt-schema-org:
-        specifier: 3.4.7
-        version: 3.4.7(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.2))(webpack-sources@3.2.3)
+        specifier: 3.5.0
+        version: 3.5.0(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.2))(webpack-sources@3.2.3)
       pinia:
         specifier: 2.2.6
         version: 2.2.6(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
@@ -5720,8 +5720,8 @@ packages:
   nuxt-gtag@3.0.2:
     resolution: {integrity: sha512-0Spu/rffPxW7REebkjE22qQOuVZIQuyIuvd61InDdJU+d+gRIqWhrUuKBWdk43N/J1elj+cTK2kEdk5FQX7vdQ==}
 
-  nuxt-schema-org@3.4.7:
-    resolution: {integrity: sha512-rmF5bgwEMrPqTP2uhnM9XNyuUojrXbD+AbbLqeDVDavc12IBKI90OWALhRvbbJbTRKEiQhtowOfs0Roua+ZJmA==}
+  nuxt-schema-org@3.5.0:
+    resolution: {integrity: sha512-hD9FjlKyoFP/Q0f6ZD8p7ZtsHBPkMST2ZQxRveps+DnPwYMg+fQ+KYpX7l7NEwG/6tjkq3ApXucuV1H3PuU+qg==}
 
   nuxt-site-config-kit@2.2.21:
     resolution: {integrity: sha512-xO41Zf6bXlA9Zvj+fX7ftD+ITee4LfrkzHj85Gt4FpgwonFxzGO5pMBtAqIxXKJwuyT1z2wVAixHI+ov66wV0w==}
@@ -14802,7 +14802,7 @@ snapshots:
       - supports-color
       - webpack-sources
 
-  nuxt-schema-org@3.4.7(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.2))(webpack-sources@3.2.3):
+  nuxt-schema-org@3.5.0(magicast@0.3.5)(rollup@4.24.4)(vue@3.5.13(typescript@5.7.2))(webpack-sources@3.2.3):
     dependencies:
       '@nuxt/devtools-kit': 1.6.1(magicast@0.3.5)(rollup@4.24.4)(webpack-sources@3.2.3)
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.24.4)(webpack-sources@3.2.3)
