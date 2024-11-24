@@ -33,7 +33,7 @@
     "autoprefixer": "10.4.20",
     "nuxt": "3.14.1592",
     "nuxt-gtag": "3.0.2",
-    "nuxt-schema-org": "3.4.7",
+    "nuxt-schema-org": "3.5.0",
     "pinia": "2.2.6",
     "vitest": "2.1.5"
   }
