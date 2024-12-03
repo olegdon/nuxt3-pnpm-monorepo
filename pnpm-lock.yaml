@@ -240,8 +240,8 @@ importers:
         specifier: 5.2.1
         version: 5.2.1(vite@6.0.2(@types/node@22.10.1)(jiti@2.4.0)(terser@5.31.6)(tsx@4.19.1)(yaml@2.5.0))(vue@3.5.13(typescript@5.7.2))
       '@vue/tsconfig':
-        specifier: 0.6.0
-        version: 0.6.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
+        specifier: 0.7.0
+        version: 0.7.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
       '@vueuse/components':
         specifier: 12.0.0
         version: 12.0.0(typescript@5.7.2)
@@ -2753,11 +2753,11 @@ packages:
   '@vue/shared@3.5.13':
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
 
-  '@vue/tsconfig@0.6.0':
-    resolution: {integrity: sha512-MHXNd6lzugsEHvuA6l1GqrF5jROqUon8sP/HInLPnthJiYvB0VvpHMywg7em1dBZfFZNBSkR68qH37zOdRHmCw==}
+  '@vue/tsconfig@0.7.0':
+    resolution: {integrity: sha512-ku2uNz5MaZ9IerPPUyOHzyjhXoX2kVJaVf7hL315DC17vS6IiZRmmCPfggNbU16QTvM80+uYYy3eYJB59WCtvg==}
     peerDependencies:
       typescript: 5.x
-      vue: ^3.3.0
+      vue: ^3.4.0
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -11015,7 +11015,7 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@vue/tsconfig@0.6.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))':
+  '@vue/tsconfig@0.7.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))':
     optionalDependencies:
       typescript: 5.7.2
       vue: 3.5.13(typescript@5.7.2)
