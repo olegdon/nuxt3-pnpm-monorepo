@@ -42,8 +42,8 @@ importers:
         specifier: 6.12.2
         version: 6.12.2(magicast@0.3.5)(rollup@4.24.4)
       '@pinia/nuxt':
-        specifier: 0.7.0
-        version: 0.7.0(magicast@0.3.5)(rollup@4.24.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
+        specifier: 0.8.0
+        version: 0.8.0(magicast@0.3.5)(pinia@2.2.8(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(rollup@4.24.4)
       '@vue-macros/nuxt':
         specifier: 1.12.9
         version: 1.12.9(@vueuse/core@12.0.0(typescript@5.7.2))(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.4.1)(@types/node@22.10.1)(eslint@9.15.0(jiti@2.4.0))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vue-tsc@2.1.10(typescript@5.7.2)))(rollup@4.24.4)(typescript@5.7.2)(vue-tsc@2.1.10(typescript@5.7.2))(vue@3.5.13(typescript@5.7.2))
@@ -90,8 +90,8 @@ importers:
         specifier: 6.12.2
         version: 6.12.2(magicast@0.3.5)(rollup@4.24.4)
       '@pinia/nuxt':
-        specifier: 0.7.0
-        version: 0.7.0(magicast@0.3.5)(rollup@4.24.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
+        specifier: 0.8.0
+        version: 0.8.0(magicast@0.3.5)(pinia@2.2.8(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(rollup@4.24.4)
       '@tailwindcss/container-queries':
         specifier: 0.1.1
         version: 0.1.1(tailwindcss@3.4.15)
@@ -156,8 +156,8 @@ importers:
         specifier: 6.12.2
         version: 6.12.2(magicast@0.3.5)(rollup@4.24.4)
       '@pinia/nuxt':
-        specifier: 0.7.0
-        version: 0.7.0(magicast@0.3.5)(rollup@4.24.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
+        specifier: 0.8.0
+        version: 0.8.0(magicast@0.3.5)(pinia@2.2.8(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(rollup@4.24.4)
       '@tailwindcss/container-queries':
         specifier: 0.1.1
         version: 0.1.1(tailwindcss@3.4.15)
@@ -1694,8 +1694,10 @@ packages:
     resolution: {integrity: sha512-HNjmfLQEVRZmHRET336f20H/8kOozUGwk7yajvsonjNxbj2wBTK1WsQuHkD5yYh9RxFGL2EyDHryOihOwUoKDA==}
     engines: {node: '>= 10.0.0'}
 
-  '@pinia/nuxt@0.7.0':
-    resolution: {integrity: sha512-IAKRl7mQCrFKQtD8Z6EzOz5bQ/px0FdeyaB+70A3igkFzHzKVJVblLCjFwXPBC/IO0EwHuMRk/SMgwkUn82jwg==}
+  '@pinia/nuxt@0.8.0':
+    resolution: {integrity: sha512-BWPUKOg3KGnRSgz54x9IUzCKTqUxZx4UJezPRbRwY5BVt18rfiP4Cqq8kxtR8WWDZa5PTRJpx0Jxz+qyUdLvjQ==}
+    peerDependencies:
+      pinia: ^2.2.7
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -9663,17 +9665,14 @@ snapshots:
       '@parcel/watcher-win32-ia32': 2.4.1
       '@parcel/watcher-win32-x64': 2.4.1
 
-  '@pinia/nuxt@0.7.0(magicast@0.3.5)(rollup@4.24.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))':
+  '@pinia/nuxt@0.8.0(magicast@0.3.5)(pinia@2.2.8(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(rollup@4.24.4)':
     dependencies:
-      '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.24.4)
+      '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.24.4)
       pinia: 2.2.8(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
     transitivePeerDependencies:
-      - '@vue/composition-api'
       - magicast
       - rollup
       - supports-color
-      - typescript
-      - vue
       - webpack-sources
 
   '@pkgjs/parseargs@0.11.0':
