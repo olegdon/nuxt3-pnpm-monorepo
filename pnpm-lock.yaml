@@ -81,8 +81,8 @@ importers:
         specifier: 1.8.1
         version: 1.8.1(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.24.4)
       '@nuxt/test-utils':
-        specifier: 3.15.0
-        version: 3.15.0(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6))
+        specifier: 3.15.1
+        version: 3.15.1(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6))
       '@nuxtjs/i18n':
         specifier: 9.1.0
         version: 9.1.0(eslint@9.16.0(jiti@2.4.0))(magicast@0.3.5)(rollup@4.24.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
@@ -144,8 +144,8 @@ importers:
         specifier: 1.8.1
         version: 1.8.1(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.24.4)
       '@nuxt/test-utils':
-        specifier: 3.15.0
-        version: 3.15.0(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6))
+        specifier: 3.15.1
+        version: 3.15.1(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6))
       '@nuxtjs/color-mode':
         specifier: 3.5.2
         version: 3.5.2(magicast@0.3.5)(rollup@4.24.4)
@@ -1461,8 +1461,8 @@ packages:
     resolution: {integrity: sha512-h4YJ1d32cU7tDKjjhjtIIEck4WF/w3DTQBT348E9Pz85YLttnLqktLM0Ez9Xc2LzCeUgBDQv1el7Ob/zT3KUqg==}
     hasBin: true
 
-  '@nuxt/test-utils@3.15.0':
-    resolution: {integrity: sha512-kl8nwCuB5/DhJVFNftO9n83yEHDsVjMCrLQmOc4Pmfb8Ba7CgE7GR+QVoVywv5x4DGiRryce7gRGXJkpLNRmGQ==}
+  '@nuxt/test-utils@3.15.1':
+    resolution: {integrity: sha512-+0MsHsE/F4FZcmirRWSqGSSlEGMeNBHXkdHmYU0cM7UItiFIxyVDdIHLkyW4bBvPfI0IRozQlZc8vht9V/5D7Q==}
     engines: {node: ^18.20.4 || ^20.9.0 || ^22.0.0 || >=23.0.0}
     peerDependencies:
       '@cucumber/cucumber': ^10.3.1 || ^11.0.0
@@ -9267,7 +9267,7 @@ snapshots:
       - supports-color
       - webpack-sources
 
-  '@nuxt/test-utils@3.15.0(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6))':
+  '@nuxt/test-utils@3.15.1(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6))':
     dependencies:
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.24.4)
       '@nuxt/schema': 3.14.1592(magicast@0.3.5)(rollup@4.24.4)
@@ -17069,7 +17069,7 @@ snapshots:
 
   vitest-environment-nuxt@1.0.1(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6)):
     dependencies:
-      '@nuxt/test-utils': 3.15.0(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6))
+      '@nuxt/test-utils': 3.15.1(@jest/globals@29.7.0)(@types/node@22.10.1)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.24.4)(terser@5.31.6)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)(terser@5.31.6))
     transitivePeerDependencies:
       - '@cucumber/cucumber'
       - '@jest/globals'
