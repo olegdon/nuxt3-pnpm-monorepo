@@ -28,7 +28,7 @@ export function definePageSeo({ title, description, image, placeholders, robots,
   title = title ? fillPlaceholders(String(title), placeholders) : (key ? $t(`pages.${key}.meta.title`, placeholders) : null)
 
   onServerPrefetch(() => {
-    // const config = useRuntimeConfig()
+    const config = useRuntimeConfig()
 
     description = description ? fillPlaceholders(String(description), placeholders) : (key ? $t(`pages.${key}.meta.description`, placeholders) : null)
     robots = robots || 'index, follow'
@@ -50,7 +50,7 @@ export function definePageSeo({ title, description, image, placeholders, robots,
       description,
       ogDescription: description,
       ogType: 'website',
-      // ogImage: image || config.public.i18n.baseUrl + config.public?.app?.layout?.logo || null,
+      ogImage: image || config.public.i18n.baseUrl + config.public?.app?.layout?.logo || null,
       ogTitle: title,
       ogUrl: url.href,
       ogLocale: i18nHead.value.htmlAttrs?.lang,

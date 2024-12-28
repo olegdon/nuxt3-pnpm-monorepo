@@ -15,10 +15,6 @@ onServerPrefetch(() => {
   })
 })
 
-if (props.error?.statusCode === 404 && props.error.url) {
-
-}
-
 const message = $t(`error.message.${props.error?.statusCode}`)
 const isDev = ref(!import.meta.env.PROD)
 
