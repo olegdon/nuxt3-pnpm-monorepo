@@ -20,7 +20,11 @@ export default {
     },
   },
   pages: {
-    home: {
+    index: {
+      meta: {
+        title: 'Kickstart your projects with Monorepo\n',
+        description: 'NuxtMonoStarter is a PNPM monorepo starter template with Nuxt.js that helps you build your next app faster by using pnpm monorepo and workspaces, Storybook, and more, already integrated.',
+      },
       examples: {
         title: 'Examples',
         description: 'Here are some examples of what NuxtMonoStarter can do.',
