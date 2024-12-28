@@ -1,9 +1,6 @@
-<script lang="ts" setup>
-</script>
-
 <template>
   <div
-    class="min-h-screen flex flex-col fill-gray-600 relative antialiased"
+    class="bg-white dark:bg-black min-h-screen flex flex-col fill-gray-600 relative antialiased"
   >
     <header class="sticky top-0 z-20 bg-extendedapp-primary-300 border-b border-accent-200 h-24 flex items-center">
       <slot name="header" />

@@ -1,9 +1,11 @@
 // https://nuxt.com/docs/getting-started/configuration
 // https://nuxt.com/docs/api/nuxt-config
-
 import tailwindConfig from '@devstdo/design/configs/tailwind.webapp.config'
 
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
   compatibilityDate: '2024-04-03',
   alias: {
     '@devstdo/webapp': './',
@@ -83,6 +85,13 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-gtag',
   ],
+  routeRules: {
+    '/**': {
+      headers: {
+        'cache-control': 'public, s-maxage=300, stale-while-revalidate=86400, stale-if-error=86400',
+      },
+    },
+  },
   typescript: {
     shim: false,
   },
@@ -90,7 +99,7 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
     customRoutes: 'page',
     defaultLocale: 'en-US',
-    baseUrl: 'http://example.com',
+    baseUrl: 'https://www.nuxtmonostarter.com',
     lazy: true,
     langDir: '../../../packages/translations',
     vueI18n: '../../../packages/translations/vue-i18n.ts',
