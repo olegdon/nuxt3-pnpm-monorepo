@@ -1,4 +1,11 @@
 <script setup lang="ts">
+const { t: $t } = useI18n()
+
+definePageSeo({
+  key: 'index',
+  title: 'pages.index.meta.title',
+  description: 'pages.index.meta.description',
+})
 </script>
 
 <template>
@@ -16,11 +23,11 @@
     <AppWelcome />
 
     <h2 class="text-xl text-black dark:text-white text-center">
-      {{ $t('pages.home.examples.title') }}
+      {{ $t('pages.index.examples.title') }}
     </h2>
 
     <p class="text-black dark:text-white text-center">
-      {{ $t('pages.home.examples.description') }}
+      {{ $t('pages.index.examples.description') }}
     </p>
 
     <div class="flex w-2/3 items-center justify-around space-x-4 mx-auto">

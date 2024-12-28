@@ -3,6 +3,16 @@ const { t: $t } = useI18n()
 const auth = useAuthStore()
 const colorMode = useColorMode()
 
+onServerPrefetch(() => {
+  defineWebsiteSeo()
+})
+
+definePageSeo({
+  key: 'index',
+  title: $t('pages.index.meta.title'),
+  description: $t('pages.index.meta.description'),
+})
+
 onMounted(() => {
   useListen('user:login', (identity: string) => {
     auth.signIn(identity)

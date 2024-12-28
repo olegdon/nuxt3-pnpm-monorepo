@@ -138,7 +138,12 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      app: {},
+      app: {
+        project: {
+          name: 'www.nuxtmonostarter.com',
+        },
+        layout: {},
+      },
     },
   },
   vite: {
