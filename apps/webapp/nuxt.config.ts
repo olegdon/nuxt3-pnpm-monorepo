@@ -3,12 +3,12 @@
 import tailwindConfig from '@devstdo/design/configs/tailwind.webapp.config'
 
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
   compatibilityDate: '2024-04-03',
   alias: {
     '@devstdo/webapp': './',
+  },
+  site: {
+    name: 'webapp',
   },
   devtools: { enabled: true },
   sourcemap: false,
@@ -64,6 +64,22 @@ export default defineNuxtConfig({
     '@vue-macros/nuxt',
     '@devstdo/design/nuxt.ts',
     'nuxt-schema-org',
+    [
+      '@nuxtjs/sitemap',
+      {
+        // disables chunking, only need to be used with very large sitemaps ( over 50000 entries )
+        // @see https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+        sitemaps: false,
+        credits: false,
+        cacheMaxAgeSeconds: 60 * 60 * 12,
+        xslColumns: [
+          { label: 'URL', width: '50%' },
+          { label: 'Priority', width: '10%', select: 'sitemap:priority' },
+          { label: 'Changefreq', width: '20%', select: 'sitemap:changefreq' },
+          { label: 'Last Updated', width: '20%', select: 'concat(substring(sitemap:lastmod,0,11),concat(\' \', substring(sitemap:lastmod,12,5)),concat(\' \', substring(sitemap:lastmod,20,6)))' },
+        ],
+      },
+    ],
     [
       '@devstdo/modules/custom-fonts/nuxt.ts',
       {

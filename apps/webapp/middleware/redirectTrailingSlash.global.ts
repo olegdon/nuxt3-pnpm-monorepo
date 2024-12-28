@@ -4,6 +4,7 @@ export default defineNuxtRouteMiddleware((to: any) => {
     const { path, query, hash } = to
     const nextPath = path.replace(/\/+$/, '') || '/'
     const nextRoute = { path: nextPath, query, hash }
+
     return navigateTo(nextRoute, { redirectCode: 301 })
   }
 })
