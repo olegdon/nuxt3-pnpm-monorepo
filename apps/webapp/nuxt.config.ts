@@ -3,6 +3,9 @@
 import tailwindConfig from '@devstdo/design/configs/tailwind.webapp.config'
 
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
   compatibilityDate: '2024-04-03',
   alias: {
     '@devstdo/webapp': './',
