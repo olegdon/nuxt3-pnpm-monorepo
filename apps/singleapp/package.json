@@ -32,6 +32,6 @@
     "nuxt": "3.15.2",
     "nuxt-schema-org": "4.0.4",
     "pinia": "2.3.0",
-    "vitest": "2.1.8"
+    "vitest": "3.0.2"
   }
 }
