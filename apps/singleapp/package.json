@@ -20,7 +20,7 @@
     "@nuxt/devtools": "1.7.0",
     "@nuxt/image": "1.9.0",
     "@nuxt/test-utils": "3.15.4",
-    "@nuxtjs/i18n": "9.1.1",
+    "@nuxtjs/i18n": "9.1.2",
     "@nuxtjs/tailwindcss": "6.13.1",
     "@pinia/nuxt": "0.9.0",
     "@tailwindcss/container-queries": "0.1.1",
