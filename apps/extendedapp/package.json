@@ -18,7 +18,7 @@
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
     "@nuxt/devtools": "1.7.0",
-    "@nuxtjs/i18n": "9.1.4",
+    "@nuxtjs/i18n": "9.1.5",
     "@nuxtjs/tailwindcss": "6.13.1",
     "@pinia/nuxt": "0.9.0",
     "@vue-macros/nuxt": "1.13.0",
