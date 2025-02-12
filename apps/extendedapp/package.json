@@ -20,7 +20,7 @@
     "@nuxt/devtools": "2.0.0",
     "@nuxtjs/i18n": "9.2.0",
     "@nuxtjs/tailwindcss": "6.13.1",
-    "@pinia/nuxt": "0.10.0",
+    "@pinia/nuxt": "0.10.1",
     "@vue-macros/nuxt": "1.13.2",
     "@vueuse/nuxt": "12.5.0",
     "autoprefixer": "10.4.20",
