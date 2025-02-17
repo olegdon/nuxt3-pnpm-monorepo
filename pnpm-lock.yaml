@@ -225,8 +225,8 @@ importers:
         specifier: 8.5.6
         version: 8.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.6)
       '@storybook/test-runner':
-        specifier: 0.21.0
-        version: 0.21.0(@types/node@22.13.4)(storybook@8.5.6)
+        specifier: 0.21.1
+        version: 0.21.1(@types/node@22.13.4)(storybook@8.5.6)
       '@storybook/vue3':
         specifier: 8.5.6
         version: 8.5.6(storybook@8.5.6)(vue@3.5.13(typescript@5.7.3))
@@ -607,10 +607,6 @@ packages:
 
   '@babel/traverse@7.25.9':
     resolution: {integrity: sha512-ZCuvfwOwlz/bawvAuvcj8rrithP2/N55Tzz342AkTvq4qaWbGfmCk/tKhNaV2cthijKrPAA8SRJV5WWe7IBMJw==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/types@7.26.3':
-    resolution: {integrity: sha512-vN5p+1kl59GVKMvTHt55NzzmYVxprfJD+ql7U9NFIfKCBkYE55LYtS+WtPlaYOyzydrKI8Nezd+aZextrd+FMA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/types@7.26.5':
@@ -2051,9 +2047,6 @@ packages:
     peerDependencies:
       storybook: ^8.5.6
 
-  '@storybook/csf@0.1.11':
-    resolution: {integrity: sha512-dHYFQH3mA+EtnCkHXzicbLgsvzYjcDJ1JWsogbItZogkPHgSJM/Wr71uMkcvw8v9mmCyP4NpXJuu6bPoVsOnzg==}
-
   '@storybook/csf@0.1.12':
     resolution: {integrity: sha512-9/exVhabisyIVL0VxTCxo01Tdm8wefIXKXfltAPTSr8cbLn5JAxGQ6QV3mjdecLGEOucfoVhAKtJfVHxEK1iqw==}
 
@@ -2101,8 +2094,8 @@ packages:
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
       storybook: ^8.5.6
 
-  '@storybook/test-runner@0.21.0':
-    resolution: {integrity: sha512-aG2QvKXSIjMN1CA9PJK/esnidZWgt1gAkfo9Kqf8+NqBSsmP/2GyL5vxu1lkRFO/4qCv5JenNZ5Uj6ie4b2oag==}
+  '@storybook/test-runner@0.21.1':
+    resolution: {integrity: sha512-LoHdJpV3jbxsWgqxsMVVEUDgZM4COGowlGswUCKNtoYVeuHo3msjwCfpALR4C51BntMqMLyjT2ASUIi2Ju+ndw==}
     engines: {node: ^16.10.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -8451,11 +8444,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/types@7.26.3':
-    dependencies:
-      '@babel/helper-string-parser': 7.25.9
-      '@babel/helper-validator-identifier': 7.25.9
-
   '@babel/types@7.26.5':
     dependencies:
       '@babel/helper-string-parser': 7.25.9
@@ -10424,10 +10412,6 @@ snapshots:
       storybook: 8.5.6
       unplugin: 1.16.1
 
-  '@storybook/csf@0.1.11':
-    dependencies:
-      type-fest: 2.19.0
-
   '@storybook/csf@0.1.12':
     dependencies:
       type-fest: 2.19.0
@@ -10468,14 +10452,14 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       storybook: 8.5.6
 
-  '@storybook/test-runner@0.21.0(@types/node@22.13.4)(storybook@8.5.6)':
+  '@storybook/test-runner@0.21.1(@types/node@22.13.4)(storybook@8.5.6)':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/generator': 7.26.2
       '@babel/template': 7.25.9
-      '@babel/types': 7.26.3
+      '@babel/types': 7.26.5
       '@jest/types': 29.6.3
-      '@storybook/csf': 0.1.11
+      '@storybook/csf': 0.1.12
       '@swc/core': 1.7.22
       '@swc/jest': 0.2.36(@swc/core@1.7.22)
       expect-playwright: 0.8.0
