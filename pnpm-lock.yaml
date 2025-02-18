@@ -285,8 +285,8 @@ importers:
         specifier: 22.0.0
         version: 22.0.0(@vue/compiler-sfc@3.5.13)
       unplugin-vue-components:
-        specifier: 28.1.0
-        version: 28.1.0(@babel/parser@7.26.5)(@nuxt/kit@3.15.4(magicast@0.3.5)(rollup@4.34.4))(vue@3.5.13(typescript@5.7.3))
+        specifier: 28.2.0
+        version: 28.2.0(@babel/parser@7.26.5)(@nuxt/kit@3.15.4(magicast@0.3.5)(rollup@4.34.4))(vue@3.5.13(typescript@5.7.3))
       unplugin-vue-macros:
         specifier: 2.14.2
         version: 2.14.2(@vueuse/core@12.7.0(typescript@5.7.3))(esbuild@0.24.2)(rollup@4.34.4)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.4)(jiti@2.4.2)(terser@5.31.6)(tsx@4.19.2)(yaml@2.7.0))(vue-tsc@2.2.2(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
@@ -7352,8 +7352,8 @@ packages:
     resolution: {integrity: sha512-8U/MtpkPkkk3Atewj1+RcKIjb5WBimZ/WSLhhR3w6SsIj8XJuKTacSP8g+2JhfSGw0Cb125Y+2zA/IzJZDVbhA==}
     engines: {node: '>=18.12.0'}
 
-  unplugin-vue-components@28.1.0:
-    resolution: {integrity: sha512-ScHoDBTf7NVxM+YzzV1b1YNHU1rRnLWIG5hhD8D3hKjgYLd6FNJife0zQhUafv3NKuGLdujRgoqy2vcdt7a55g==}
+  unplugin-vue-components@28.2.0:
+    resolution: {integrity: sha512-FMncMZRnOcVs81BligpZL4tPFHE+VX1P1SYgzzl4D6ZgLiJHoZWNx743z+Vfyz701GsZ8WX/ENvYrIZ4mvJPeA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/parser': ^7.15.8
@@ -17317,7 +17317,7 @@ snapshots:
       pathe: 2.0.3
       picomatch: 4.0.2
 
-  unplugin-vue-components@28.1.0(@babel/parser@7.26.5)(@nuxt/kit@3.15.4(magicast@0.3.5)(rollup@4.34.4))(vue@3.5.13(typescript@5.7.3)):
+  unplugin-vue-components@28.2.0(@babel/parser@7.26.5)(@nuxt/kit@3.15.4(magicast@0.3.5)(rollup@4.34.4))(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       chokidar: 3.6.0
       debug: 4.4.0(supports-color@9.4.0)
