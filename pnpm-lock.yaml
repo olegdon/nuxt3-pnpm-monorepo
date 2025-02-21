@@ -225,8 +225,8 @@ importers:
         specifier: 8.5.6
         version: 8.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.6)
       '@storybook/test-runner':
-        specifier: 0.21.1
-        version: 0.21.1(@types/node@22.13.4)(storybook@8.5.6)
+        specifier: 0.21.3
+        version: 0.21.3(@types/node@22.13.4)(storybook@8.5.6)
       '@storybook/vue3':
         specifier: 8.5.6
         version: 8.5.6(storybook@8.5.6)(vue@3.5.13(typescript@5.7.3))
@@ -2094,8 +2094,8 @@ packages:
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
       storybook: ^8.5.6
 
-  '@storybook/test-runner@0.21.1':
-    resolution: {integrity: sha512-LoHdJpV3jbxsWgqxsMVVEUDgZM4COGowlGswUCKNtoYVeuHo3msjwCfpALR4C51BntMqMLyjT2ASUIi2Ju+ndw==}
+  '@storybook/test-runner@0.21.3':
+    resolution: {integrity: sha512-tsorR0IVYElcaTZrT/ZrH/8YDw7c+wrLDN0e3qj1WdbqU8l2IU4+a32HLXaakzdDpuTn+d8xCk4VZMlzMrmToA==}
     engines: {node: ^16.10.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -8286,7 +8286,7 @@ snapshots:
       '@babel/types': 7.26.5
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
-      jsesc: 3.0.2
+      jsesc: 3.1.0
 
   '@babel/helper-annotate-as-pure@7.25.9':
     dependencies:
@@ -8296,7 +8296,7 @@ snapshots:
     dependencies:
       '@babel/compat-data': 7.26.2
       '@babel/helper-validator-option': 7.25.9
-      browserslist: 4.24.2
+      browserslist: 4.24.4
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -10517,7 +10517,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       storybook: 8.5.6
 
-  '@storybook/test-runner@0.21.1(@types/node@22.13.4)(storybook@8.5.6)':
+  '@storybook/test-runner@0.21.3(@types/node@22.13.4)(storybook@8.5.6)':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/generator': 7.26.2
@@ -12104,8 +12104,8 @@ snapshots:
 
   caniuse-api@3.0.0:
     dependencies:
-      browserslist: 4.24.2
-      caniuse-lite: 1.0.30001677
+      browserslist: 4.24.4
+      caniuse-lite: 1.0.30001700
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
 
@@ -15915,7 +15915,7 @@ snapshots:
 
   postcss-colormin@7.0.2(postcss@8.5.2):
     dependencies:
-      browserslist: 4.24.2
+      browserslist: 4.24.4
       caniuse-api: 3.0.0
       colord: 2.9.3
       postcss: 8.5.2
@@ -15923,7 +15923,7 @@ snapshots:
 
   postcss-convert-values@7.0.4(postcss@8.5.2):
     dependencies:
-      browserslist: 4.24.2
+      browserslist: 4.24.4
       postcss: 8.5.2
       postcss-value-parser: 4.2.0
 
@@ -15971,7 +15971,7 @@ snapshots:
 
   postcss-merge-rules@7.0.4(postcss@8.5.2):
     dependencies:
-      browserslist: 4.24.2
+      browserslist: 4.24.4
       caniuse-api: 3.0.0
       cssnano-utils: 5.0.0(postcss@8.5.2)
       postcss: 8.5.2
@@ -15991,7 +15991,7 @@ snapshots:
 
   postcss-minify-params@7.0.2(postcss@8.5.2):
     dependencies:
-      browserslist: 4.24.2
+      browserslist: 4.24.4
       cssnano-utils: 5.0.0(postcss@8.5.2)
       postcss: 8.5.2
       postcss-value-parser: 4.2.0
@@ -16050,7 +16050,7 @@ snapshots:
 
   postcss-normalize-unicode@7.0.2(postcss@8.5.2):
     dependencies:
-      browserslist: 4.24.2
+      browserslist: 4.24.4
       postcss: 8.5.2
       postcss-value-parser: 4.2.0
 
@@ -16072,7 +16072,7 @@ snapshots:
 
   postcss-reduce-initial@7.0.2(postcss@8.5.2):
     dependencies:
-      browserslist: 4.24.2
+      browserslist: 4.24.4
       caniuse-api: 3.0.0
       postcss: 8.5.2
 
@@ -16990,7 +16990,7 @@ snapshots:
 
   stylehacks@7.0.4(postcss@8.5.2):
     dependencies:
-      browserslist: 4.24.2
+      browserslist: 4.24.4
       postcss: 8.5.2
       postcss-selector-parser: 6.1.2
 
