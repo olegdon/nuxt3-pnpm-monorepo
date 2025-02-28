@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t: $t } = useI18n()
+const { data } = await useAsyncData(() => queryCollection('content').path('/').first())
 
 definePageSeo({
   key: 'index',
@@ -10,15 +11,13 @@ definePageSeo({
 
 <template>
   <div class="p-4 space-y-8 dark:text-gray-300 text-black">
-    <ContentDoc v-slot="{ doc }">
-      <h1 class="text-4xl font-bold text-center">
-        {{ doc.title }}
-      </h1>
+    <h1 class="text-4xl font-bold text-center">
+      {{ data?.title }}
+    </h1>
 
-      <p class="text-center">
-        {{ doc.description }}
-      </p>
-    </ContentDoc>
+    <div>
+      {{ data?.description }}
+    </div>
 
     <AppWelcome />
 

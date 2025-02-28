@@ -1,4 +1,8 @@
 packages:
-  # all packages in sub-dirs of packages/ and apps/
-  - 'packages/*'
-  - 'apps/*'
+  - packages/*
+  - apps/*
+ignoredBuiltDependencies:
+  - better-sqlite3
+  - esbuild
+onlyBuiltDependencies:
+  - better-sqlite3
