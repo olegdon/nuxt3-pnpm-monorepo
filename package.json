@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.4.1",
+  "packageManager": "pnpm@10.5.2",
   "author": "Oleg Don <info@devstdo.com>",
   "keywords": [],
   "main": "index.js",
@@ -20,9 +20,9 @@
     "dev": "concurrently \"pnpm extendedapp dev --port=3002\" \"pnpm singleapp dev --port=3001\" \"pnpm webapp dev --port=3000\" \"pnpm design dev\""
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.1.1",
+    "@antfu/eslint-config": "4.3.0",
     "concurrently": "9.1.2",
-    "eslint": "9.20.1",
+    "eslint": "9.21.0",
     "typescript": "5.7.3"
   }
 }
