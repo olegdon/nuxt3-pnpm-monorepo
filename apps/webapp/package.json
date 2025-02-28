@@ -17,7 +17,7 @@
     "@devstdo/design": "workspace:*",
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
-    "@nuxt/content": "2.13.4",
+    "@nuxt/content": "3.2.2",
     "@nuxt/devtools": "2.1.1",
     "@nuxt/image": "1.9.0",
     "@nuxt/test-utils": "3.17.0",
