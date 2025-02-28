@@ -7,8 +7,6 @@ definePageSeo({
   title: 'pages.index.meta.title',
   description: 'pages.index.meta.description',
 })
-
-console.log(data)
 </script>
 
 <template>
