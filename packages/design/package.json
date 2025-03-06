@@ -18,7 +18,7 @@
     "@storybook/addon-interactions": "8.6.2",
     "@storybook/addon-links": "8.6.2",
     "@storybook/blocks": "8.6.2",
-    "@storybook/test-runner": "0.21.3",
+    "@storybook/test-runner": "0.22.0",
     "@storybook/vue3": "8.6.2",
     "@storybook/vue3-vite": "8.6.2",
     "@tailwindcss/container-queries": "0.1.1",
