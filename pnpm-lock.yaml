@@ -78,8 +78,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(rollup@4.34.4)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.13(typescript@5.7.3))
       '@nuxt/image':
-        specifier: 1.9.0
-        version: 1.9.0(db0@0.2.4(better-sqlite3@11.8.1))(magicast@0.3.5)(rollup@4.34.4)
+        specifier: 1.10.0
+        version: 1.10.0(db0@0.2.4(better-sqlite3@11.8.1))(magicast@0.3.5)
       '@nuxt/test-utils':
         specifier: 3.17.0
         version: 3.17.0(@jest/globals@29.7.0)(@types/node@22.13.5)(jiti@2.4.2)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.34.4)(terser@5.31.6)(typescript@5.7.3)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.5)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(yaml@2.8.0)
@@ -141,8 +141,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(rollup@4.34.4)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.13(typescript@5.7.3))
       '@nuxt/image':
-        specifier: 1.9.0
-        version: 1.9.0(db0@0.2.4(better-sqlite3@11.8.1))(magicast@0.3.5)(rollup@4.34.4)
+        specifier: 1.10.0
+        version: 1.10.0(db0@0.2.4(better-sqlite3@11.8.1))(magicast@0.3.5)
       '@nuxt/test-utils':
         specifier: 3.17.0
         version: 3.17.0(@jest/globals@29.7.0)(@types/node@22.13.5)(jiti@2.4.2)(magicast@0.3.5)(playwright-core@1.46.1)(rollup@4.34.4)(terser@5.31.6)(typescript@5.7.3)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.5)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(yaml@2.8.0)
@@ -204,8 +204,8 @@ importers:
         specifier: workspace:*
         version: link:../services
       '@nuxt/image':
-        specifier: 1.9.0
-        version: 1.9.0(db0@0.2.4(better-sqlite3@11.8.1))(magicast@0.3.5)(rollup@4.34.4)
+        specifier: 1.10.0
+        version: 1.10.0(db0@0.2.4(better-sqlite3@11.8.1))(magicast@0.3.5)
       '@nuxt/kit':
         specifier: 3.15.4
         version: 3.15.4(magicast@0.3.5)(rollup@4.34.4)
@@ -1373,9 +1373,9 @@ packages:
     peerDependencies:
       vite: '>=6.0'
 
-  '@nuxt/image@1.9.0':
-    resolution: {integrity: sha512-kuuePx/jtlmsuG/G8mTMELntw4p8MLD4tu9f4A064xor/ks29oEoBmFRzvfFwxqZ7cqfG2M4LZfTZFjQz5St+Q==}
-    engines: {node: '>=18.20.5'}
+  '@nuxt/image@1.10.0':
+    resolution: {integrity: sha512-/B58GeEmme7bkmQUrXzEw8P9sJb9BkMaYZqLDtq8ZdDLEddE3P4nVya8RQPB+p4b7EdqWajpPqdy1A2ZPLev/A==}
+    engines: {node: '>=18.20.6'}
 
   '@nuxt/kit@3.13.2':
     resolution: {integrity: sha512-KvRw21zU//wdz25IeE1E5m/aFSzhJloBRAQtv+evcFeZvuroIxpIQuUqhbzuwznaUwpiWbmwlcsp5uOWmi4vwA==}
@@ -3575,14 +3575,6 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  crossws@0.2.4:
-    resolution: {integrity: sha512-DAxroI2uSOgUKLz00NX6A8U/8EE3SZHmIND+10jkVSaypvyt57J5JEOxAQOL6lQxyzi/wZbTIwssU1uy69h5Vg==}
-    peerDependencies:
-      uWebSockets.js: '*'
-    peerDependenciesMeta:
-      uWebSockets.js:
-        optional: true
-
   crossws@0.3.1:
     resolution: {integrity: sha512-HsZgeVYaG+b5zA+9PbIPGq4+J/CJynJuearykPsXx4V/eMhyQ5EDVg3Ak2FBZtVXCiOLu/U7IiwDHTr9MA+IKw==}
 
@@ -4634,9 +4626,6 @@ packages:
     resolution: {integrity: sha512-B+yCKyDRnO0BXSfjAP4tCXJgJwmnKp3GyH5Yh66mY9KuOCrrGQSPk/gBFG2TgH7OyB/6mvqNZ1X0XNVuy0qRsw==}
     peerDependencies:
       h3: ^1.6.0
-
-  h3@1.13.0:
-    resolution: {integrity: sha512-vFEAu/yf8UMUcB4s43OaDaigcqpQd14yanmOsn+NcRX3/guSKncyE2rOYhq8RIchgJrPSs/QiIddnTTR1ddiAg==}
 
   h3@1.13.1:
     resolution: {integrity: sha512-u/z6Z4YY+ANZ05cRRfsFJadTBrNA6e3jxdU+AN5UCbZSZEUwgHiwjvUEe0k1NoQmAvQmETwr+xB5jd7mhCJuIQ==}
@@ -6203,9 +6192,6 @@ packages:
 
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
-
-  pathe@2.0.0:
-    resolution: {integrity: sha512-G7n4uhtk9qJt2hlD+UFfsIGY854wpF+zs2bUbQ3CQEUTcn7v25LRsrmurOxTo4bJgjE4qkyshd9ldsEuY9M6xg==}
 
   pathe@2.0.1:
     resolution: {integrity: sha512-6jpjMpOth5S9ITVu5clZ7NOgHNsv5vRQdheL9ztp2vZmM6fRbLvyua1tiBIL4lk8SAe3ARzeXEly6siXCjDHDw==}
@@ -9511,7 +9497,7 @@ snapshots:
 
   '@nuxt/devtools-wizard@1.7.0':
     dependencies:
-      consola: 3.4.0
+      consola: 3.4.2
       diff: 7.0.0
       execa: 7.2.0
       global-directory: 4.0.1
@@ -9622,17 +9608,18 @@ snapshots:
       - utf-8-validate
       - vue
 
-  '@nuxt/image@1.9.0(db0@0.2.4(better-sqlite3@11.8.1))(magicast@0.3.5)(rollup@4.34.4)':
+  '@nuxt/image@1.10.0(db0@0.2.4(better-sqlite3@11.8.1))(magicast@0.3.5)':
     dependencies:
-      '@nuxt/kit': 3.15.1(magicast@0.3.5)(rollup@4.34.4)
-      consola: 3.3.3
+      '@nuxt/kit': 3.17.3(magicast@0.3.5)
+      consola: 3.4.2
       defu: 6.1.4
-      h3: 1.13.0
+      h3: 1.15.1
       image-meta: 0.2.1
-      ohash: 1.1.4
-      pathe: 2.0.0
-      std-env: 3.8.0
-      ufo: 1.5.4
+      knitwork: 1.2.0
+      ohash: 2.0.11
+      pathe: 2.0.3
+      std-env: 3.9.0
+      ufo: 1.6.1
     optionalDependencies:
       ipx: 2.1.0(db0@0.2.4(better-sqlite3@11.8.1))
     transitivePeerDependencies:
@@ -9654,9 +9641,6 @@ snapshots:
       - idb-keyval
       - ioredis
       - magicast
-      - rollup
-      - supports-color
-      - uWebSockets.js
       - uploadthing
 
   '@nuxt/kit@3.13.2(magicast@0.3.5)(rollup@4.34.4)':
@@ -9797,14 +9781,14 @@ snapshots:
   '@nuxt/schema@3.13.2(rollup@4.34.4)':
     dependencies:
       compatx: 0.1.8
-      consola: 3.4.0
+      consola: 3.4.2
       defu: 6.1.4
       hookable: 5.5.3
       pathe: 1.1.2
       pkg-types: 1.3.1
       scule: 1.3.0
-      std-env: 3.8.0
-      ufo: 1.5.4
+      std-env: 3.9.0
+      ufo: 1.6.1
       uncrypto: 0.1.3
       unimport: 3.14.6(rollup@4.34.4)
       untyped: 1.5.2
@@ -9816,14 +9800,14 @@ snapshots:
     dependencies:
       c12: 2.0.4(magicast@0.3.5)
       compatx: 0.1.8
-      consola: 3.4.0
+      consola: 3.4.2
       defu: 6.1.4
       hookable: 5.5.3
       pathe: 1.1.2
       pkg-types: 1.3.1
       scule: 1.3.0
-      std-env: 3.8.0
-      ufo: 1.5.4
+      std-env: 3.9.0
+      ufo: 1.6.1
       uncrypto: 0.1.3
       unimport: 3.14.6(rollup@4.34.4)
       untyped: 1.5.2
@@ -9834,10 +9818,10 @@ snapshots:
 
   '@nuxt/schema@3.15.1':
     dependencies:
-      consola: 3.4.0
+      consola: 3.4.2
       defu: 6.1.4
       pathe: 2.0.3
-      std-env: 3.8.0
+      std-env: 3.9.0
 
   '@nuxt/schema@3.15.4':
     dependencies:
@@ -12368,7 +12352,7 @@ snapshots:
 
   citty@0.1.6:
     dependencies:
-      consola: 3.4.0
+      consola: 3.4.2
 
   cjs-module-lexer@1.4.0: {}
 
@@ -12553,8 +12537,6 @@ snapshots:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-
-  crossws@0.2.4: {}
 
   crossws@0.3.1:
     dependencies:
@@ -13358,7 +13340,7 @@ snapshots:
       enhanced-resolve: 5.17.1
       mlly: 1.7.4
       pathe: 1.1.2
-      ufo: 1.5.4
+      ufo: 1.6.1
 
   fake-indexeddb@6.0.0: {}
 
@@ -13575,7 +13557,7 @@ snapshots:
   giget@1.2.3:
     dependencies:
       citty: 0.1.6
-      consola: 3.4.0
+      consola: 3.4.2
       defu: 6.1.4
       node-fetch-native: 1.6.4
       nypm: 0.3.12
@@ -13586,7 +13568,7 @@ snapshots:
   giget@1.2.4:
     dependencies:
       citty: 0.1.6
-      consola: 3.4.0
+      consola: 3.4.2
       defu: 6.1.4
       node-fetch-native: 1.6.6
       nypm: 0.5.2
@@ -13698,21 +13680,6 @@ snapshots:
   h3-compression@0.3.2(h3@1.15.1):
     dependencies:
       h3: 1.15.1
-
-  h3@1.13.0:
-    dependencies:
-      cookie-es: 1.2.2
-      crossws: 0.2.4
-      defu: 6.1.4
-      destr: 2.0.3
-      iron-webcrypto: 1.2.1
-      ohash: 1.1.4
-      radix3: 1.1.2
-      ufo: 1.5.4
-      uncrypto: 0.1.3
-      unenv: 1.10.0
-    transitivePeerDependencies:
-      - uWebSockets.js
 
   h3@1.13.1:
     dependencies:
@@ -14095,18 +14062,18 @@ snapshots:
     dependencies:
       '@fastify/accept-negotiator': 1.1.0
       citty: 0.1.6
-      consola: 3.4.0
+      consola: 3.4.2
       defu: 6.1.4
-      destr: 2.0.3
+      destr: 2.0.5
       etag: 1.8.1
-      h3: 1.13.1
+      h3: 1.15.1
       image-meta: 0.2.1
       listhen: 1.9.0
       ofetch: 1.4.1
       pathe: 1.1.2
       sharp: 0.32.6
       svgo: 3.3.2
-      ufo: 1.5.4
+      ufo: 1.6.1
       unstorage: 1.14.4(db0@0.2.4(better-sqlite3@11.8.1))
       xss: 1.0.15
     transitivePeerDependencies:
@@ -15423,7 +15390,7 @@ snapshots:
       acorn: 8.14.0
       pathe: 1.1.2
       pkg-types: 1.3.1
-      ufo: 1.5.4
+      ufo: 1.6.1
 
   mlly@1.7.4:
     dependencies:
@@ -15684,8 +15651,8 @@ snapshots:
       '@nuxt/kit': 3.15.4(magicast@0.3.5)(rollup@4.34.4)
       pkg-types: 1.3.1
       site-config-stack: 3.1.0(vue@3.5.13(typescript@5.7.3))
-      std-env: 3.8.0
-      ufo: 1.5.4
+      std-env: 3.9.0
+      ufo: 1.6.1
     transitivePeerDependencies:
       - magicast
       - rollup
@@ -15698,7 +15665,7 @@ snapshots:
       pkg-types: 2.1.0
       site-config-stack: 3.1.9(vue@3.5.13(typescript@5.7.3))
       std-env: 3.9.0
-      ufo: 1.5.4
+      ufo: 1.6.1
     transitivePeerDependencies:
       - magicast
       - vue
@@ -15887,20 +15854,20 @@ snapshots:
   nypm@0.3.12:
     dependencies:
       citty: 0.1.6
-      consola: 3.4.0
+      consola: 3.4.2
       execa: 8.0.1
       pathe: 1.1.2
       pkg-types: 1.3.1
-      ufo: 1.5.4
+      ufo: 1.6.1
 
   nypm@0.4.1:
     dependencies:
       citty: 0.1.6
-      consola: 3.4.0
+      consola: 3.4.2
       pathe: 1.1.2
       pkg-types: 1.3.1
       tinyexec: 0.3.2
-      ufo: 1.5.4
+      ufo: 1.6.1
 
   nypm@0.5.2:
     dependencies:
@@ -16135,8 +16102,6 @@ snapshots:
   path-type@5.0.0: {}
 
   pathe@1.1.2: {}
-
-  pathe@2.0.0: {}
 
   pathe@2.0.1: {}
 
@@ -17108,12 +17073,12 @@ snapshots:
 
   site-config-stack@3.1.0(vue@3.5.13(typescript@5.7.3)):
     dependencies:
-      ufo: 1.5.4
+      ufo: 1.6.1
       vue: 3.5.13(typescript@5.7.3)
 
   site-config-stack@3.1.9(vue@3.5.13(typescript@5.7.3)):
     dependencies:
-      ufo: 1.5.4
+      ufo: 1.6.1
       vue: 3.5.13(typescript@5.7.3)
 
   skin-tone@2.0.0:
@@ -18041,7 +18006,7 @@ snapshots:
   untun@0.1.3:
     dependencies:
       citty: 0.1.6
-      consola: 3.4.0
+      consola: 3.4.2
       pathe: 1.1.2
 
   untyped@1.5.1:
