@@ -29,7 +29,7 @@
     "@vueuse/core": "12.7.0",
     "autoprefixer": "10.4.21",
     "mitt": "3.0.1",
-    "pinia": "3.0.1",
+    "pinia": "3.0.2",
     "postcss": "8.5.3",
     "postcss-nested": "7.0.2",
     "storybook": "8.6.13",
