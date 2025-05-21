@@ -39,8 +39,8 @@ importers:
         specifier: 9.2.1
         version: 9.2.1(eslint@9.27.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.41.0)(typescript@5.7.3)(vue@3.5.14(typescript@5.7.3))
       '@nuxtjs/tailwindcss':
-        specifier: 6.13.1
-        version: 6.13.1(magicast@0.3.5)(rollup@4.41.0)
+        specifier: 6.14.0
+        version: 6.14.0(magicast@0.3.5)
       '@pinia/nuxt':
         specifier: 0.10.1
         version: 0.10.1(magicast@0.3.5)(pinia@3.0.2(typescript@5.7.3)(vue@3.5.14(typescript@5.7.3)))(rollup@4.41.0)
@@ -87,8 +87,8 @@ importers:
         specifier: 9.2.1
         version: 9.2.1(eslint@9.27.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.41.0)(typescript@5.7.3)(vue@3.5.14(typescript@5.7.3))
       '@nuxtjs/tailwindcss':
-        specifier: 6.13.1
-        version: 6.13.1(magicast@0.3.5)(rollup@4.41.0)
+        specifier: 6.14.0
+        version: 6.14.0(magicast@0.3.5)
       '@pinia/nuxt':
         specifier: 0.10.1
         version: 0.10.1(magicast@0.3.5)(pinia@3.0.2(typescript@5.7.3)(vue@3.5.14(typescript@5.7.3)))(rollup@4.41.0)
@@ -156,8 +156,8 @@ importers:
         specifier: 7.2.10
         version: 7.2.10(h3@1.15.3)(magicast@0.3.5)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.14(typescript@5.7.3))
       '@nuxtjs/tailwindcss':
-        specifier: 6.13.1
-        version: 6.13.1(magicast@0.3.5)(rollup@4.41.0)
+        specifier: 6.14.0
+        version: 6.14.0(magicast@0.3.5)
       '@pinia/nuxt':
         specifier: 0.10.1
         version: 0.10.1(magicast@0.3.5)(pinia@3.0.2(typescript@5.7.3)(vue@3.5.14(typescript@5.7.3)))(rollup@4.41.0)
@@ -1780,8 +1780,8 @@ packages:
     resolution: {integrity: sha512-7w1Ys2XIE/QVTJn5dbt2p/hrmDoGO9Ay1S3o6LI5M/MDRzKPvnXi5ByRUcc7Sfa3LUpLad5/w4IOQ4lyxhq9Hw==}
     engines: {node: '>=18.0.0'}
 
-  '@nuxtjs/tailwindcss@6.13.1':
-    resolution: {integrity: sha512-atL2SaPsxLfMTlXUQvr1UpDYdz6ocNOhH35H+t7M++g4r79QiQScJ7XuyyMR9AyBN19lkPA3nw7NXxazXmYxlA==}
+  '@nuxtjs/tailwindcss@6.14.0':
+    resolution: {integrity: sha512-30RyDK++LrUVRgc2A85MktGWIZoRQgeQKjE4CjjD64OXNozyl+4ScHnnYgqVToMM6Ch2ZG2W4wV2J0EN6F0zkQ==}
 
   '@oxc-parser/binding-darwin-arm64@0.71.0':
     resolution: {integrity: sha512-7R7TuHWL2hZ8BbRdxXlVJTE0os7TM6LL2EX2OkIz41B3421JeIU+2YH+IV55spIUy5E5ynesLk0IdpSSPVZ25Q==}
@@ -6582,11 +6582,6 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -7053,9 +7048,6 @@ packages:
   pathe@2.0.0:
     resolution: {integrity: sha512-G7n4uhtk9qJt2hlD+UFfsIGY854wpF+zs2bUbQ3CQEUTcn7v25LRsrmurOxTo4bJgjE4qkyshd9ldsEuY9M6xg==}
 
-  pathe@2.0.1:
-    resolution: {integrity: sha512-6jpjMpOth5S9ITVu5clZ7NOgHNsv5vRQdheL9ztp2vZmM6fRbLvyua1tiBIL4lk8SAe3ARzeXEly6siXCjDHDw==}
-
   pathe@2.0.2:
     resolution: {integrity: sha512-15Ztpk+nov8DR524R4BF7uEuzESgzUEAV4Ah7CUMNGXdE5ELuvxElxGXndBl32vMSsWa1jpNf22Z+Er3sKwq+w==}
 
@@ -7366,10 +7358,6 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       postcss: ^8.2.9
-
-  postcss@8.4.49:
-    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.3:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
@@ -8615,10 +8603,6 @@ packages:
 
   unplugin@2.0.0-beta.1:
     resolution: {integrity: sha512-2qzQo5LN2DmUZXkWDHvGKLF5BP0WN+KthD6aPnPJ8plRBIjv4lh5O07eYcSxgO2znNw9s4MNhEO1sB+JDllDbQ==}
-    engines: {node: '>=18.12.0'}
-
-  unplugin@2.1.2:
-    resolution: {integrity: sha512-Q3LU0e4zxKfRko1wMV2HmP8lB9KWislY7hxXpxd+lGx0PRInE4vhMBVEZwpdVYHvtqzhSrzuIfErsob6bQfCzw==}
     engines: {node: '>=18.12.0'}
 
   unplugin@2.2.0:
@@ -9885,7 +9869,7 @@ snapshots:
       '@babel/parser': 7.27.2
       '@babel/template': 7.27.2
       '@babel/types': 7.27.1
-      debug: 4.4.0
+      debug: 4.4.1
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -9919,13 +9903,13 @@ snapshots:
 
   '@colors/colors@1.6.0': {}
 
-  '@csstools/selector-resolve-nested@3.0.0(postcss-selector-parser@7.0.0)':
+  '@csstools/selector-resolve-nested@3.0.0(postcss-selector-parser@7.1.0)':
     dependencies:
-      postcss-selector-parser: 7.0.0
+      postcss-selector-parser: 7.1.0
 
-  '@csstools/selector-specificity@5.0.0(postcss-selector-parser@7.0.0)':
+  '@csstools/selector-specificity@5.0.0(postcss-selector-parser@7.1.0)':
     dependencies:
-      postcss-selector-parser: 7.0.0
+      postcss-selector-parser: 7.1.0
 
   '@dabh/diagnostics@2.0.3':
     dependencies:
@@ -10645,7 +10629,7 @@ snapshots:
 
   '@koa/router@12.0.1':
     dependencies:
-      debug: 4.4.0
+      debug: 4.4.1
       http-errors: 2.0.0
       koa-compose: 4.1.0
       methods: 1.1.2
@@ -11523,25 +11507,26 @@ snapshots:
       - vite
       - vue
 
-  '@nuxtjs/tailwindcss@6.13.1(magicast@0.3.5)(rollup@4.41.0)':
+  '@nuxtjs/tailwindcss@6.14.0(magicast@0.3.5)':
     dependencies:
-      '@nuxt/kit': 3.15.1(magicast@0.3.5)(rollup@4.41.0)
-      autoprefixer: 10.4.21(postcss@8.4.49)
-      c12: 2.0.1(magicast@0.3.5)
-      consola: 3.3.3
+      '@nuxt/kit': 3.17.4(magicast@0.3.5)
+      autoprefixer: 10.4.21(postcss@8.5.3)
+      c12: 3.0.4(magicast@0.3.5)
+      consola: 3.4.2
       defu: 6.1.4
-      h3: 1.13.1
+      h3: 1.15.3
       klona: 2.0.6
-      pathe: 2.0.1
-      postcss: 8.4.49
-      postcss-nesting: 13.0.1(postcss@8.4.49)
+      ohash: 2.0.11
+      pathe: 2.0.3
+      pkg-types: 2.1.0
+      postcss: 8.5.3
+      postcss-nesting: 13.0.1(postcss@8.5.3)
       tailwind-config-viewer: 2.0.4(tailwindcss@3.4.17)
       tailwindcss: 3.4.17
-      ufo: 1.5.4
+      ufo: 1.6.1
       unctx: 2.4.1
     transitivePeerDependencies:
       - magicast
-      - rollup
       - supports-color
       - ts-node
 
@@ -12550,7 +12535,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 5.62.0
       '@typescript-eslint/visitor-keys': 5.62.0
-      debug: 4.4.0
+      debug: 4.4.1
       globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.7.2
@@ -13694,13 +13679,13 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
   agent-base@7.1.1:
     dependencies:
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
@@ -13873,16 +13858,6 @@ snapshots:
   asynckit@0.4.0: {}
 
   at-least-node@1.0.0: {}
-
-  autoprefixer@10.4.21(postcss@8.4.49):
-    dependencies:
-      browserslist: 4.24.4
-      caniuse-lite: 1.0.30001718
-      fraction.js: 4.3.7
-      normalize-range: 0.1.2
-      picocolors: 1.1.1
-      postcss: 8.4.49
-      postcss-value-parser: 4.2.0
 
   autoprefixer@10.4.21(postcss@8.5.3):
     dependencies:
@@ -14518,6 +14493,7 @@ snapshots:
   crossws@0.3.1:
     dependencies:
       uncrypto: 0.1.3
+    optional: true
 
   crossws@0.3.3:
     dependencies:
@@ -15871,6 +15847,7 @@ snapshots:
       ufo: 1.5.4
       uncrypto: 0.1.3
       unenv: 1.10.0
+    optional: true
 
   h3@1.15.1:
     dependencies:
@@ -16145,14 +16122,14 @@ snapshots:
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@7.0.5:
     dependencies:
       agent-base: 7.1.1
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
@@ -16938,7 +16915,7 @@ snapshots:
 
   koa-send@5.0.1:
     dependencies:
-      debug: 4.4.0
+      debug: 4.4.1
       http-errors: 1.8.1
       resolve-path: 1.4.0
     transitivePeerDependencies:
@@ -16958,7 +16935,7 @@ snapshots:
       content-disposition: 0.5.4
       content-type: 1.0.5
       cookies: 0.9.1
-      debug: 4.4.0
+      debug: 4.4.1
       delegates: 1.0.0
       depd: 2.0.0
       destroy: 1.2.0
@@ -16986,7 +16963,7 @@ snapshots:
   lambda-local@2.2.0:
     dependencies:
       commander: 10.0.1
-      dotenv: 16.4.7
+      dotenv: 16.5.0
       winston: 3.17.0
 
   launch-editor@2.10.0:
@@ -17641,8 +17618,6 @@ snapshots:
       any-promise: 1.3.0
       object-assign: 4.1.1
       thenify-all: 1.6.0
-
-  nanoid@3.3.7: {}
 
   nanoid@3.3.8: {}
 
@@ -18402,8 +18377,6 @@ snapshots:
 
   pathe@2.0.0: {}
 
-  pathe@2.0.1: {}
-
   pathe@2.0.2: {}
 
   pathe@2.0.3: {}
@@ -18492,7 +18465,7 @@ snapshots:
   postcss-calc@10.1.1(postcss@8.5.3):
     dependencies:
       postcss: 8.5.3
-      postcss-selector-parser: 7.0.0
+      postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
 
   postcss-colormin@7.0.3(postcss@8.5.3):
@@ -18594,12 +18567,12 @@ snapshots:
       postcss: 8.5.3
       postcss-selector-parser: 7.0.0
 
-  postcss-nesting@13.0.1(postcss@8.4.49):
+  postcss-nesting@13.0.1(postcss@8.5.3):
     dependencies:
-      '@csstools/selector-resolve-nested': 3.0.0(postcss-selector-parser@7.0.0)
-      '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.0.0)
-      postcss: 8.4.49
-      postcss-selector-parser: 7.0.0
+      '@csstools/selector-resolve-nested': 3.0.0(postcss-selector-parser@7.1.0)
+      '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.1.0)
+      postcss: 8.5.3
+      postcss-selector-parser: 7.1.0
 
   postcss-normalize-charset@7.0.1(postcss@8.5.3):
     dependencies:
@@ -18697,12 +18670,6 @@ snapshots:
       is-url-superb: 4.0.0
       postcss: 8.5.3
       quote-unquote: 1.0.0
-
-  postcss@8.4.49:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
 
   postcss@8.5.3:
     dependencies:
@@ -20003,10 +19970,10 @@ snapshots:
 
   unctx@2.4.1:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
       estree-walker: 3.0.3
       magic-string: 0.30.17
-      unplugin: 2.1.2
+      unplugin: 2.3.4
 
   undici-types@6.21.0: {}
 
@@ -20445,11 +20412,6 @@ snapshots:
       webpack-virtual-modules: 0.6.2
 
   unplugin@2.0.0-beta.1:
-    dependencies:
-      acorn: 8.14.0
-      webpack-virtual-modules: 0.6.2
-
-  unplugin@2.1.2:
     dependencies:
       acorn: 8.14.0
       webpack-virtual-modules: 0.6.2
@@ -20957,7 +20919,7 @@ snapshots:
     dependencies:
       chalk: 2.4.2
       commander: 3.0.2
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
