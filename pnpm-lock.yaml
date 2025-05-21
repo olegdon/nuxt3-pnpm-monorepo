@@ -94,7 +94,7 @@ importers:
         version: 0.10.1(magicast@0.3.5)(pinia@3.0.2(typescript@5.7.3)(vue@3.5.14(typescript@5.7.3)))(rollup@4.41.0)
       '@tailwindcss/container-queries':
         specifier: 0.1.1
-        version: 0.1.1(tailwindcss@3.4.17)
+        version: 0.1.1(tailwindcss@4.1.7)
       '@vue-macros/nuxt':
         specifier: 1.13.5
         version: 1.13.5(@vueuse/core@12.7.0(typescript@5.7.3))(magicast@0.3.5)(nuxt@3.17.4(@parcel/watcher@2.4.1)(@types/node@22.15.19)(better-sqlite3@11.8.1)(db0@0.3.2(better-sqlite3@11.8.1))(eslint@9.27.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.41.0)(terser@5.31.6)(typescript@5.7.3)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue-tsc@2.2.10(typescript@5.7.3))(yaml@2.8.0))(rollup@4.41.0)(typescript@5.7.3)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue-tsc@2.2.10(typescript@5.7.3))(vue@3.5.14(typescript@5.7.3))
@@ -163,7 +163,7 @@ importers:
         version: 0.10.1(magicast@0.3.5)(pinia@3.0.2(typescript@5.7.3)(vue@3.5.14(typescript@5.7.3)))(rollup@4.41.0)
       '@tailwindcss/container-queries':
         specifier: 0.1.1
-        version: 0.1.1(tailwindcss@3.4.17)
+        version: 0.1.1(tailwindcss@4.1.7)
       '@vue-macros/nuxt':
         specifier: 1.13.5
         version: 1.13.5(@vueuse/core@12.7.0(typescript@5.7.3))(magicast@0.3.5)(nuxt@3.17.4(@parcel/watcher@2.4.1)(@types/node@22.15.19)(better-sqlite3@11.8.1)(db0@0.3.2(better-sqlite3@11.8.1))(eslint@9.27.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.41.0)(terser@5.31.6)(typescript@5.7.3)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue-tsc@2.2.10(typescript@5.7.3))(yaml@2.8.0))(rollup@4.41.0)(typescript@5.7.3)(vite@6.3.5(@types/node@22.15.19)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue-tsc@2.2.10(typescript@5.7.3))(vue@3.5.14(typescript@5.7.3))
@@ -235,7 +235,7 @@ importers:
         version: 8.6.13(storybook@8.6.13)(vite@6.2.0(@types/node@22.15.19)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.13(typescript@5.7.3))
       '@tailwindcss/container-queries':
         specifier: 0.1.1
-        version: 0.1.1(tailwindcss@3.4.17)
+        version: 0.1.1(tailwindcss@4.1.7)
       '@types/node':
         specifier: 22.15.19
         version: 22.15.19
@@ -276,8 +276,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.13)
       tailwindcss:
-        specifier: 3.4.17
-        version: 3.4.17
+        specifier: 4.1.7
+        version: 4.1.7
       unplugin-auto-import:
         specifier: 19.1.1
         version: 19.1.1(@nuxt/kit@3.17.4(magicast@0.3.5))(@vueuse/core@12.7.0(typescript@5.7.3))
@@ -8192,6 +8192,9 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  tailwindcss@4.1.7:
+    resolution: {integrity: sha512-kr1o/ErIdNhTz8uzAYL7TpaUuzKIE6QPQ4qmSdxnoX/lo+5wmUHQA6h3L5yIqEImSRnAAURDirLu/BgiXGPAhg==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -12349,9 +12352,9 @@ snapshots:
     dependencies:
       '@swc/counter': 0.1.3
 
-  '@tailwindcss/container-queries@0.1.1(tailwindcss@3.4.17)':
+  '@tailwindcss/container-queries@0.1.1(tailwindcss@4.1.7)':
     dependencies:
-      tailwindcss: 3.4.17
+      tailwindcss: 4.1.7
 
   '@testing-library/dom@10.4.0':
     dependencies:
@@ -19783,6 +19786,8 @@ snapshots:
       sucrase: 3.35.0
     transitivePeerDependencies:
       - ts-node
+
+  tailwindcss@4.1.7: {}
 
   tapable@2.2.1: {}
 
