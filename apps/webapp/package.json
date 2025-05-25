@@ -20,7 +20,7 @@
     "@nuxt/content": "3.2.2",
     "@nuxt/devtools": "2.1.1",
     "@nuxt/image": "1.9.0",
-    "@nuxt/test-utils": "3.17.0",
+    "@nuxt/test-utils": "3.19.1",
     "@nuxtjs/color-mode": "3.5.2",
     "@nuxtjs/i18n": "9.2.1",
     "@nuxtjs/sitemap": "7.2.10",
