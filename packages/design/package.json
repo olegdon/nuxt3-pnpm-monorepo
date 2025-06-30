@@ -22,7 +22,7 @@
     "@storybook/vue3": "8.6.13",
     "@storybook/vue3-vite": "8.6.13",
     "@tailwindcss/container-queries": "0.1.1",
-    "@types/node": "22.15.19",
+    "@types/node": "22.15.34",
     "@vitejs/plugin-vue": "5.2.4",
     "@vue/tsconfig": "0.7.0",
     "@vueuse/components": "12.8.2",
