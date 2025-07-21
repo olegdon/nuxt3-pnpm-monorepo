@@ -36,8 +36,8 @@ importers:
         specifier: 2.6.2
         version: 2.6.2(vite@7.0.5(@types/node@22.16.5)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
       '@nuxtjs/i18n':
-        specifier: 10.0.0
-        version: 10.0.0(@netlify/blobs@9.1.2)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))
+        specifier: 10.0.1
+        version: 10.0.1(@netlify/blobs@9.1.2)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))
       '@nuxtjs/tailwindcss':
         specifier: 6.14.0
         version: 6.14.0(magicast@0.3.5)
@@ -84,8 +84,8 @@ importers:
         specifier: 3.19.2
         version: 3.19.2(@jest/globals@29.7.0)(magicast@0.3.5)(playwright-core@1.46.1)(typescript@5.8.3)(vitest@3.2.4(@types/debug@4.1.12)(@types/node@22.16.5)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))
       '@nuxtjs/i18n':
-        specifier: 10.0.0
-        version: 10.0.0(@netlify/blobs@9.1.2)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))
+        specifier: 10.0.1
+        version: 10.0.1(@netlify/blobs@9.1.2)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))
       '@nuxtjs/tailwindcss':
         specifier: 6.14.0
         version: 6.14.0(magicast@0.3.5)
@@ -150,8 +150,8 @@ importers:
         specifier: 3.5.2
         version: 3.5.2(magicast@0.3.5)(rollup@4.45.1)
       '@nuxtjs/i18n':
-        specifier: 10.0.0
-        version: 10.0.0(@netlify/blobs@9.1.2)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))
+        specifier: 10.0.1
+        version: 10.0.1(@netlify/blobs@9.1.2)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))
       '@nuxtjs/sitemap':
         specifier: 7.4.3
         version: 7.4.3(h3@1.15.3)(magicast@0.3.5)(vite@7.0.5(@types/node@22.16.5)(jiti@2.4.2)(terser@5.31.6)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
@@ -1526,8 +1526,8 @@ packages:
   '@nuxtjs/color-mode@3.5.2':
     resolution: {integrity: sha512-cC6RfgZh3guHBMLLjrBB2Uti5eUoGM9KyauOaYS9ETmxNWBMTvpgjvSiSJp1OFljIXPIqVTJ3xtJpSNZiO3ZaA==}
 
-  '@nuxtjs/i18n@10.0.0':
-    resolution: {integrity: sha512-QPpbFn55LpXEynOSxBxQoIaxUE8Y/W8rFazfsY/A2eVXJCgKIwz8lsEf54+GEj59kO1jZc4InACeFr7Q2suOYA==}
+  '@nuxtjs/i18n@10.0.1':
+    resolution: {integrity: sha512-tYsPNtQAGc9aZtynoOe0vhe4b8geogCv4KBHJow8A8oCGn5P4CSqXJr35y/bEsxqSQ7pdFshvFo2Iz/9fLPA6A==}
     engines: {node: '>=20.11.1'}
 
   '@nuxtjs/mdc@0.17.0':
@@ -9804,8 +9804,8 @@ snapshots:
 
   '@intlify/bundle-utils@10.0.1(vue-i18n@11.1.9(vue@3.5.17(typescript@5.8.3)))':
     dependencies:
-      '@intlify/message-compiler': 11.1.9
-      '@intlify/shared': 11.1.9
+      '@intlify/message-compiler': 11.1.10
+      '@intlify/shared': 11.1.10
       acorn: 8.15.0
       escodegen: 2.1.0
       estree-walker: 2.0.2
@@ -9871,8 +9871,8 @@ snapshots:
     dependencies:
       '@eslint-community/eslint-utils': 4.7.0(eslint@9.31.0(jiti@2.4.2))
       '@intlify/bundle-utils': 10.0.1(vue-i18n@11.1.9(vue@3.5.17(typescript@5.8.3)))
-      '@intlify/shared': 11.1.9
-      '@intlify/vue-i18n-extensions': 8.0.0(@intlify/shared@11.1.9)(vue-i18n@11.1.9(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))
+      '@intlify/shared': 11.1.10
+      '@intlify/vue-i18n-extensions': 8.0.0(@intlify/shared@11.1.10)(vue-i18n@11.1.9(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))
       '@rollup/pluginutils': 5.1.4(rollup@4.45.1)
       '@typescript-eslint/scope-manager': 8.37.0
       '@typescript-eslint/typescript-estree': 8.37.0(typescript@5.8.3)
@@ -9895,12 +9895,12 @@ snapshots:
 
   '@intlify/utils@0.13.0': {}
 
-  '@intlify/vue-i18n-extensions@8.0.0(@intlify/shared@11.1.9)(vue-i18n@11.1.9(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))':
+  '@intlify/vue-i18n-extensions@8.0.0(@intlify/shared@11.1.10)(vue-i18n@11.1.9(vue@3.5.17(typescript@5.8.3)))(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       '@babel/parser': 7.28.0
       '@vue/compiler-dom': 3.5.17
     optionalDependencies:
-      '@intlify/shared': 11.1.9
+      '@intlify/shared': 11.1.10
       vue: 3.5.17(typescript@5.8.3)
       vue-i18n: 11.1.9(vue@3.5.17(typescript@5.8.3))
 
@@ -10816,11 +10816,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxtjs/i18n@10.0.0(@netlify/blobs@9.1.2)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))':
+  '@nuxtjs/i18n@10.0.1(@netlify/blobs@9.1.2)(db0@0.3.2(better-sqlite3@11.10.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       '@intlify/core': 11.1.10
       '@intlify/h3': 0.6.1
-      '@intlify/shared': 11.1.9
+      '@intlify/shared': 11.1.10
       '@intlify/unplugin-vue-i18n': 6.0.8(eslint@9.31.0(jiti@2.4.2))(rollup@4.45.1)(typescript@5.8.3)(vue-i18n@11.1.9(vue@3.5.17(typescript@5.8.3)))
       '@intlify/utils': 0.13.0
       '@miyaneee/rollup-plugin-json5': 1.2.0(rollup@4.45.1)
@@ -18992,7 +18992,7 @@ snapshots:
   unimport@4.0.0(rollup@4.45.1):
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.45.1)
-      acorn: 8.14.0
+      acorn: 8.15.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
       fast-glob: 3.3.3
