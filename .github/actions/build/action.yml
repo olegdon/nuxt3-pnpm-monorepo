@@ -3,7 +3,7 @@ runs:
   using: composite
   steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
@@ -11,7 +11,7 @@ runs:
     - name: Install pnpm
       shell: bash
       run: npm install -g pnpm
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: Get pnpm store directory
       id: pnpm-cache
       shell: bash
