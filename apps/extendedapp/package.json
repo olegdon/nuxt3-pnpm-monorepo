@@ -22,7 +22,7 @@
     "@nuxtjs/tailwindcss": "6.14.0",
     "@pinia/nuxt": "0.11.2",
     "@vue-macros/nuxt": "1.13.5",
-    "@vueuse/nuxt": "13.6.0",
+    "@vueuse/nuxt": "13.7.0",
     "autoprefixer": "10.4.21",
     "nuxt": "4.0.3",
     "pinia": "3.0.3",
