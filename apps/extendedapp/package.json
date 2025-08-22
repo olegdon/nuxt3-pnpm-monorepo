@@ -17,7 +17,7 @@
     "@devstdo/design": "workspace:*",
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
-    "@nuxt/devtools": "2.6.2",
+    "@nuxt/devtools": "2.6.3",
     "@nuxtjs/i18n": "10.0.6",
     "@nuxtjs/tailwindcss": "6.14.0",
     "@pinia/nuxt": "0.11.2",
