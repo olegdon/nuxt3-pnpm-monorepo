@@ -24,7 +24,7 @@
     "@vue-macros/nuxt": "1.13.5",
     "@vueuse/nuxt": "13.9.0",
     "autoprefixer": "10.4.21",
-    "nuxt": "4.1.0",
+    "nuxt": "4.1.1",
     "pinia": "3.0.3",
     "vitest": "3.2.4"
   }
