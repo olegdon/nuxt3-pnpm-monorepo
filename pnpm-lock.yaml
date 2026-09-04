@@ -3882,14 +3882,6 @@ packages:
   '@volar/source-map@2.4.28':
     resolution: {integrity: sha512-yX2BDBqJkRXfKw8my8VarTyjv48QwxdJtvRgUpNE5erCsgEUdI2DsLbpa+rOQVAJYshY99szEcRDmyHbF10ggQ==}
 
-  '@volar/typescript@2.4.15':
-    resolution: {integrity: sha512-2aZ8i0cqPGjXb4BhkMsPYDkkuc2ZQ6yOpqwAuNwUoncELqoy5fRgOQtLR9gB0g902iS0NAkvpIzs27geVyVdPg==}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
   '@volar/typescript@2.4.23':
     resolution: {integrity: sha512-lAB5zJghWxVPqfcStmAP1ZqQacMpe90UrP5RJ3arDyrhy4aCUQqmxPPLB2PWDKugvylmO41ljK7vZ+t6INMTag==}
     peerDependencies:
@@ -4353,6 +4345,14 @@ packages:
 
   '@vue/language-core@2.2.12':
     resolution: {integrity: sha512-IsGljWbKGU1MZpBPN+BvPAdr55YPkj2nB/TBNGNC32Vy2qLG25DYu/NBN2vNtZqdRbTRjaoYrahLrToim2NanA==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@vue/language-core@3.0.6':
+    resolution: {integrity: sha512-e2RRzYWm+qGm8apUHW1wA5RQxzNhkqbbKdbKhiDUcmMrNAZGyM8aTiL3UrTqkaFI5s7wJRGGrp4u3jgusuBp2A==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
@@ -7093,6 +7093,9 @@ packages:
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
+
+  magic-string@0.30.18:
+    resolution: {integrity: sha512-yi8swmWbO17qHhwIBNeeZxTceJMeBvWJaId6dyvTSOwTipqeHhMhOrz6513r1sOKnpvQ7zkhlG8tPrpilwTxHQ==}
 
   magic-string@0.30.19:
     resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
@@ -11784,7 +11787,7 @@ snapshots:
       h3: 1.15.4
       jiti: 2.6.1
       knitwork: 1.2.0
-      magic-string: 0.30.21
+      magic-string: 0.30.19
       mlly: 1.8.0
       mocked-exports: 0.1.1
       pathe: 2.0.3
@@ -11842,7 +11845,7 @@ snapshots:
       h3: 1.15.4
       jiti: 2.6.1
       knitwork: 1.2.0
-      magic-string: 0.30.21
+      magic-string: 0.30.19
       mlly: 1.8.0
       mocked-exports: 0.1.1
       pathe: 2.0.3
@@ -14225,14 +14228,6 @@ snapshots:
 
   '@volar/source-map@2.4.28': {}
 
-  '@volar/typescript@2.4.15(typescript@5.9.3)':
-    dependencies:
-      '@volar/language-core': 2.4.15
-      path-browserify: 1.0.1
-      vscode-uri: 3.1.0
-    optionalDependencies:
-      typescript: 5.9.3
-
   '@volar/typescript@2.4.23(typescript@5.9.3)':
     dependencies:
       '@volar/language-core': 2.4.23
@@ -14624,7 +14619,7 @@ snapshots:
       '@vue-macros/common': 1.16.1(vue@3.5.22(typescript@5.9.3))
       '@vue/compiler-core': 3.5.17
       '@vue/shared': 3.5.22
-      magic-string: 0.30.21
+      magic-string: 0.30.19
       unplugin: 1.16.1
       vue: 3.5.22(typescript@5.9.3)
 
@@ -14859,7 +14854,7 @@ snapshots:
 
   '@vue/compiler-sfc@3.5.17':
     dependencies:
-      '@babel/parser': 7.28.3
+      '@babel/parser': 7.28.4
       '@vue/compiler-core': 3.5.17
       '@vue/compiler-dom': 3.5.17
       '@vue/compiler-ssr': 3.5.17
@@ -14883,7 +14878,7 @@ snapshots:
 
   '@vue/compiler-sfc@3.5.19':
     dependencies:
-      '@babel/parser': 7.28.4
+      '@babel/parser': 7.28.3
       '@vue/compiler-core': 3.5.19
       '@vue/compiler-dom': 3.5.19
       '@vue/compiler-ssr': 3.5.19
@@ -15010,6 +15005,19 @@ snapshots:
       minimatch: 9.0.5
       muggle-string: 0.4.1
       path-browserify: 1.0.1
+    optionalDependencies:
+      typescript: 5.9.3
+
+  '@vue/language-core@3.0.6(typescript@5.9.3)':
+    dependencies:
+      '@volar/language-core': 2.4.23
+      '@vue/compiler-dom': 3.5.22
+      '@vue/compiler-vue2': 2.7.16
+      '@vue/shared': 3.5.22
+      alien-signals: 2.0.5
+      muggle-string: 0.4.1
+      path-browserify: 1.0.1
+      picomatch: 4.0.3
     optionalDependencies:
       typescript: 5.9.3
 
@@ -18262,6 +18270,10 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  magic-string@0.30.18:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.5
+
   magic-string@0.30.19:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -18870,7 +18882,7 @@ snapshots:
       klona: 2.0.6
       knitwork: 1.2.0
       listhen: 1.9.0
-      magic-string: 0.30.21
+      magic-string: 0.30.19
       magicast: 0.3.5
       mime: 4.1.0
       mlly: 1.8.0
@@ -21261,7 +21273,7 @@ snapshots:
     dependencies:
       acorn: 8.14.1
       estree-walker: 3.0.3
-      magic-string: 0.30.21
+      magic-string: 0.30.17
       unplugin: 2.3.4
 
   undici-types@6.21.0: {}
@@ -21376,7 +21388,7 @@ snapshots:
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
       local-pkg: 1.1.2
-      magic-string: 0.30.21
+      magic-string: 0.30.19
       mlly: 1.8.0
       pathe: 2.0.3
       picomatch: 4.0.3
@@ -21564,12 +21576,12 @@ snapshots:
     dependencies:
       '@vue-macros/common': 3.0.0-beta.16(vue@3.5.22(typescript@5.9.3))
       '@vue/compiler-sfc': 3.5.22
-      '@vue/language-core': 3.1.1(typescript@5.9.3)
+      '@vue/language-core': 3.0.6(typescript@5.9.3)
       ast-walker-scope: 0.8.1
       chokidar: 4.0.3
       json5: 2.2.3
       local-pkg: 1.1.2
-      magic-string: 0.30.21
+      magic-string: 0.30.19
       mlly: 1.8.0
       muggle-string: 0.4.1
       pathe: 2.0.3
@@ -21887,7 +21899,7 @@ snapshots:
     dependencies:
       estree-walker: 3.0.3
       exsolve: 1.0.7
-      magic-string: 0.30.21
+      magic-string: 0.30.18
       pathe: 2.0.3
       source-map-js: 1.2.1
       vite: 7.1.9(@types/node@22.18.9)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.31.6)(yaml@2.8.1)
@@ -21897,7 +21909,7 @@ snapshots:
     dependencies:
       estree-walker: 3.0.3
       exsolve: 1.0.7
-      magic-string: 0.30.21
+      magic-string: 0.30.18
       pathe: 2.0.3
       source-map-js: 1.2.1
       vite: 7.1.9(@types/node@22.18.9)(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.31.6)(yaml@2.8.1)
@@ -22046,7 +22058,7 @@ snapshots:
 
   vue-component-meta@2.2.10(typescript@5.9.3):
     dependencies:
-      '@volar/typescript': 2.4.15(typescript@5.9.3)
+      '@volar/typescript': 2.4.23(typescript@5.9.3)
       '@vue/language-core': 2.2.10(typescript@5.9.3)
       path-browserify: 1.0.1
       vue-component-type-helpers: 2.2.10
