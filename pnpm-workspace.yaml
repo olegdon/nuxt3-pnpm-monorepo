@@ -2,6 +2,7 @@ packages:
   - packages/*
   - apps/*
 overrides:
+  '@nuxtjs/tailwindcss>tailwindcss': 4.3.3
   better-sqlite3: 12.10.0
 allowBuilds:
   '@swc/core': true

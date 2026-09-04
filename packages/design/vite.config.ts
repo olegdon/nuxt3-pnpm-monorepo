@@ -7,33 +7,38 @@ import { defineConfig } from 'vite'
 import fontLoader from './utils/fontLoader'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [
-    vue(),
-    VueMacros(),
-    AutoImport({
-      imports: ['vue', 'vue-router', '@vueuse/core', 'pinia'],
-      dirs: [
-        './stubs',
-        './stores',
-        './composables',
-        '../services/composables',
-        '../services/utils',
-      ],
-      vueTemplate: true,
-    }),
-    Components({
-      dirs: ['./components'],
-      extensions: ['vue', 'ts'],
-      include: [/\.vue$/, /\.vue\?vue/, /\.stories\.ts$/],
-      dts: true,
-      directoryAsNamespace: true,
-    }),
-    fontLoader.fontVitePlugin,
-  ],
-  resolve: {
-    alias: {
-      '~': fileURLToPath(new URL('./', import.meta.url)),
+export default defineConfig(async () => {
+  const { default: tailwindcss } = await import('@tailwindcss/vite')
+
+  return {
+    plugins: [
+      vue(),
+      VueMacros(),
+      AutoImport({
+        imports: ['vue', 'vue-router', '@vueuse/core', 'pinia'],
+        dirs: [
+          './stubs',
+          './stores',
+          './composables',
+          '../services/composables',
+          '../services/utils',
+        ],
+        vueTemplate: true,
+      }),
+      Components({
+        dirs: ['./components'],
+        extensions: ['vue', 'ts'],
+        include: [/\.vue$/, /\.vue\?vue/, /\.stories\.ts$/],
+        dts: true,
+        directoryAsNamespace: true,
+      }),
+      fontLoader.fontVitePlugin,
+      tailwindcss(),
+    ],
+    resolve: {
+      alias: {
+        '~': fileURLToPath(new URL('./', import.meta.url)),
+      },
     },
-  },
+  }
 })
