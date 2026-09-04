@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config "../tailwind.config.ts";
+@import "tailwindcss";
 
 /* base transition */
 .v-enter-active,
@@ -52,6 +51,10 @@
     background: linear-gradient(90deg, #18181b, #18181b), linear-gradient(90deg, #00dc82, #1de0b1, #36e4da);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
+  }
+
+  .dark .highlight-nuxt {
+    background: linear-gradient(90deg, #18181b, #18181b), linear-gradient(90deg, #00dc82, #1de0b1, #36e4da);
   }
 }
 

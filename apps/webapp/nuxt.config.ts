@@ -48,6 +48,9 @@ export default defineNuxtConfig({
       '@nuxtjs/tailwindcss',
       {
         cssPath: '../../packages/design/styles/webapp.css',
+        experimental: {
+          tailwindcss4: true,
+        },
         config: {
           content: [
             '../../packages/design/components/base/**/*.vue',
