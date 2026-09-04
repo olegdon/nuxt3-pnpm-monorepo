@@ -3,12 +3,12 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.18.3",
+  "packageManager": "pnpm@11.25.0",
   "author": "Oleg Don <info@devstdo.com>",
   "keywords": [],
   "main": "index.js",
   "engines": {
-    "node": ">=20 <=22"
+    "node": ">=20 <=24"
   },
   "scripts": {
     "lint": "eslint .",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "5.4.1",
+    "better-sqlite3": "12.10.0",
     "concurrently": "9.2.1",
     "eslint": "9.38.0",
     "typescript": "5.9.3"
