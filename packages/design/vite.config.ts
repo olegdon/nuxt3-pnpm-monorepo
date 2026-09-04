@@ -1,5 +1,4 @@
 import { fileURLToPath, URL } from 'node:url'
-import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -31,7 +30,6 @@ export default defineConfig({
       directoryAsNamespace: true,
     }),
     fontLoader.fontVitePlugin,
-    tailwindcss(),
   ],
   resolve: {
     alias: {

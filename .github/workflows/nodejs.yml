@@ -12,7 +12,7 @@ jobs:
   linting:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: ./.github/actions/build
       - name: All lining
         run: pnpm lint
@@ -20,7 +20,7 @@ jobs:
   webapp:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: ./.github/actions/build
       - name: Webapp Build
         run: pnpm webapp build
@@ -28,7 +28,7 @@ jobs:
   design:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: ./.github/actions/build
       - name: Install Playwright
         run: npx playwright install
