@@ -5,8 +5,8 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  better-sqlite3: 12.10.0
   '@nuxtjs/tailwindcss>tailwindcss': 4.3.3
+  better-sqlite3: 12.10.0
 
 importers:
 
