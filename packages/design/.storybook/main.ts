@@ -3,7 +3,6 @@ export default {
   addons: [
     '@storybook/addon-docs',
     'storybook-addon-vue-slots',
-    'storybook-dark-mode',
   ],
   core: {
     disableTelemetry: true,

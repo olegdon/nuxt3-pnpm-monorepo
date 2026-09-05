@@ -279,9 +279,6 @@ importers:
       storybook-addon-vue-slots:
         specifier: 0.9.29
         version: 0.9.29(@storybook/blocks@7.6.24(@types/react@19.2.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@10.0.0))(@storybook/components@7.6.24(@types/react@19.2.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/core-events@7.6.24)(@storybook/preview-api@7.6.24)(@storybook/theming@7.6.24(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@storybook/types@7.6.24)(@storybook/vue3@10.6.0(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.5.22(typescript@5.9.3))
-      storybook-dark-mode:
-        specifier: 4.0.2
-        version: 4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3
@@ -3271,21 +3268,11 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
 
-  '@storybook/components@8.2.9':
-    resolution: {integrity: sha512-OkkcZ/f/6o3GdFEEK9ZHKIGHWUHmavZUYs5xaSgU64bOrA2aqEFtfeWWitZYTv3Euhk8MVLWfyEMDfez0AlvDg==}
-    peerDependencies:
-      storybook: ^8.2.9
-
   '@storybook/core-common@7.6.24':
     resolution: {integrity: sha512-wgCarEWFodQaJ76uLxwHoxtGwQPymzoZHFLE2fJm04y6sdotUgattUUY5FxbhSveImj6VTLDDzstkzxxz166UQ==}
 
   '@storybook/core-events@7.6.24':
     resolution: {integrity: sha512-9mhV2grn+IYljRJSqoTec3XhoMs1Va0aYWe937siX3Fj77F6zuXmEugrJstgVYsPAgcqH9eBSCM7rwdmbo7LVg==}
-
-  '@storybook/core-events@8.2.9':
-    resolution: {integrity: sha512-8VS6k2ySAYdG2VBWxb66Vko7Pqd429TIdkrw1/u2N0IPsvPsdbs3WaOTyxOMB1e39YUCpD/IZUOPdxX2lC3g4w==}
-    peerDependencies:
-      storybook: ^8.2.9
 
   '@storybook/csf@0.1.13':
     resolution: {integrity: sha512-7xOOwCLGB3ebM87eemep89MYRFTko+D8qE7EdAAq74lgdqRR5cOUtYWJLjO2dLtP94nqoOdHJo6MdLLKzg412Q==}
@@ -3296,13 +3283,6 @@ packages:
   '@storybook/global@5.0.0':
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
 
-  '@storybook/icons@1.2.10':
-    resolution: {integrity: sha512-310apKdDcjbbX2VSLWPwhEwAgjxTzVagrwucVZIdGPErwiAppX8KvBuWZgPo+rQLVrtH8S+pw1dbUwjcE6d7og==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-
   '@storybook/icons@2.1.0':
     resolution: {integrity: sha512-Fxh9vYpX9bQqFeHRiY8h2ApeRGDzRSMLwJwNZ/AIRqnyOKHxRKL+yFe+ctEkVJmuptRE9u1Hrn8ZZNHyfDKKNg==}
     peerDependencies:
@@ -3310,11 +3290,6 @@ packages:
 
   '@storybook/manager-api@7.6.24':
     resolution: {integrity: sha512-afscdt9zc8wx+s0VzIlvU+pc5X6KTGHOUj6sLlJDCzzrRG2MBNdSfwOuivlC93jV+yPdgdgW46jaK4meC9jLdg==}
-
-  '@storybook/manager-api@8.2.9':
-    resolution: {integrity: sha512-mkYvUlfqDw+0WbxIynh5TcrotmoXlumEsOA4+45zuNea8XpEgj5cNBUCnmfEO6yQ85swqkS8YYbMpg1cZyu/Vw==}
-    peerDependencies:
-      storybook: ^8.2.9
 
   '@storybook/node-logger@7.6.24':
     resolution: {integrity: sha512-6+kuX0q4VH1Orf0Yda+dj6svMIjtN5FbXU9lgKWbO5OY2xeyEtr/+3phxfTnfd6N89kYxDx8JGeP5ldzx2alxg==}
@@ -3351,11 +3326,6 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-
-  '@storybook/theming@8.2.9':
-    resolution: {integrity: sha512-OL0NFvowPX85N5zIYdgeKKaFm7V4Vgtci093vL3cDZT13LGH6GuEzJKkUFGuUGNPFlJc+EgTj0o6PYKrOLyQ6w==}
-    peerDependencies:
-      storybook: ^8.2.9
 
   '@storybook/types@7.6.24':
     resolution: {integrity: sha512-XOhLmXnQprLRIs4dT9kmWHgETEiGdOjbJ9ULQGoKR72wia47Buzrjwg5Ym3BTQEzrtLpo/8FD3NS+Migldp+XA==}
@@ -9019,9 +8989,6 @@ packages:
       react-dom:
         optional: true
 
-  storybook-dark-mode@4.0.2:
-    resolution: {integrity: sha512-zjcwwQ01R5t1VsakA6alc2JDIRVtavryW8J3E3eKLDIlAMcvsgtpxlelWkZs2cuNspk6Z10XzhQVrUWtYc3F0w==}
-
   storybook@10.6.0:
     resolution: {integrity: sha512-H48X6AURAFTpfN2zEux6vNesee5Oq8Gxj1IanYmblPZ218sfKSeyyerF1NC7GD7BrruoC8L4/cU0zII4y+d6zw==}
     hasBin: true
@@ -13706,10 +13673,6 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
 
-  '@storybook/components@8.2.9(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))':
-    dependencies:
-      storybook: 10.6.0(@types/react@19.2.18)(react@18.3.1)
-
   '@storybook/core-common@7.6.24(supports-color@10.0.0)':
     dependencies:
       '@storybook/core-events': 7.6.24
@@ -13743,10 +13706,6 @@ snapshots:
     dependencies:
       ts-dedent: 2.2.0
 
-  '@storybook/core-events@8.2.9(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))':
-    dependencies:
-      storybook: 10.6.0(@types/react@19.2.18)(react@18.3.1)
-
   '@storybook/csf@0.1.13':
     dependencies:
       type-fest: 2.19.0
@@ -13765,11 +13724,6 @@ snapshots:
       - supports-color
 
   '@storybook/global@5.0.0': {}
-
-  '@storybook/icons@1.2.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
 
   '@storybook/icons@2.1.0(react@18.3.1)':
     dependencies:
@@ -13794,10 +13748,6 @@ snapshots:
     transitivePeerDependencies:
       - react
       - react-dom
-
-  '@storybook/manager-api@8.2.9(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))':
-    dependencies:
-      storybook: 10.6.0(@types/react@19.2.18)(react@18.3.1)
 
   '@storybook/node-logger@7.6.24': {}
 
@@ -13870,10 +13820,6 @@ snapshots:
       memoizerific: 1.11.3
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@storybook/theming@8.2.9(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))':
-    dependencies:
-      storybook: 10.6.0(@types/react@19.2.18)(react@18.3.1)
 
   '@storybook/types@7.6.24':
     dependencies:
@@ -21370,21 +21316,6 @@ snapshots:
     optionalDependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  storybook-dark-mode@4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1)):
-    dependencies:
-      '@storybook/components': 8.2.9(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))
-      '@storybook/core-events': 8.2.9(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))
-      '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@storybook/manager-api': 8.2.9(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))
-      '@storybook/theming': 8.2.9(storybook@10.6.0(@types/react@19.2.18)(react@18.3.1))
-      fast-deep-equal: 3.1.3
-      memoizerific: 1.11.3
-    transitivePeerDependencies:
-      - react
-      - react-dom
-      - storybook
 
   storybook@10.6.0(@types/react@19.2.18)(react@18.3.1):
     dependencies:
