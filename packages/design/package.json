@@ -28,7 +28,7 @@
     "@vueuse/core": "13.9.0",
     "autoprefixer": "10.4.21",
     "mitt": "3.0.1",
-    "pinia": "3.0.3",
+    "pinia": "3.0.4",
     "playwright": "1.46.1",
     "postcss": "8.5.6",
     "postcss-nested": "7.0.2",
