@@ -36,6 +36,6 @@
     "nuxt-gtag": "4.0.0",
     "nuxt-schema-org": "5.0.10",
     "pinia": "3.0.4",
-    "vitest": "3.2.4"
+    "vitest": "3.2.7"
   }
 }
