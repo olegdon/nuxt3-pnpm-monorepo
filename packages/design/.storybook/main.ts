@@ -1,11 +1,8 @@
 export default {
   stories: ['../stories/**/*.mdx', '../stories/**/*.ts'],
   addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
+    '@storybook/addon-docs',
     'storybook-addon-vue-slots',
-    'storybook-dark-mode',
   ],
   core: {
     disableTelemetry: true,

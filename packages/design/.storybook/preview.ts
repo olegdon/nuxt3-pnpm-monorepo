@@ -47,12 +47,6 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
-    darkMode: {
-      classTarget: 'html',
-      darkClass: 'dark',
-      lightClass: 'light',
-      stylePreview: true,
-    },
   },
   decorators: [
     (story, meta) => {
