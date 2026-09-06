@@ -1,4 +1,4 @@
-import { useFontLoader } from './useFontLoader'
+import { useFontLoader } from './useFontLoader.ts'
 
 export default function (options: any) {
   return useFontLoader(
