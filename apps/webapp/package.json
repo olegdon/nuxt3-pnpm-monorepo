@@ -18,7 +18,7 @@
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
     "@nuxt/content": "3.16.0",
-    "@nuxt/devtools": "2.6.5",
+    "@nuxt/devtools": "2.7.0",
     "@nuxt/image": "1.11.0",
     "@nuxt/test-utils": "3.19.2",
     "@nuxtjs/color-mode": "3.5.2",
@@ -36,6 +36,6 @@
     "nuxt-gtag": "4.0.0",
     "nuxt-schema-org": "5.0.10",
     "pinia": "3.0.4",
-    "vitest": "3.2.4"
+    "vitest": "3.2.7"
   }
 }
