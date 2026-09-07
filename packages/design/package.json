@@ -26,7 +26,7 @@
     "@vue/tsconfig": "0.9.1",
     "@vueuse/components": "14.4.0",
     "@vueuse/core": "14.4.0",
-    "autoprefixer": "10.4.21",
+    "autoprefixer": "10.5.5",
     "mitt": "3.0.1",
     "pinia": "3.0.4",
     "playwright": "1.46.1",
