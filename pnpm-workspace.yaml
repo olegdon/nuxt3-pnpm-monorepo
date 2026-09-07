@@ -3,7 +3,7 @@ packages:
   - apps/*
 overrides:
   '@nuxtjs/tailwindcss>tailwindcss': 4.3.3
-  better-sqlite3: 12.10.0
+  better-sqlite3: 12.11.1
 allowBuilds:
   '@parcel/watcher': true
   '@swc/core': true
