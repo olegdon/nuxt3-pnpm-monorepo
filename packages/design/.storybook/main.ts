@@ -1,8 +1,8 @@
 export default {
+  staticDirs: ['../public'],
   stories: ['../stories/**/*.mdx', '../stories/**/*.ts'],
   addons: [
     '@storybook/addon-docs',
-    'storybook-addon-vue-slots',
   ],
   core: {
     disableTelemetry: true,

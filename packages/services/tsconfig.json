@@ -1,7 +1,7 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "types": ["node", "./types/window"]
+    "types": ["node"]
   },
   "include": [
     "./**/*.ts",

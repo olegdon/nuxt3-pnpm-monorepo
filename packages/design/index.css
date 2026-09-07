@@ -1,3 +1,7 @@
-@import './styles/webapp.css';
-@import './styles/singleapp.css';
-@import './styles/extendedapp.css';
+@import 'tailwindcss';
+@config './tailwind.config.ts';
+@source './components';
+@source './stories';
+@import './styles/common.css';
+@import './styles/fonts.css';
+@custom-variant dark (&:where(.dark, .dark *));

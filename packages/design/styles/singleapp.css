@@ -1,9 +1,7 @@
-@import "./webapp.css";
-
-@layer utilities {
-
-}
-
-@layer components {
-
-}
+@import "tailwindcss";
+@config "../configs/tailwind.singleapp.config.ts";
+@source "../components/base";
+@source "../../../apps/singleapp";
+@custom-variant dark (&:where(.dark, .dark *));
+@import "./common.css";
+@import "./fonts.css";

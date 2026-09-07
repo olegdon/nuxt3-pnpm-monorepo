@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { to } = withDefaults(
+const props = withDefaults(
   defineProps<{
     to?: any
     interactive?: boolean
@@ -17,7 +17,7 @@ const { to } = withDefaults(
   },
 )
 
-const component = to ? resolveComponent('NuxtLinkLocale') : 'div'
+const component = computed(() => props.to ? resolveComponent('NuxtLinkLocale') : 'div')
 </script>
 
 <template>

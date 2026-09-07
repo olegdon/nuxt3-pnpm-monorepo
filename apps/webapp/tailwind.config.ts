@@ -1,5 +1,3 @@
-import containerPlugin from '@tailwindcss/container-queries'
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -10,5 +8,4 @@ export default {
     './nuxt.config.{js,ts}',
     './app.vue',
   ],
-  plugins: [containerPlugin],
 }

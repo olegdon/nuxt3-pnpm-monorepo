@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import containerPlugin from '@tailwindcss/container-queries'
 import extendedappConfig from './configs/tailwind.extendedapp.config'
 import singleappConfig from './configs/tailwind.singleapp.config'
 import webappConfig from './configs/tailwind.webapp.config'
@@ -17,6 +16,5 @@ export default {
   darkMode: 'class',
   presets: [webappConfig, singleappConfig, extendedappConfig],
   plugins: [
-    containerPlugin,
   ],
 } satisfies Config

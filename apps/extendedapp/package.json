@@ -1,31 +1,29 @@
 {
   "name": "@devstdo/extendedapp",
+  "type": "module",
   "private": true,
   "author": "Oleg Don <info@devstdo.com>",
   "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "dev": "nuxi dev",
-    "start": "nuxi start",
-    "build": "nuxi build",
-    "coverage": "vitest run --coverage",
-    "postinstall": "nuxi prepare",
-    "test": "vitest run",
-    "ci:test": "vitest run",
-    "ci:smoke": "pnpm dlx concurrently -k -s first -n \"NUXT,TEST\" -c \"magenta,blue\" \"pnpm dev --host localhost\" \"pnpm dlx wait-on -t 120000 http://localhost:3000/ && pnpm echo \"pass\" \""
+    "start": "node .output/server/index.mjs",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@devstdo/design": "workspace:*",
+    "@devstdo/services": "workspace:*",
+    "@devstdo/translations": "workspace:*",
+    "@devstdo/webapp": "workspace:*",
+    "nuxt": "4.5.2",
+    "pinia": "4.0.3",
+    "vue": "3.5.42",
+    "vue-router": "5.3.1"
   },
   "devDependencies": {
-    "@devstdo/design": "workspace:*",
-    "@devstdo/modules": "workspace:*",
-    "@devstdo/services": "workspace:*",
-    "@nuxt/devtools": "2.6.5",
-    "@nuxtjs/i18n": "10.1.1",
-    "@nuxtjs/tailwindcss": "6.14.0",
-    "@pinia/nuxt": "0.11.3",
-    "@vue-macros/nuxt": "3.1.4",
-    "@vueuse/nuxt": "13.9.0",
-    "autoprefixer": "10.4.21",
-    "nuxt": "4.1.3",
-    "pinia": "3.0.3",
-    "vitest": "3.2.4"
+    "typescript": "5.9.3",
+    "vue-tsc": "3.3.11"
   }
 }

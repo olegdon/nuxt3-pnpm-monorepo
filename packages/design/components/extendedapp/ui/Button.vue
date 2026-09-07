@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { variant } = withDefaults(
+const props = withDefaults(
   defineProps<{
     variant?: 'default' | 'ghost' | 'alternative'
   }>(),
@@ -14,7 +14,7 @@ const variantStyles: Record<string, string> = {
 </script>
 
 <template>
-  <BaseUiButton class="p-3 transition-colors" :class="variantStyles[variant]">
+  <BaseUiButton class="p-3 transition-colors" :class="variantStyles[props.variant]">
     <!-- @slot button content -->
     <slot />
   </BaseUiButton>

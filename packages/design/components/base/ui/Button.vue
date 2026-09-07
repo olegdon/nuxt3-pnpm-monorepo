@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { to, variant, size } = withDefaults(
+const props = withDefaults(
   defineProps<{
     to?: any
     target?: string
@@ -15,7 +15,7 @@ const { to, variant, size } = withDefaults(
   },
 )
 
-const component = (to) ? resolveComponent('NuxtLinkLocale') : 'button'
+const component = computed(() => props.to ? resolveComponent('NuxtLinkLocale') : 'button')
 
 const variantStyles = {
   default: 'bg-blue-500 hover:bg-blue-600 text-white rounded-md',

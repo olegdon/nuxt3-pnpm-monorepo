@@ -1,15 +1,7 @@
-<script setup lang="ts">
-function logClientBoundaryError(error: any) {
-  // eslint-disable-next-line no-console
-  console.debug(error)
-  clearError(error)
-}
-</script>
-
 <template>
-  <NuxtLayout>
-    <NuxtErrorBoundary @error="logClientBoundaryError">
+  <SiteShell>
+    <NuxtLayout>
       <NuxtPage />
-    </NuxtErrorBoundary>
-  </NuxtLayout>
+    </NuxtLayout>
+  </SiteShell>
 </template>

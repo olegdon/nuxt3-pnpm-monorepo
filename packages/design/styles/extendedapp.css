@@ -1,9 +1,9 @@
-@import "./webapp.css";
-
-@layer utilities {
-
-}
-
-@layer components {
-
-}
+@import "tailwindcss";
+@config "../configs/tailwind.extendedapp.config.ts";
+@source "../components/base";
+@source "../components/extendedapp";
+@source "../../../apps/extendedapp";
+@custom-variant dark (&:where(.dark, .dark *));
+@import "./common.css";
+@import "./fonts.css";
+@source "../../../apps/webapp";

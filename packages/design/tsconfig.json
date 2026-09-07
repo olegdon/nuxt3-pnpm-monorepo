@@ -8,7 +8,6 @@
     },
     "types": [
       "node",
-      "unplugin-vue-macros/macros-global",
       "unplugin-icons/types/vue",
       "vue-i18n"
     ],
