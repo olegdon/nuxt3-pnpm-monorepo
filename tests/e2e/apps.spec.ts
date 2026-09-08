@@ -48,8 +48,14 @@ for (const [i, app] of ['webapp', 'singleapp', 'extendedapp'].entries()) {
     await expect(feature.getByRole('textbox')).toHaveCSS('border-top-width', '1px')
     if (app === 'singleapp')
       await expect(page.locator('main')).toHaveCSS('font-family', /Niramit/)
-    if (app === 'extendedapp')
-      await expect(feature.getByRole('button')).toHaveCSS('background-color', 'rgb(42, 80, 202)')
+    if (app === 'extendedapp') {
+      const button = feature.getByRole('button', { name: 'Say hello' })
+
+      await feature.getByRole('heading').hover()
+      await expect(button).toHaveCSS('background-color', 'rgb(42, 80, 202)')
+      await button.hover()
+      await expect(button).toHaveCSS('background-color', 'rgb(35, 59, 133)')
+    }
     expect(errors).toEqual([])
   })
 }
