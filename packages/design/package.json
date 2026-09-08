@@ -35,7 +35,7 @@
     "storybook": "10.6.0",
     "storybook-addon-vue-slots": "0.9.29",
     "tailwindcss": "4.3.3",
-    "unplugin-auto-import": "20.2.0",
+    "unplugin-auto-import": "20.3.0",
     "unplugin-icons": "22.5.0",
     "unplugin-vue-components": "29.2.0",
     "unplugin-vue-macros": "2.14.5",
