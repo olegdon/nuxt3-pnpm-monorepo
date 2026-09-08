@@ -7,7 +7,7 @@ import { useTwLoader } from './loaders/tw'
 function deepMerge(obj1: any, obj2: any) {
   const output = { ...obj1 }
   for (const key in obj2) {
-    if (typeof obj2[key] === 'object' && obj2[key] !== null && Object.prototype.hasOwnProperty.call(obj1, key) && typeof obj1[key] === 'object')
+    if (typeof obj2[key] === 'object' && obj2[key] !== null && Object.hasOwn(obj1, key) && typeof obj1[key] === 'object')
       output[key] = deepMerge(obj1[key], obj2[key])
 
     else
