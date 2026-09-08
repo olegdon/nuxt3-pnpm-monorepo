@@ -1,5 +1,18 @@
 minimumReleaseAgeExcludePrune: true
+
 trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - '@oxc-resolver/binding-darwin-arm64@4.2.0'
+  - '@oxc-resolver/binding-darwin-x64@4.2.0'
+  - '@oxc-resolver/binding-linux-arm64-gnu@4.2.0'
+  - '@oxc-resolver/binding-linux-x64-gnu@4.2.0'
+  - '@oxc-resolver/binding-win32-arm64-msvc@4.2.0'
+  - '@oxc-resolver/binding-win32-x64-msvc@4.2.0'
+  - '@swc/core@1.7.22'
+  - chokidar@4.0.3
+  - semver@6.3.1
+
 shellEmulator: true
 
 packages:
