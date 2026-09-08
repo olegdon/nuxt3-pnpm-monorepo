@@ -19,7 +19,7 @@ Nuxt app files use the Nuxt 4 `app/` layout. Server routes, public assets and Co
 
 ## Development
 
-Use Node 24 (at least 24.11) or Node 22 (at least 22.19), and pnpm **11.25.0**, matching `packageManager` and CI. After changing Node versions, reinstall dependencies so native binaries match your runtime.
+Use Node 24 (at least 24.11) or Node 22 (at least 22.19), and pnpm **12.3.4**, matching `packageManager` and CI. After changing Node versions, reinstall dependencies so native binaries match your runtime.
 
 ```sh
 pnpm install --frozen-lockfile
