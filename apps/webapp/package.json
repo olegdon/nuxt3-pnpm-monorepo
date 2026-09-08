@@ -19,7 +19,7 @@
     "@devstdo/services": "workspace:*",
     "@nuxt/content": "3.16.0",
     "@nuxt/devtools": "3.4.2",
-    "@nuxt/image": "1.11.0",
+    "@nuxt/image": "2.1.0",
     "@nuxt/test-utils": "3.23.0",
     "@nuxtjs/color-mode": "3.5.2",
     "@nuxtjs/i18n": "10.6.0",
