@@ -28,7 +28,7 @@
     "@playwright/test": "1.63.0",
     "@types/node": "24.13.3",
     "better-sqlite3": "12.11.1",
-    "concurrently": "9.2.4",
+    "concurrently": "10.0.5",
     "eslint": "9.39.5",
     "typescript": "5.9.3"
   }
