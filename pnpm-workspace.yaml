@@ -1,7 +1,6 @@
 minimumReleaseAgeExcludePrune: true
 
 trustPolicy: no-downgrade
-
 trustPolicyExclude:
   - '@oxc-resolver/binding-darwin-arm64@4.2.0'
   - '@oxc-resolver/binding-darwin-x64@4.2.0'
