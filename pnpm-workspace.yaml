@@ -1,9 +1,15 @@
+minimumReleaseAgeExcludePrune: true
+trustPolicy: no-downgrade
+shellEmulator: true
+
 packages:
   - packages/*
   - apps/*
+
 overrides:
   '@nuxtjs/tailwindcss>tailwindcss': 4.3.3
   better-sqlite3: 12.11.1
+
 allowBuilds:
   '@parcel/watcher': true
   '@swc/core': true
