@@ -1,211 +1,63 @@
-// https://nuxt.com/docs/getting-started/configuration
-// https://nuxt.com/docs/api/nuxt-config
-import tailwindConfig from '@devstdo/design/configs/tailwind.webapp.config'
+import process from 'node:process'
+import { fileURLToPath } from 'node:url'
+
+const resolve = (path: string) => fileURLToPath(new URL(path, import.meta.url))
 
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
-  compatibilityDate: '2024-04-03',
-  alias: {
-    '@devstdo/webapp': './',
-  },
-  site: {
-    name: 'webapp',
-  },
-  devtools: { enabled: true },
-  sourcemap: false,
+  compatibilityDate: '2026-09-06',
   telemetry: false,
-  experimental: {
-    componentIslands: 'local',
-  },
-  features: {
-    inlineStyles: true,
-  },
-  imports: {
-    dirs: [
-      'stores',
-      '../../packages/design/stores',
-      '../../packages/services/composables',
-      '../../packages/services/utils',
-    ],
-  },
+  devtools: { enabled: true },
+  srcDir: '.',
   modules: [
-    [
-      '@pinia/nuxt',
-      {
-        autoImports: ['defineStore', 'acceptHMRUpdate'],
-      },
-    ],
-    [
-      '@nuxtjs/color-mode',
-      {
-        classSuffix: '',
-      },
-    ],
+    '@pinia/nuxt',
+    '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
-    [
-      '@nuxtjs/tailwindcss',
-      {
-        cssPath: '../../packages/design/styles/webapp.css',
-        experimental: {
-          tailwindcss4: true,
-        },
-        config: {
-          content: [
-            '../../packages/design/components/base/**/*.vue',
-            '../../packages/design/styles/*.css',
-            './components/**/*.{js,vue,ts}',
-            './layouts/**/*.vue',
-            './pages/**/*.vue',
-            './nuxt.config.{js,ts}',
-            './app.vue',
-          ],
-          theme: tailwindConfig.theme,
-        },
-        viewer: false,
-      },
-    ],
     '@vueuse/nuxt',
-    '@vue-macros/nuxt',
     '@devstdo/design/nuxt.ts',
+    '@nuxt/image',
     'nuxt-schema-org',
-    [
-      '@nuxtjs/sitemap',
-      {
-        // disables chunking, only need to be used with very large sitemaps ( over 50000 entries )
-        // @see https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
-        sitemaps: false,
-        credits: false,
-        cacheMaxAgeSeconds: 60 * 60 * 12,
-        xslColumns: [
-          { label: 'URL', width: '50%' },
-          { label: 'Priority', width: '10%', select: 'sitemap:priority' },
-          { label: 'Changefreq', width: '20%', select: 'sitemap:changefreq' },
-          { label: 'Last Updated', width: '20%', select: 'concat(substring(sitemap:lastmod,0,11),concat(\' \', substring(sitemap:lastmod,12,5)),concat(\' \', substring(sitemap:lastmod,20,6)))' },
-        ],
-      },
-    ],
-    [
-      '@devstdo/modules/custom-fonts/nuxt.ts',
-      {
-        fonts: [],
-        settings: {
-          display: 'swap',
-          rel: 'prefetch',
-          assetDir: '_nuxt',
-        },
-      },
-    ],
-    [
-      '@nuxt/image',
-      {
-        ipx: {},
-        presets: {},
-      },
-    ],
-    '@nuxt/content',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
     'nuxt-gtag',
+    '@devstdo/modules/nuxt-app-module-config/module.ts',
+    '@devstdo/modules/optional-content.ts',
   ],
-  routeRules: {
-    '/**': {
-      headers: {
-        'cache-control': 'public, s-maxage=300, stale-while-revalidate=86400, stale-if-error=86400',
-      },
-    },
-  },
-  typescript: {
-    shim: false,
-  },
+  imports: { dirs: [resolve('../../packages/services/composables'), resolve('../../packages/services/utils')] },
+  monorepoDesign: { app: 'webapp' },
+  colorMode: { classSuffix: '' },
   i18n: {
     detectBrowserLanguage: false,
-    customRoutes: 'page',
+    strategy: 'no_prefix',
     defaultLocale: 'en-US',
-    baseUrl: 'https://www.nuxtmonostarter.com',
-    lazy: true,
     langDir: '../../../packages/translations',
     vueI18n: '../../../packages/translations/vue-i18n.ts',
-    locales: [
-      {
-        code: 'en-US',
-        files: ['en-US.ts'],
-        language: 'en-US',
-      },
-    ],
+    locales: [{ code: 'en-US', language: 'en-US', files: ['en-US.ts', 'singleapp/en-US.ts'] }],
+  },
+  site: {
+    name: 'NuxtMonoStarter',
+    url: 'https://www.nuxtmonostarter.com',
+    indexable: process.env.NUXT_PUBLIC_SITE_INDEXABLE === 'true',
+  },
+  schemaOrg: { reactive: true },
+  sitemap: { credits: false, sitemaps: false },
+  robots: {
+    credits: false,
+    groups: [{
+      userAgent: ['GPTBot', 'Google-Extended', 'CCBot', 'magpie-crawler', 'ia_archiver', 'omgili', 'omgilibot', 'Baiduspider', 'AhrefsBot', 'DataForSeoBot', 'Yeti', 'SemrushBot', 'sentibot', 'MJ12bot', 'Bytespider', 'SirdataBot', 'LCC', 'TurnitinBot', 'BLEXBot', 'dotbot', 'ImagesiftBot'],
+      disallow: ['/'],
+    }],
   },
   gtag: {
-    enabled: true,
-    id: 'G-6T72QZDMP9',
+    enabled: process.env.NODE_ENV === 'production',
+    id: '',
+    initMode: 'manual',
+    config: { send_page_view: false },
+    initCommands: [['consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }]],
   },
-  build: {
-    transpile: [
-      '@devstdo/services',
-    ],
-  },
-  runtimeConfig: {
-    public: {
-      app: {
-        project: {
-          name: 'www.nuxtmonostarter.com',
-        },
-        layout: {},
-      },
-    },
-  },
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          chunkFileNames: '_nuxt/od-[hash].js',
-          assetFileNames: '_nuxt/od-[hash][extname]',
-          entryFileNames: '_nuxt/od-[hash].js',
-          // target ~250KB per chunk in an ideal world
-          experimentalMinChunkSize: 250 * 1024,
-          manualChunks: (id: string) => {
-            // need to avoid touching non-entrypoint files, otherwise it breaks bundling
-            // because imports aren't idempotent
-            if (
-              !id.includes('node_modules')
-              && !id.startsWith('virtual:')
-              && !id.includes('src')
-              && !id.includes('assets')
-            ) {
-              // merge pages/foo/* as chunk-pg-foo, pages/bar/* as chunk-pg-bar, etc.
-              // then merge pages/* (ie no subfolder) into chunk-pg-misc
-              if (id.includes('pages')) {
-                const parts = id.split('/')
-                const folderIndex = parts.indexOf('pages')
-                if (folderIndex + 2 < parts.length) {
-                  const pageGroup = parts[folderIndex + 1]
-                  return `chunk-pg-${pageGroup}`
-                }
-                return 'chunk-pg-misc'
-              }
-            }
-          },
-        },
-      },
-    },
-  },
-  hooks: {
-    'build:manifest': (manifest) => {
-      // removes css files from output to avoid blocking requests
-      // this is a workaround for https://github.com/nuxt/nuxt/issues/21821
-      Object.keys(manifest).forEach((key: string) => {
-        if (manifest[key].css)
-          manifest[key].css = []
-      })
-
-      for (const key in manifest) {
-        manifest[key].dynamicImports = []
-
-        const file = manifest[key]
-        if (file.assets) {
-          file.assets = file.assets.filter(
-            assetName => !/.+\.gif|jpe?g|png|svg$/.test(assetName),
-          )
-        }
-      }
-    },
-  },
+  runtimeConfig: { public: {
+    site: { url: 'https://www.nuxtmonostarter.com', name: 'NuxtMonoStarter', indexable: false },
+    analyticsEnabled: false,
+    gtag: { id: '' },
+  } },
+  typescript: { strict: true },
 })

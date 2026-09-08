@@ -1,5 +1,7 @@
+import { acceptHMRUpdate, defineStore } from 'pinia'
+
 export const useAuthStore = defineStore('AuthStore', () => {
-  const identity = ref(null)
+  const identity = ref<string | null>(null)
 
   function signIn(identityInput: string) {
     identity.value = identityInput

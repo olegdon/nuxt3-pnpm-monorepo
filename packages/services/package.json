@@ -3,8 +3,18 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
+  "exports": {
+    "./utils/*": "./utils/*.ts",
+    "./composables/*": "./composables/*.ts"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.42"
+  },
+  "dependencies": {
+    "micromark": "4.0.2",
+    "mitt": "3.0.1"
+  },
   "devDependencies": {
-    "@tsconfig/recommended": "1.0.13",
-    "micromark": "4.0.2"
+    "@tsconfig/recommended": "1.0.13"
   }
 }

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Niramit;
+  src: url('/assets/fonts/niramit/niramit-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Niramit;
+  src: url('/assets/fonts/niramit/niramit-semi-bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Baton;
+  src: url('/assets/fonts/baton/baton-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Baton;
+  src: url('/assets/fonts/baton/baton-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

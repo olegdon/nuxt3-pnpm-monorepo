@@ -19,15 +19,9 @@ type Story = StoryObj<typeof LayoutSplash>
 
 export default meta
 export const Content: Story = {
-  parameters: {
-    slots: {
-      default: {
-        components: {
-          BaseUiSheet,
-        },
-        template: '<BaseUiSheet>{{ args.default || "Splash Content" }}</BaseUiSheet>',
-      },
-    },
-  },
+  render: () => ({
+    components: { LayoutSplash, BaseUiSheet },
+    template: '<LayoutSplash><BaseUiSheet>Splash Content</BaseUiSheet></LayoutSplash>',
+  }),
 }
 export const Default: Story = {}

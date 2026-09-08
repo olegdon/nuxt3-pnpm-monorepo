@@ -1,29 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import UiSheet from '~/components/base/ui/Sheet.vue'
 
-const meta: Meta<typeof UiSheet> = {
+const meta = {
   title: 'Base/UI/Sheet',
   component: UiSheet,
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: 'A sheet component, provides a sheet to display content.',
-      },
-    },
-  },
-}
-
-type Story = StoryObj<typeof UiSheet>
+  render: args => ({
+    components: { UiSheet },
+    setup: () => ({ args }),
+    template: '<UiSheet v-bind="args">Sheet Content</UiSheet>',
+  }),
+} satisfies Meta<typeof UiSheet>
 
 export default meta
-
-export const Default: Story = {
-  parameters: {
-    slots: {
-      default: {
-        template: '{{ args.default || "Sheet Content" }}',
-      },
-    },
-  },
-}
+type Story = StoryObj<typeof meta>
+export const Default: Story = {}

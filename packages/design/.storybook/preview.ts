@@ -2,40 +2,14 @@ import type { Preview } from '@storybook/vue3'
 import { setup } from '@storybook/vue3'
 import { createPinia } from 'pinia'
 import { createI18n } from 'vue-i18n'
-import vuei18n from '../../translations/vue-i18n'
+import messages from '../../translations/en-US'
 import '../index.css'
-import 'virtual:virtual-fontface-css/font-face.css'
 
 const pinia = createPinia()
 
-setup((app: any) => {
-  app.use(
-    // @ts-expect-error this thing has a weird interface
-    createI18n(
-      {
-        legacy: false,
-        defaultLocale: 'en-US',
-        datetimeFormats: vuei18n.datetimeFormats,
-        numberFormats: vuei18n.numberFormats,
-        langDir: '../../translations',
-        locales: [
-          {
-            code: 'en-US',
-            files: ['en-US.ts'],
-            language: 'en-US',
-          },
-        ],
-      },
-    ),
-  )
+setup((app) => {
+  app.use(createI18n({ legacy: false, locale: 'en-US', messages: { 'en-US': messages } }))
   app.use(pinia)
-  app.mixin({
-    methods: {
-      localePath() {
-        return null
-      },
-    },
-  })
 })
 
 const preview: Preview = {
@@ -53,22 +27,14 @@ const preview: Preview = {
       let fontFamily = 'Arial'
 
       if (meta.componentId.startsWith('extendedapp'))
-        fontFamily = '"Niramit"'
-
-      meta.canvasElement.appendChild(
-        Object.assign(
-          document.createElement('style'),
-          {
-            textContent: `
-              .sbdocs-preview { font-family: ${fontFamily}; }
-            `,
-          },
-        ),
-      )
+        fontFamily = 'Baton, Arial, sans-serif'
+      else if (meta.componentId.startsWith('singleapp'))
+        fontFamily = 'Niramit, Arial, sans-serif'
 
       return {
         components: { story },
-        template: `<story />`,
+        setup: () => ({ fontFamily }),
+        template: '<div :style="{ fontFamily }"><story /></div>',
       }
     },
   ],

@@ -11,8 +11,8 @@
       {{ $t('components.welcome.documentation.title') }}
     </template>
 
-    Nuxt 3
-    <a href="https://v3.nuxtjs.org" target="_blank" rel="noopener">official documentation</a>
+    Nuxt 4
+    <a href="https://nuxt.com" target="_blank" rel="noopener">official documentation</a>
     provides you with all information you need to get started.
   </BaseInteractionWelcomeItem>
 
@@ -45,15 +45,14 @@
     </template>
 
     Tools and libraries being used in this project:
-    <a href="https://v3.nuxtjs.org" target="_blank" rel="noopener">Nuxt 3</a>,
+    <a href="https://nuxt.com" target="_blank" rel="noopener">Nuxt 4</a>,
     <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a>,
     <a href="https://pnpm.io/" target="_blank" rel="noopener">Pnpm</a>,
     <a href="https://pnpm.io/workspaces" target="_blank" rel="noopener">Workspace</a>,
     <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
     <a href="https://content.nuxt.com/" target="_blank" rel="noopener">Nuxt Content</a>,
     <a href="https://i18n.nuxtjs.org/" target="_blank" rel="noopener">Support different locales</a>,
-    <a href="https://tailwindcss.com/" target="_blank" rel="noopener">Tailwind 3</a>,
-    <a href="https://vue-macros.sxzz.moe/" target="_blank" rel="noopener">Vue Macros</a>,
+    <a href="https://tailwindcss.com/" target="_blank" rel="noopener">Tailwind 4</a>,
     <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript - JavaScript, but strongly typed and better</a>,
 
     and APIs auto importing - for Composition API, VueUse, Components (locally & from design) and custom composables

@@ -1,34 +1,24 @@
-import tailwindConfig from '@devstdo/design/configs/tailwind.extendedapp.config'
+import { fileURLToPath } from 'node:url'
 
 export default defineNuxtConfig({
-  imports: {
-    dirs: [
-      'stores',
-      '../../packages/services/composables',
-      '../../packages/services/utils',
-    ],
+  extends: ['../webapp'],
+  srcDir: '.',
+  // This app overrides the content page, so it needs no content database.
+  starterContent: { enabled: false },
+  typescript: {
+    tsConfig: {
+      // This overridden page is checked by webapp, where Content is enabled.
+      exclude: [fileURLToPath(new URL('../webapp/pages/index.vue', import.meta.url))],
+    },
   },
-  modules: [
-    [
-      '@devstdo/design/nuxt.ts',
-      { app: 'extendedapp' },
-    ],
-    [
-      '@devstdo/modules/nuxt-app-module-config/module.ts',
-      {
-        app: 'extendedapp',
-        tailwind: tailwindConfig,
-        // image: {},
-        i18n: {
-          baseUrl: `http://example.com`,
-          locales: (runtimeConfig: any) => runtimeConfig.default.i18n.locales,
-          defaultLocale: (runtimeConfig: any) => runtimeConfig.default.i18n.defaultLocale,
-        },
-        asyncRuntimeConfig: async () => await import(('./configs/extendedapp.ts')),
-      },
-    ],
-  ],
-  extends: [
-    '../webapp',
-  ],
+  monorepoDesign: { app: 'extendedapp' },
+  runtimeConfig: { public: { site: { url: 'https://extended.nuxtmonostarter.com', name: 'NuxtMonoStarter Extended App' } } },
+  site: {
+    name: 'NuxtMonoStarter Extended App',
+    url: 'https://extended.nuxtmonostarter.com',
+  },
+  i18n: {
+    langDir: '../../../packages/translations',
+    locales: [{ code: 'en-US', language: 'en-US', files: ['en-US.ts', 'singleapp/en-US.ts', 'extendedapp/en-US.ts'] }],
+  },
 })

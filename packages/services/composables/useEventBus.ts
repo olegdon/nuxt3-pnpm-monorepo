@@ -1,11 +1,6 @@
 import mitt from 'mitt'
 
-// eslint-disable-next-line ts/consistent-type-definitions
-type ApplicationEvents = {
-  'user:login': any
+// Create one bus per consumer/app; never share an emitter across SSR requests.
+export function createAppEventBus() {
+  return mitt<{ 'user:login': string }>()
 }
-
-const emitter = mitt<ApplicationEvents>()
-
-export const useEvent = emitter.emit
-export const useListen = emitter.on

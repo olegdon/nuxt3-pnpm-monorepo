@@ -6,9 +6,9 @@
       <slot name="header" />
     </header>
 
-    <main class="grow flex flex-col justify-between">
+    <div class="grow flex flex-col justify-between">
       <slot />
-    </main>
+    </div>
 
     <footer class="w-full top-0 bg-extendedapp-primary-200 border-t border-accent-200 h-12 flex items-center">
       <slot name="footer" />

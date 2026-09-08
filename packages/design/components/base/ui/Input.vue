@@ -2,9 +2,7 @@
 const { placeholder } = defineProps<{
   placeholder?: string
 }>()
-const { modelValue } = defineModels<{
-  modelValue?: string
-}>()
+const modelValue = defineModel<string>()
 </script>
 
 <template>

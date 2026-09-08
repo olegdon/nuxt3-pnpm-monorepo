@@ -1,16 +1,15 @@
 {
   "name": "@devstdo/modules",
+  "type": "module",
   "version": "1.0.0",
   "private": true,
   "description": "",
   "author": "",
   "keywords": [],
   "dependencies": {
-    "fast-glob": "3.3.3",
-    "pathe": "2.0.3"
+    "@nuxt/kit": "4.5.2"
   },
   "devDependencies": {
-    "@nuxt/kit": "4.5.2",
     "@tsconfig/recommended": "1.0.13"
   }
 }

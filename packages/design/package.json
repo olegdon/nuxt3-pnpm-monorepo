@@ -1,5 +1,6 @@
 {
   "name": "@devstdo/design",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,40 +9,40 @@
     "test": "test-storybook --index-json",
     "ci:test": "pnpm dlx concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build --quiet && pnpm dlx http-server storybook-static --port 6006 --silent\" \"pnpm dlx wait-on http://127.0.0.1:6006 && pnpm test\""
   },
+  "peerDependencies": {
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.42"
+  },
+  "dependencies": {
+    "@nuxt/kit": "4.5.2",
+    "@tailwindcss/vite": "4.3.3",
+    "tailwindcss": "4.3.3"
+  },
   "devDependencies": {
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
-    "@nuxt/image": "2.1.0",
-    "@nuxt/kit": "4.5.2",
-    "@nuxt/schema": "4.5.2",
     "@storybook/addon-docs": "10.6.0",
     "@storybook/test-runner": "0.24.5",
     "@storybook/vue3": "10.6.0",
     "@storybook/vue3-vite": "10.6.0",
-    "@tailwindcss/container-queries": "0.1.1",
-    "@tailwindcss/postcss": "4.3.3",
-    "@tailwindcss/vite": "4.3.3",
     "@types/node": "24.13.3",
     "@vitejs/plugin-vue": "6.0.8",
     "@vue/tsconfig": "0.9.1",
     "@vueuse/components": "14.4.0",
     "@vueuse/core": "14.4.0",
     "autoprefixer": "10.5.5",
-    "mitt": "3.0.1",
-    "pinia": "3.0.4",
+    "pinia": "4.0.3",
     "playwright": "1.63.0",
     "postcss": "8.5.28",
     "postcss-nested": "7.0.2",
     "storybook": "10.6.0",
-    "storybook-addon-vue-slots": "0.9.29",
-    "tailwindcss": "4.3.3",
     "unplugin-auto-import": "20.3.0",
     "unplugin-icons": "22.5.0",
     "unplugin-vue-components": "29.2.0",
-    "unplugin-vue-macros": "2.14.5",
-    "vite": "7.3.6",
+    "vite": "8.2.2",
     "vue": "3.5.42",
     "vue-i18n": "11.4.10",
+    "vue-router": "5.3.1",
     "vue-tsc": "3.3.11"
   }
 }

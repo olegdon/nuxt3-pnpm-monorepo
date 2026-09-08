@@ -2,40 +2,26 @@ on:
   push:
     branches: [main]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  linting:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
       - uses: ./.github/actions/build
-      - name: All lining
-        run: pnpm lint
-
-  webapp:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: ./.github/actions/build
-      - name: Webapp Build
-        run: pnpm webapp build
-
-  design:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: ./.github/actions/build
-      - name: Install Playwright
-        run: pnpm --filter @devstdo/design exec playwright install
-
-  deploy:
-    needs: [linting, design, webapp]
-    runs-on: ubuntu-latest
-
-    steps:
-      - run: echo "Deploying .."
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+      - run: pnpm design build
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-results
+          path: test-results/

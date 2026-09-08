@@ -13,13 +13,14 @@ trustPolicyExclude:
   - semver@6.3.1
 
 shellEmulator: true
+saveExact: true
 
 packages:
   - packages/*
   - apps/*
 
 overrides:
-  '@nuxtjs/tailwindcss>tailwindcss': 4.3.3
+  '@nuxt/devtools': 3.4.2
   better-sqlite3: 12.11.1
 
 allowBuilds:
