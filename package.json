@@ -29,7 +29,7 @@
     "@types/node": "24.13.3",
     "better-sqlite3": "13.0.3",
     "concurrently": "10.0.5",
-    "eslint": "9.39.5",
+    "eslint": "10.10.0",
     "typescript": "7.0.2"
   }
 }
