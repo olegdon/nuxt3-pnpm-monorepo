@@ -28,6 +28,8 @@ pnpm dev
 
 The development ports are webapp 3000, singleapp 3001, extendedapp 3002 and Storybook 6006. To run one consumer, use `pnpm singleapp dev`, `pnpm webapp dev`, `pnpm extendedapp dev` or `pnpm design dev`.
 
+The root and apps alias `typescript` to `@typescript/typescript6` so ESLint and Vue tooling can use the TypeScript 6 API. The root also aliases `@typescript/native` to TypeScript 7 to retain `pnpm exec tsc`. Keep these aliases until the tooling supports TypeScript's new API; see [Microsoft's compatibility guidance](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/#running-side-by-side-with-typescript-6.0).
+
 ```sh
 pnpm lint
 pnpm typecheck
