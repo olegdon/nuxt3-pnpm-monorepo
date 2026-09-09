@@ -27,9 +27,9 @@
     "@antfu/eslint-config": "9.5.1",
     "@playwright/test": "1.63.0",
     "@types/node": "24.13.3",
-    "better-sqlite3": "12.11.1",
-    "concurrently": "9.2.4",
+    "better-sqlite3": "13.0.3",
+    "concurrently": "10.0.5",
     "eslint": "9.39.5",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   }
 }
