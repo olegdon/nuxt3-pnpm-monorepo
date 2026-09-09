@@ -34,7 +34,7 @@
     "zod": "4.5.4"
   },
   "devDependencies": {
-    "typescript": "7.0.2",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
     "vue-tsc": "3.3.11"
   }
 }
