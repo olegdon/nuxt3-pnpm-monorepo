@@ -26,7 +26,7 @@
     "@storybook/test-runner": "0.24.5",
     "@storybook/vue3": "10.6.0",
     "@storybook/vue3-vite": "10.6.0",
-    "@types/node": "24.13.3",
+    "@types/node": "24.13.4",
     "@vitejs/plugin-vue": "6.0.8",
     "@vue/tsconfig": "0.9.1",
     "@vueuse/components": "14.4.0",
