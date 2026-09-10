@@ -12,13 +12,10 @@ export default defineConfig(async () => {
     plugins: [
       vue(),
       AutoImport({
-        imports: ['vue', 'vue-router', '@vueuse/core', 'pinia'],
+        imports: ['vue', 'vue-router', '@vueuse/core', 'pinia', 'vue-i18n'],
         dirs: [
           './stubs',
-          './stores',
           './composables',
-          '../services/composables',
-          '../services/utils',
         ],
         vueTemplate: true,
       }),

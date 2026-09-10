@@ -1,27 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import LayoutSplash from '~/components/base/layout/Splash.vue'
-import BaseUiSheet from '~/components/base/ui/Sheet.vue'
 
-const meta: Meta<typeof LayoutSplash> = {
-  title: 'Base/Layout/Splash',
+const meta = {
+  title: 'Applications/Splash',
   component: LayoutSplash,
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: 'A full screen layout with a centered element, e.g. login.',
-      },
-    },
-  },
-}
-
-type Story = StoryObj<typeof LayoutSplash>
-
+  parameters: { fullPage: true, docs: { description: { component: 'A centered full-height layout for loading and recovery states.' } } },
+  render: () => ({ components: { LayoutSplash }, template: '<LayoutSplash><div class="info-card"><h2>Preparing your workspace</h2><p role="status">Loading shared resources…</p></div></LayoutSplash>' }),
+} satisfies Meta<typeof LayoutSplash>
 export default meta
-export const Content: Story = {
-  render: () => ({
-    components: { LayoutSplash, BaseUiSheet },
-    template: '<LayoutSplash><BaseUiSheet>Splash Content</BaseUiSheet></LayoutSplash>',
-  }),
-}
-export const Default: Story = {}
+type Story = StoryObj<typeof meta>
+export const Loading: Story = {}

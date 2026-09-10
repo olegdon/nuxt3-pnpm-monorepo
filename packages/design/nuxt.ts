@@ -23,6 +23,15 @@ export default defineNuxtModule<{ app: 'webapp' | 'singleapp' | 'extendedapp' }>
     if (existsSync(overrides))
       addComponentsDir({ path: overrides, priority: 10 })
 
+    // Nuxt Image needs source directories in dev; Nitro publicAssets only
+    // makes them available in the production public output.
+    if (nuxt.options.image !== false) {
+      nuxt.options.image = {
+        ...nuxt.options.image,
+        dirs: [...(nuxt.options.image?.dirs || []), resolve('./public')],
+      }
+    }
+
     nuxt.options.css.push(resolve(`./styles/${options.app}.css`))
     addVitePlugin(tailwindcss())
     nuxt.hook('nitro:config', (config) => {

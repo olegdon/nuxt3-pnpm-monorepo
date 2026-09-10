@@ -1,3 +1,3 @@
-# Kickstart your projects with Monorepo
+# One workspace. Three ways to build.
 
-NuxtMonoStarter is a PNPM monorepo starter template with Nuxt.js that helps you build your next app faster by using pnpm monorepo and workspaces, Storybook, and more, already integrated.
+A core webapp, an independent app, and an extended app. Explore how they share code while keeping their own identity.

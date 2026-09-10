@@ -1,23 +1,16 @@
-import { Title, Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
-import config from '~/utils/tailwind'
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
 
 <Meta title="Foundations/Colors" />
 
-<Title>Colors</Title>
+# Semantic colors
+
+The app shells and compositions use semantic CSS variables from `styles/common.css`. The toolbar switches their rendered mode; these swatches document the exact values. App-specific palette pages retain the available Tailwind colors.
 
 <ColorPalette>
-  {Object.entries(config.colors).filter((color) => !(typeof color[1] === 'object') && !['inherit', 'currentColor'].includes(color[1])).map((color) => (
-    <ColorItem
-      key={ color[0] }
-      title={ color[0] }
-      colors={{ [color[0]]: color[1] }}
-    />
-  ))}
-  {Object.entries(config.colors).filter((color) => typeof color[1] === 'object').map((color) => (
-    <ColorItem
-      key={ color[0] }
-      title={ color[0] }
-      colors={ color[1] }
-    />
-  ))}
+  <ColorItem title="Light surfaces" colors={{ Canvas: '#f8faf9', Surface: '#ffffff', Border: '#dce5df' }} />
+  <ColorItem title="Light text" colors={{ Primary: '#172b25', Muted: '#576a62' }} />
+  <ColorItem title="Dark surfaces" colors={{ Canvas: '#0e1713', Surface: '#15211d', Border: '#304039' }} />
+  <ColorItem title="Dark text" colors={{ Primary: '#e8f1eb', Muted: '#a9bdb1' }} />
+  <ColorItem title="App accents — light" colors={{ Core: '#08734e', Single: '#a43c18', Extended: '#2a50ca' }} />
+  <ColorItem title="App accents — dark" colors={{ Core: '#7ae0ae', Single: '#ffb38e', Extended: '#a4baff' }} />
 </ColorPalette>

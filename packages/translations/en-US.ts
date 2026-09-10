@@ -22,12 +22,8 @@ export default {
   pages: {
     index: {
       meta: {
-        title: 'Kickstart your projects with Monorepo',
-        description: 'NuxtMonoStarter is a PNPM monorepo starter template with Nuxt.js that helps you build your next app faster by using pnpm monorepo and workspaces, Storybook, and more, already integrated.',
-      },
-      examples: {
-        title: 'Examples',
-        description: 'Here are some examples of what NuxtMonoStarter can do.',
+        title: 'One workspace. Three ways to build.',
+        description: 'Explore a Nuxt 4 monorepo with a core webapp, an independent app and a layer-based extended app sharing workspace packages.',
       },
     },
   },
@@ -37,30 +33,5 @@ export default {
       500: 'An error has occurred',
     },
     back: 'back to Home',
-  },
-  components: {
-    color: {
-      mode: 'color mode:',
-    },
-    user: {
-      login: 'Login',
-    },
-    welcome: {
-      documentation: {
-        title: 'Documentation',
-      },
-      tooling: {
-        title: 'Tooling',
-      },
-      ecosystem: {
-        title: 'Ecosystem',
-      },
-      repository: {
-        title: 'Repository',
-      },
-      support: {
-        title: 'Support NuxtMonoStarter',
-      },
-    },
   },
 }
