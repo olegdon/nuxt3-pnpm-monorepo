@@ -27,6 +27,7 @@
     "@antfu/eslint-config": "9.5.1",
     "@playwright/test": "1.63.0",
     "@types/node": "24.13.3",
+    "@typescript/native": "npm:typescript@7.0.2",
     "better-sqlite3": "13.0.3",
     "concurrently": "10.0.5",
     "eslint": "10.10.0",
