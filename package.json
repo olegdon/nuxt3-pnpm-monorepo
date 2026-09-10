@@ -30,6 +30,6 @@
     "better-sqlite3": "13.0.3",
     "concurrently": "10.0.5",
     "eslint": "10.10.0",
-    "typescript": "7.0.2"
+    "typescript": "npm:@typescript/typescript6@6.0.2"
   }
 }

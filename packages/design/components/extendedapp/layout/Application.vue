@@ -1,17 +1,14 @@
 <template>
-  <div
-    class="bg-white dark:bg-black min-h-screen flex flex-col fill-gray-600 relative antialiased"
-  >
-    <header class="sticky top-0 z-20 bg-extendedapp-primary-300 border-b border-accent-200 h-24 flex items-center">
-      <slot name="header" />
-    </header>
-
-    <div class="grow flex flex-col justify-between">
-      <slot />
-    </div>
-
-    <footer class="w-full top-0 bg-extendedapp-primary-200 border-t border-accent-200 h-12 flex items-center">
-      <slot name="footer" />
-    </footer>
-  </div>
+  <BaseLayoutApplication app="extendedapp">
+    <template #header>
+      <div class="layer-strip">
+        <div class="page-width">webapp <span aria-hidden="true">→</span> extendedapp <span class="layer-strip-note">Shared foundation. Local overrides.</span>
+        </div>
+      </div>
+    </template>
+    <slot />
+    <template #footer>
+      <code>extends: ['../webapp']</code>
+    </template>
+  </BaseLayoutApplication>
 </template>

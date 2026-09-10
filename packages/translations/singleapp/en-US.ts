@@ -2,7 +2,7 @@ export default {
   general: { title: 'This is a single app instance' },
   feature: {
     title: 'A shared welcome',
-    description: 'Try the same experience here and in the main application.',
+    description: 'A reusable component from the shared design package.',
     imageAlt: 'NuxtMonoStarter — build together',
     name: 'Your name',
     action: 'Say hello',

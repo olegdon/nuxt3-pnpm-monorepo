@@ -1,7 +1,5 @@
 export default {
-  general: {
-    title: 'This is an extended app instance',
-    header: 'Header',
-    footer: 'Footer',
+  feature: {
+    description: 'Shared behavior, with the extended app’s button override.',
   },
 }

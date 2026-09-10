@@ -1,21 +1,10 @@
 <script lang="ts" setup>
-const props = withDefaults(
-  defineProps<{
-    variant?: 'default' | 'ghost' | 'alternative'
-  }>(),
-  {
-    variant: 'default',
-  },
-)
-const variantStyles: Record<string, string> = {
-  default: 'bg-extendedapp-primary-600 text-white hover:bg-extendedapp-primary-800',
-  ghost: 'border border-extended-gray-100 ',
-}
+withDefaults(defineProps<{ variant?: 'default' | 'ghost' | 'alternative' | 'tag' | 'green' | 'outline' }>(), { variant: 'default' })
+const overrides = { default: 'ui-button-extended', ghost: 'ui-button-extended-ghost', alternative: 'ui-button-extended-alternative' }
 </script>
 
 <template>
-  <BaseUiButton class="p-3 transition-colors" :class="variantStyles[props.variant]">
-    <!-- @slot button content -->
+  <BaseUiButton :variant="variant" :unstyled="variant in overrides" :class="overrides[variant as keyof typeof overrides]">
     <slot />
   </BaseUiButton>
 </template>

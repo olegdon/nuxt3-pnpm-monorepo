@@ -1,6 +1,55 @@
-import { Markdown, Meta } from '@storybook/addon-docs/blocks';
-import ReadMe from "../../../README.md?raw";
+import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Introduction" />
 
-<Markdown>{ReadMe}</Markdown>
+# NuxtMonoStarter design system
+
+One workspace, three application identities. This catalog previews the same Vue components used by the Nuxt 4 apps.
+
+## Start here
+
+- **Components** covers buttons, inputs, sheets and notices, including disabled, validation and interaction states.
+- **Patterns** contains the working shared greeting, restored support block and analytics consent UI.
+- **Applications** shows the core, standalone and extended shells with their real navigation and layout.
+- **Extended App / Button** compares explicit base components with the extended app override.
+
+Use the **Light / Dark** toolbar to inspect contrast and focus states. The **Core webapp / Single app / Extended app** toolbar changes the theme for shared stories. Stories demonstrating a specific consumer fix that identity in their parameters. Resize the preview to inspect mobile layouts.
+
+## What is shared?
+
+<div style={{ overflowX: 'auto' }} tabIndex={0} role="region" aria-label="Application comparison">
+  <table style={{ width: '100%', minWidth: '560px' }}>
+    <thead>
+      <tr>
+        <th scope="col">Consumer</th>
+        <th scope="col">Relationship</th>
+        <th scope="col">Identity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Core webapp</th>
+        <td>Base website and Nuxt layer</td>
+        <td>Neutral system typography, green accents</td>
+      </tr>
+      <tr>
+        <th scope="row">Single app</th>
+        <td>Independent Nuxt app using workspace packages</td>
+        <td>Niramit typography, warm accents</td>
+      </tr>
+      <tr>
+        <th scope="row">Extended app</th>
+        <td>Extends webapp and overrides selected components</td>
+        <td>Baton typography, blue accents, inherited navigation</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+The support block is extracted from the core page into a reusable component, so its story stays synchronized with the app.
+
+## Preview boundaries
+
+Storybook is a Vue renderer, not a running Nuxt server. Preview-only adapters provide a memory router, static image delivery and isolated consent state. They do not load analytics or write cookies. Navigation changes active states without loading app pages. Nuxt integration checks remain responsible for IPX, SSR, metadata and real route inheritance.
+
+Interactive stories exercise typing, greetings, button events and consent changes. The catalog runner also checks for unresolved components and broken images.
