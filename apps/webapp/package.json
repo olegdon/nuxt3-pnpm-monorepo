@@ -21,7 +21,7 @@
     "@nuxt/image": "2.1.0",
     "@nuxtjs/color-mode": "4.0.1",
     "@nuxtjs/i18n": "10.6.0",
-    "@nuxtjs/robots": "6.2.1",
+    "@nuxtjs/robots": "6.2.2",
     "@nuxtjs/sitemap": "8.5.0",
     "@pinia/nuxt": "1.0.2",
     "@vueuse/nuxt": "14.4.0",
