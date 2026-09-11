@@ -352,8 +352,8 @@ importers:
         specifier: 14.4.0
         version: 14.4.0(vue@3.5.42(@typescript/typescript6@6.0.2))
       autoprefixer:
-        specifier: 10.5.5
-        version: 10.5.5(postcss@8.5.28)
+        specifier: 10.5.6
+        version: 10.5.6(postcss@8.5.28)
       pinia:
         specifier: 4.0.3
         version: 4.0.3(@typescript/typescript6@6.0.2)(@vue/devtools-api@8.2.1)(vue@3.5.42(@typescript/typescript6@6.0.2))
@@ -4080,6 +4080,13 @@ packages:
 
   autoprefixer@10.5.5:
     resolution: {integrity: sha512-uiRYvQYe/nNSzBJ7OUnd2/TZVsAdob3blml44teEpee9Cc1f4rGZFewO+JT3Wo8mgFOSzNqes4FHZn/Qz8WOuw==}
+    engines: {node: ^10 || ^12 || >=14}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.1.0
+
+  autoprefixer@10.5.6:
+    resolution: {integrity: sha512-HiH4oYNc5+DQEx/b8FPfMj+WHH/WWUBmbN5r1Uf/ixtfyFkk+wGIlfJT/RD5eAyzlwkeYRtZUCI8qrEi26pl2g==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -13567,6 +13574,15 @@ snapshots:
   asynckit@0.4.0: {}
 
   autoprefixer@10.5.5(postcss@8.5.28):
+    dependencies:
+      browserslist: 4.28.9
+      caniuse-lite: 1.0.30001810
+      fraction.js: 5.3.4
+      picocolors: 1.1.1
+      postcss: 8.5.28
+      postcss-value-parser: 4.2.0
+
+  autoprefixer@10.5.6(postcss@8.5.28):
     dependencies:
       browserslist: 4.28.9
       caniuse-lite: 1.0.30001810
