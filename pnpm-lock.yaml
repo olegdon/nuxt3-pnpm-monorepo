@@ -409,8 +409,8 @@ importers:
         specifier: 14.4.0
         version: 14.4.0(vue@3.5.42(@typescript/typescript6@6.0.2))
       autoprefixer:
-        specifier: 10.6.0
-        version: 10.6.0(postcss@8.5.28)
+        specifier: 10.6.1
+        version: 10.6.1(postcss@8.5.28)
       pinia:
         specifier: 4.0.3
         version: 4.0.3(@typescript/typescript6@6.0.2)(@vue/devtools-api@8.2.1)(vue@3.5.42(@typescript/typescript6@6.0.2))
@@ -4149,8 +4149,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  autoprefixer@10.6.0:
-    resolution: {integrity: sha512-A26d6qs9kqGgkmImIXMYvXTzqb4Qv7AVgpY1NXzr9Y659J8qHHnLOO/zE8ewIGFMprOolAoRAQYDgNryXIJKBw==}
+  autoprefixer@10.6.1:
+    resolution: {integrity: sha512-cL1Qz6ADZhcEbny/8HPfe99J6HhNoYtpX2LFLIbhgGE7Q1hlQVkYFdetDN7Id3KiQxhDrHwzlHr/YQCnZ8+xSA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -13653,7 +13653,7 @@ snapshots:
       postcss: 8.5.28
       postcss-value-parser: 4.2.0
 
-  autoprefixer@10.6.0(postcss@8.5.28):
+  autoprefixer@10.6.1(postcss@8.5.28):
     dependencies:
       browserslist: 4.28.9
       caniuse-lite: 1.0.30001810
