@@ -24,7 +24,7 @@
     "@nuxtjs/robots": "6.2.3",
     "@nuxtjs/sitemap": "8.5.1",
     "@pinia/nuxt": "1.0.2",
-    "@vueuse/nuxt": "14.4.0",
+    "@vueuse/nuxt": "15.0.0",
     "nuxt": "4.5.2",
     "nuxt-gtag": "5.0.0",
     "nuxt-schema-org": "6.3.2",
