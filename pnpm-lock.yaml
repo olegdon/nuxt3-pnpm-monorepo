@@ -385,8 +385,8 @@ importers:
         specifier: 10.6.1
         version: 10.6.1(@types/react@19.2.18)(storybook@10.6.1(@types/react@19.2.18)(react@18.3.1))
       '@storybook/test-runner':
-        specifier: 0.24.5
-        version: 0.24.5(@types/node@24.19.0)(debug@4.4.3(supports-color@10.0.0))(esbuild-register@3.6.0(esbuild@0.28.2)(supports-color@10.0.0))(storybook@10.6.1(@types/react@19.2.18)(react@18.3.1))(supports-color@10.0.0)
+        specifier: 0.26.0
+        version: 0.26.0(@types/node@24.19.0)(debug@4.4.3(supports-color@10.0.0))(esbuild-register@3.6.0(esbuild@0.28.2)(supports-color@10.0.0))(storybook@10.6.1(@types/react@19.2.18)(react@18.3.1))(supports-color@10.0.0)
       '@storybook/vue3':
         specifier: 10.6.1
         version: 10.6.1(@typescript/typescript6@6.0.2)(storybook@10.6.1(@types/react@19.2.18)(react@18.3.1))(vue@3.5.43(@typescript/typescript6@6.0.2))
@@ -3169,12 +3169,12 @@ packages:
       '@types/react-dom':
         optional: true
 
-  '@storybook/test-runner@0.24.5':
-    resolution: {integrity: sha512-U8ib6parBD+wA4z5ZW/JnsR3KkEXoP+sHP8WJdDZeh0GwfTlcWjhbeR6Ij/gxNFEA1bdpBa/P8qYTOs+LKIN1g==}
+  '@storybook/test-runner@0.26.0':
+    resolution: {integrity: sha512-q/B3Mf5QQuYAQ99AKcxTnNzPBso2OctLy13mEA23kYM8vW+Sz3WysdZIiQvNQ0bQFI9MDRkcLQVGIBcnnkaZXA==}
     engines: {node: '>=20.0.0'}
     hasBin: true
     peerDependencies:
-      storybook: ^0.0.0-0 || ^10.0.0 || ^10.0.0-0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0 || ^11.0.0-0
+      storybook: ^0.0.0-0 || ^10.0.0 || ^10.0.0-0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0 || ^11.0.0-0 || >=11
 
   '@storybook/vue3-vite@10.6.1':
     resolution: {integrity: sha512-37+SUClusHz/rqHHfsGWHUx+bpfesv032TW8F+inU7X1sIEEbRY7hS/oQbtm0CBJK3XARrSozwsATnP76dy3sA==}
@@ -4449,10 +4449,6 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.4.1:
-    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-
   chalk@5.6.2:
     resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
@@ -4490,10 +4486,6 @@ packages:
   chownr@3.0.0:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
     engines: {node: '>=18'}
-
-  ci-info@4.3.0:
-    resolution: {integrity: sha512-l+2bNRMiQgcfILUi33labAZYIWlH1kWDp+ecNo5iisRKrbm0xcRyCww71/YU0Fkw0mAFpz9bJayXPjey6vkmaQ==}
-    engines: {node: '>=8'}
 
   ci-info@4.4.0:
     resolution: {integrity: sha512-77PSwercCZU2Fc4sX94eF8k8Pxte6JAwL4/ICZLFjJLqegs7kCuAsqqj/70NQF6TvDpgFjkubQB2FW2ZZddvQg==}
@@ -10273,7 +10265,7 @@ snapshots:
       '@types/node': 24.19.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
-      ci-info: 4.3.0
+      ci-info: 4.4.0
       exit-x: 0.2.2
       fast-json-stable-stringify: 2.1.0
       graceful-fs: 4.2.11
@@ -12726,7 +12718,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.18
 
-  '@storybook/test-runner@0.24.5(@types/node@24.19.0)(debug@4.4.3(supports-color@10.0.0))(esbuild-register@3.6.0(esbuild@0.28.2)(supports-color@10.0.0))(storybook@10.6.1(@types/react@19.2.18)(react@18.3.1))(supports-color@10.0.0)':
+  '@storybook/test-runner@0.26.0(@types/node@24.19.0)(debug@4.4.3(supports-color@10.0.0))(esbuild-register@3.6.0(esbuild@0.28.2)(supports-color@10.0.0))(storybook@10.6.1(@types/react@19.2.18)(react@18.3.1))(supports-color@10.0.0)':
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.0.0)
       '@babel/generator': 7.29.8
@@ -14143,8 +14135,6 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chalk@5.4.1: {}
-
   chalk@5.6.2: {}
 
   change-case@5.4.4: {}
@@ -14170,8 +14160,6 @@ snapshots:
       readdirp: 5.1.1
 
   chownr@3.0.0: {}
-
-  ci-info@4.3.0: {}
 
   ci-info@4.4.0: {}
 
@@ -15949,7 +15937,7 @@ snapshots:
       '@jest/types': 30.5.1
       babel-jest: 30.5.1(@babel/core@7.29.7(supports-color@10.0.0))(supports-color@10.0.0)
       chalk: 4.1.2
-      ci-info: 4.3.0
+      ci-info: 4.4.0
       deepmerge: 4.3.1
       glob: 13.0.6
       graceful-fs: 4.2.11
@@ -16179,7 +16167,7 @@ snapshots:
       '@jest/types': 30.5.1
       '@types/node': 24.19.0
       chalk: 4.1.2
-      ci-info: 4.3.0
+      ci-info: 4.4.0
       graceful-fs: 4.2.11
       picomatch: 4.0.7
 
@@ -16195,7 +16183,7 @@ snapshots:
   jest-watch-typeahead@3.0.1(jest@30.5.1(@types/node@24.19.0)(esbuild-register@3.6.0(esbuild@0.28.2)(supports-color@10.0.0))(supports-color@10.0.0)):
     dependencies:
       ansi-escapes: 7.3.0
-      chalk: 5.4.1
+      chalk: 5.6.2
       jest: 30.5.1(@types/node@24.19.0)(esbuild-register@3.6.0(esbuild@0.28.2)(supports-color@10.0.0))(supports-color@10.0.0)
       jest-regex-util: 30.5.0
       jest-watcher: 30.5.1

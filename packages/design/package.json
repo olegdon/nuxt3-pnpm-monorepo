@@ -23,7 +23,7 @@
     "@devstdo/modules": "workspace:*",
     "@devstdo/services": "workspace:*",
     "@storybook/addon-docs": "10.6.1",
-    "@storybook/test-runner": "0.24.5",
+    "@storybook/test-runner": "0.26.0",
     "@storybook/vue3": "10.6.1",
     "@storybook/vue3-vite": "10.6.1",
     "@types/node": "24.19.0",
