@@ -34,7 +34,7 @@
     "autoprefixer": "10.6.1",
     "pinia": "4.0.3",
     "playwright": "1.63.0",
-    "postcss": "8.5.28",
+    "postcss": "8.5.29",
     "postcss-nested": "8.0.1",
     "storybook": "10.6.1",
     "unplugin-auto-import": "21.1.0",
