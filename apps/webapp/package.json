@@ -27,7 +27,7 @@
     "@vueuse/nuxt": "15.0.0",
     "nuxt": "4.5.2",
     "nuxt-gtag": "5.0.0",
-    "nuxt-schema-org": "6.3.2",
+    "nuxt-schema-org": "6.4.3",
     "pinia": "4.0.3",
     "vue": "3.5.43",
     "vue-router": "5.4.0",

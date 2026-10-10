@@ -271,8 +271,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(magic-string@1.2.3)(magicast@0.5.4)(oxc-parser@0.141.0)(rolldown@1.2.13)(unplugin@3.3.0(esbuild@0.28.2)(rolldown@1.2.13)(rollup@4.63.1)(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.31.6)(yaml@2.9.0)))
       nuxt-schema-org:
-        specifier: 6.3.2
-        version: 6.3.2(af3ef8a1f4ce080756eaa6c231274b93)
+        specifier: 6.4.3
+        version: 6.4.3(af3ef8a1f4ce080756eaa6c231274b93)
       pinia:
         specifier: 4.0.3
         version: 4.0.3(@typescript/typescript6@6.0.2)(@vue/devtools-api@8.2.1)(vue@3.5.43(@typescript/typescript6@6.0.2))
@@ -338,8 +338,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(magic-string@0.30.21)(magicast@0.5.4)(oxc-parser@0.139.0)(rolldown@1.2.13)(unplugin@2.3.11)
       nuxt-schema-org:
-        specifier: 6.3.2
-        version: 6.3.2(90f801fa6b15e574719b952192ba8d79)
+        specifier: 6.4.3
+        version: 6.4.3(90f801fa6b15e574719b952192ba8d79)
       pinia:
         specifier: 4.0.3
         version: 4.0.3(@typescript/typescript6@6.0.2)(@vue/devtools-api@8.2.1)(vue@3.5.43(@typescript/typescript6@6.0.2))
@@ -6980,8 +6980,8 @@ packages:
   nuxt-gtag@5.0.0:
     resolution: {integrity: sha512-L0h7p4khJRWomv0HkyyL6jhWEejdFw2uS1LaJZG3rTwLWdxcCIbpoBRbjDtFQAc9owyYkLTBbmS90XZs/gElhQ==}
 
-  nuxt-schema-org@6.3.2:
-    resolution: {integrity: sha512-Dd4UDM1kwa+tpimSylZfcdeMIa6Li83Fi+L+FJvCnbYjgVVeHRe2Wg24aWx7o37dXxWzczfyrkXAKtYyJlgClA==}
+  nuxt-schema-org@6.4.3:
+    resolution: {integrity: sha512-2iZC8iyELkRo0rf58ZKa7pp+RepVwGOdfwa9/n8DV/wVuR6TxEBZxZmOcXrdx9a1vB55ulZiI6Dc32s+f1aJeQ==}
     peerDependencies:
       '@unhead/vue': ^2.0.7 || ^3.0.0
       unhead: ^2.0.7 || ^3.0.0
@@ -17616,13 +17616,13 @@ snapshots:
       - rolldown
       - unplugin
 
-  nuxt-schema-org@6.3.2(90f801fa6b15e574719b952192ba8d79):
+  nuxt-schema-org@6.4.3(90f801fa6b15e574719b952192ba8d79):
     dependencies:
       '@nuxt/kit': 4.5.2(magic-string@0.30.21)(magicast@0.5.4)(oxc-parser@0.139.0)(rolldown@1.2.13)(unplugin@2.3.11)
       defu: 6.1.7
       nuxt-site-config: 4.2.3(3f4d35524cbe6a583f02dfd049df52f7)
       nuxtseo-shared: 5.3.16(c0caa92ccc3fec023494660f64efdf29)
-      pkg-types: 2.3.2
+      pkg-types: 2.3.3
       ufo: 1.6.4
     optionalDependencies:
       '@unhead/vue': 3.4.0(@oxc-project/types@0.148.0)(esbuild@0.28.2)(lightningcss@1.33.0)(oxc-parser@0.139.0)(rolldown@1.2.13)(rollup@4.63.1)(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.31.6)(yaml@2.9.0))(vue@3.5.43(@typescript/typescript6@6.0.2))
@@ -17639,13 +17639,13 @@ snapshots:
       - vite
       - vue
 
-  nuxt-schema-org@6.3.2(af3ef8a1f4ce080756eaa6c231274b93):
+  nuxt-schema-org@6.4.3(af3ef8a1f4ce080756eaa6c231274b93):
     dependencies:
       '@nuxt/kit': 4.5.2(magic-string@1.2.3)(magicast@0.5.4)(oxc-parser@0.141.0)(rolldown@1.2.13)(unplugin@3.3.0(esbuild@0.28.2)(rolldown@1.2.13)(rollup@4.63.1)(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.31.6)(yaml@2.9.0)))
       defu: 6.1.7
       nuxt-site-config: 4.2.3(83564b34d284576d42a9d1d5c512f268)
       nuxtseo-shared: 5.3.16(2513743a90f5090248978313879c7228)
-      pkg-types: 2.3.2
+      pkg-types: 2.3.3
       ufo: 1.6.4
     optionalDependencies:
       '@unhead/vue': 3.4.0(@oxc-project/types@0.148.0)(esbuild@0.28.2)(lightningcss@1.33.0)(oxc-parser@0.141.0)(rolldown@1.2.13)(rollup@4.63.1)(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.31.6)(yaml@2.9.0))(vue@3.5.43(@typescript/typescript6@6.0.2))
