@@ -7,7 +7,7 @@
   "author": "",
   "keywords": [],
   "dependencies": {
-    "@nuxt/kit": "4.5.2"
+    "@nuxt/kit": "4.6.1"
   },
   "devDependencies": {
     "@tsconfig/recommended": "1.0.13"
