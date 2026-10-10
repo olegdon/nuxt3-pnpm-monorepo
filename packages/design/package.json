@@ -27,7 +27,7 @@
     "@storybook/vue3": "10.6.1",
     "@storybook/vue3-vite": "10.6.1",
     "@types/node": "24.19.2",
-    "@vitejs/plugin-vue": "6.0.9",
+    "@vitejs/plugin-vue": "6.0.10",
     "@vue/tsconfig": "0.9.1",
     "@vueuse/components": "15.0.0",
     "@vueuse/core": "15.0.0",
